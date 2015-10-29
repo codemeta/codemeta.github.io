@@ -1,34 +1,26 @@
-# Site wide configuration
-title: CodeMeta
-description: "A Rosetta Stone for Software Metadata"
-logo: #"images/rosetta.jpg" # 120x120 px default image used for Twitter summary card
-teaser: #"images/rosetta.jpg" # 400x250 px default teaser image used in image archive grid
-url: #"http://codemeta.github.io"
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Jekyll configuration
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-sass:
-    sass_dir: _sass
-    style: compressed
-permalink: /:categories/:title/
-kramdown:
-  toc_levels: 1..2
-highlighter: pygments
-gems:
-  - jekyll-sitemap
+# Setup
+title:            Hyde
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://hyde.getpoole.com
+baseurl:          /
 
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
 
-# Site owner
-owner:
-  name: Carl Boettiger
-  email:
-  twitter: cboettig
-  google:
-    ad-client: 
-    ad-slot: 
-  bio: 
-  avatar: bio-photo.jpg # 160x160 px image for author byline
-  disqus-shortname:
+paginate:         5
 
+# Custom vars
+version:          2.1.0
 
-exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
+github:
+  repo:           https://github.com/poole/hyde
