@@ -47,6 +47,8 @@ If you're interested in preservation, discovery, reuse or attribution for academ
 - [Lars Holm Nielsen](http://www.hankat.dk/), Zenodo
 - [Mark Hahnel](https://twitter.com/markhahnel?lang=en), figshare
 
+For more detail, [visit the project on GitHub](https://github.com/codemeta/codemeta) or check back here soon!
+
 <!--
 
 ## 
