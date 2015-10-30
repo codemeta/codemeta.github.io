@@ -16,7 +16,7 @@ Fortunately, a rapidly growing movement to improve preservation, discovery, reus
 
 # The Future of Software Metadata
 
-<h1 style="text-align: center;"><a class="btn" href="#">Join Us</a></h1>
+<h1 style="text-align: center;"><a class="btn" href="https://docs.google.com/forms/d/1twPehXHCrpw2rfLAkHZMwm2M9cuGr79mWb4UMopZX1k/viewform">Join Us</a></h1>
 
 <br/>
 
@@ -35,7 +35,7 @@ Different software repositories, software languages and scientific domains denot
 
 If you're interested in preservation, discovery, reuse or attribution for academic software, we would love to have you join us in April. Please register your interest on the linked form! 
 
-<h1 style="text-align: center;"><a class="btn" href="#">Join Us</a></h1>
+<h1 style="text-align: center;"><a class="btn" href="https://docs.google.com/forms/d/1twPehXHCrpw2rfLAkHZMwm2M9cuGr79mWb4UMopZX1k/viewform">Join Us</a></h1>
 
 ### Our team
 
