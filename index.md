@@ -10,7 +10,7 @@ Research relies heavily on scientific software, and a large and growing fraction
 Fortunately, a rapidly growing movement to improve preservation, discovery, reuse and attribution of academic software is now underway: a recent [NIH report](http://softwarediscoveryindex.org), conferences and working groups of [Force11](https://www.force11.org/), [WSSSPE](http://wssspe.researchcomputing.org.uk/) & [Software Sustainability Institute](http://www.software.ac.uk/), and the rising adoption of repositories like [GitHub](https://github.com), [Zenodo](https://zenodo.org), [figshare](https://figshare.com) & [DataONE](https://www.dataone.org) by academic software developers. Now is the time to improve how these resources can talk to each other.  
 <hr/>
 
-# April 15 - 15 2016
+# April 15 - 17 2016
 
 # Portland, Oregon
 
