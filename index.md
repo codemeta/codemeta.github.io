@@ -33,10 +33,6 @@ What metadata you want from software is determined by your use case.  If your pr
 
 Different software repositories, software languages and scientific domains denote this information in different ways, which makes it difficult or impossible for tools to work across these different sources without losing valuable information along the way.  For instance, a fantastic collaboration between GitHub and figshare provides researchers a way to import software on the former into the persistent archive of the latter, getting a permanent identifier, a DOI in the process.  To assign a DOI, figshare must then pass metadata about the object to DataCite, the central DOI provider for all repositories.  While this makes DataCite a powerful aggregator, the lack of a crosswalk table means that much valuable metadata is currently lost along the way, such as the original software license, platform, and so forth. Any tool or approach working across software repositories faces similar challenges without a crosswalk table to translate between these.
 
-If you're interested in preservation, discovery, reuse or attribution for academic software, we would love to have you join us in April. Please register your interest on the linked form! 
-
-<h1 style="text-align: center;"><a class="btn" href="https://docs.google.com/forms/d/1twPehXHCrpw2rfLAkHZMwm2M9cuGr79mWb4UMopZX1k/viewform">Join Us</a></h1>
-
 ### Our team
 
 - [Carl Boettiger](http://carlboettiger.info), UC Berkeley
@@ -46,6 +42,14 @@ If you're interested in preservation, discovery, reuse or attribution for academ
 - [Martin Fenner](https://twitter.com/mfenner), DataCite
 - [Lars Holm Nielsen](http://www.hankat.dk/), Zenodo
 - [Mark Hahnel](https://twitter.com/markhahnel?lang=en), figshare
+- [Abby Mayes](https://twitter.com/abbycabs), Mozilla Science Foundation
+- [Kyle Niemeyer](http://kyleniemeyer.com/), Oregon State
+- [Jennifer Lin](https://twitter.com/jenniferlin15), CrossRef
+- [Alice Allen](https://twitter.com/asclnet), ASCL
+- [Mercè Crosas](http://scholar.harvard.edu/mercecrosas), Harvard IQSS 
+- [Ashley Sands](https://knowledgeinfrastructures.gseis.ucla.edu/?page_id=62#Sands), UCLA
+- [Neil Chue Hong](https://twitter.com/npch) SSI
+
 
 For more detail, [visit the project on GitHub](https://github.com/codemeta/codemeta) or check back here soon!
 
