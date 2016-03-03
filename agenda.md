@@ -68,8 +68,8 @@ Morning
     - Emphasize connections to other workshops (e.g., SCWG)
     - Discuss the use cases
     - Review the crosswalk schema, and use case adequacy
-- 45 mins
-    - emphasize connections to other workshops (e.g., SCWG)
+- Discussion: How can CodeMeta enable Software Citation? (45 mins)
+    - Implementation feedback, additional recommendations for SCWG, and vice versa
 - Break (3-3:30)
 - 90 mins
     - 
