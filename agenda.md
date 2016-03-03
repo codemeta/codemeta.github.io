@@ -66,10 +66,11 @@ Morning
 - Overview presentation (15+15 questions)
     - CodeMeta motivation
     - Emphasize connections to other workshops (e.g., SCWG)
-    - Discuss the use cases
+    - Present the use cases
     - Review the crosswalk schema, and use case adequacy
 - Discussion: How can CodeMeta enable Software Citation? (45 mins)
     - Implementation feedback, additional recommendations for SCWG, and vice versa
 - Break (3-3:30)
-- 90 mins
-    - 
+- CodeMeta Use cases (75 mins)
+    - Discussion: do CodeMeta use cases adequately cover by the crosswalk
+- Concluding discussion (15 mins)
