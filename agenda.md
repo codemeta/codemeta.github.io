@@ -61,4 +61,15 @@ Morning
 
 ## April 17
 
-- Afternooon
+- Afternooon, 1:30 to 5:00 pm, with break
+- Introductions (15 minutes)
+- Overview presentation (15+15 questions)
+    - CodeMeta motivation
+    - Emphasize connections to other workshops (e.g., SCWG)
+    - Discuss the use cases
+    - Review the crosswalk schema, and use case adequacy
+- 45 mins
+    - emphasize connections to other workshops (e.g., SCWG)
+- Break (3-3:30)
+- 90 mins
+    - 
