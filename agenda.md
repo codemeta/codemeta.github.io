@@ -54,7 +54,7 @@ Morning
 - Afternoon
 - Application use case / vision (plenary)
 - Breakout into 3 design sessions
-  - R software package / sofware implementation criteria
+  - R software package / software implementation criteria
   - Lagotto software citation counting
   - Software Discovery Index implementation based on this metadata
   (journal article draft?)
@@ -73,4 +73,5 @@ Morning
 - Break (3-3:30)
 - CodeMeta Use cases (75 mins)
     - Discussion: do CodeMeta use cases adequately cover by the crosswalk
+    - i.e. Software dependencies: what to include, what use cases you can adequately address, what you cannot.  (transitive credit? Installing?)
 - Concluding discussion (15 mins)
