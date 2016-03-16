@@ -16,8 +16,6 @@ Fortunately, a rapidly growing movement to improve preservation, discovery, reus
 
 # The Future of Software Metadata
 
-<h1 style="text-align: center;"><a class="btn" href="https://docs.google.com/forms/d/1twPehXHCrpw2rfLAkHZMwm2M9cuGr79mWb4UMopZX1k/viewform">Join Us</a></h1>
-
 <br/>
 
 <hr/>
