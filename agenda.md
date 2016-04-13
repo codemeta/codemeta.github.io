@@ -40,10 +40,10 @@ https://github.com/cboettig/eager/blob/master/project-description.Rmd#proposal-o
         - Explain tools for collaborative work
         - Google doc version of spreadsheet
         - Google doc notes docuemnt
-    - Each group focuses on 2-3 schema mappings to the generic concepts
-    - Group A: Zenodo, Software Ontology, __________
-    - Group B: FIgShare, R Package Description, __________
-    - Group C: DataCite, Software Discovery Index, _________
+    - Each group focuses on 2-3 schema mappings to the generic concepts (Self-select into following groups, groups can pick the third schema:)
+       - Group A: Zenodo, Software Ontology, __________
+        - Group B: FIgShare, R Package Description, __________
+        - Group C: DataCite, Software Discovery Index, _________
     - Goal: Review, revise, and extend crosswalk
     - Groups identify:
         - Problem areas in crosswalk, where mapping is controversial
@@ -59,10 +59,10 @@ https://github.com/cboettig/eager/blob/master/project-description.Rmd#proposal-o
 ## April 16
 
 Morning
-8:30 Coffee
-9:00: Plenary: JSON-LD: Intro to the schema (Arfon)
+- 8:30 Coffee
+- 9:00: Plenary: JSON-LD: Intro to the schema (Arfon)
     - Q&A, Review/feedback of schema approach
-9:45: Use Case Breakouts (3)
+- 9:45: Use Case Breakouts (3)
     - Introduce use case breakouts (Carl)
     - Each group assigned 2-3 use cases
     - For each use case:
