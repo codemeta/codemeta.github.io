@@ -51,6 +51,7 @@ Different software repositories, software languages and scientific domains denot
 - [Neil Chue Hong](https://twitter.com/npch) SSI
 - [Peter Slaughter](https://github.com/sbpcs59), NCEAS
 - [Patricia Cruse](https://www.datacite.org/news/datacite-appoints-patricia-cruse-executive-director.html), DataCite
+- [Dan Katz](http://danielskatz.org/), NCSA
 - [Carole Goble](http://www.manchester.ac.uk/research/Carole.goble/), University of Manchester
 
 
@@ -62,22 +63,6 @@ Different software repositories, software languages and scientific domains denot
 
 
 For more detail, [visit the project on GitHub](https://github.com/codemeta/codemeta) or check back here soon.
-
-<!--
-
-## 
-
-- Kartz Software Citation
-- Ian Mulavny JATS
-- Altmetrics
-- NIH, NSF
-
-
-- Reference manager support (Martin Fenner, Ian Mulavany
-- depc (impactstory team)
-
-
--->
 
 ## Special thanks to our supporters
 

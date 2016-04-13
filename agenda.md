@@ -7,9 +7,9 @@ title: Agenda
 
 ## Venue and logistics
 - [Portlant Paramount Hotel](http://www.portlandparamount.com/), Friday & Saturday
-- Coffee at 8am , Lewis Room
-- Sunday Force19 Workshop, see: http://sched.co/5wK5
-- OHSU Collaborative Life Science Building, Rooms TBD
+  - Coffee at 8am, Lewis Room
+- [Sunday Force16 Workshop](http://sched.co/5wK5)
+  - OHSU Collaborative Life Science Building, Rooms TBD
 
 ## Background materials and links
 
@@ -40,7 +40,7 @@ Portland Paramount Hotel, Lewis Room
 - 11:00 am: Introduction to existing vocabularies
     - Overview of existing crosswalk table (Matt)
     - 5 minutes each: software metadata creation story and use cases
-        - Zenodo (Kris), Figshare (Mark), Software Ontology, Software Discovery Index, DataCite (Martin), R Packages (Carl)
+        - Zenodo (Krzyz), Figshare (Mark), Software Ontology, Software Discovery Index, DataCite (Martin), R Packages (Carl)
         - Schema.org, Dublin Core
 - 12:00 Lunch
 
@@ -52,19 +52,17 @@ Portland Paramount Hotel, Lewis Room
         - Google doc version of spreadsheet
         - Google doc notes docuemnt
     - Each group focuses on 2-3 schema mappings to the generic concepts (Self-select into following groups, groups can pick the third schema:)
-       - Group A: Zenodo, Software Ontology, __________
-        - Group B: FIgShare, R Package Description, __________
-        - Group C: DataCite, Software Discovery Index, _________
+       - Group A: Zenodo, Software Ontology, ... 
+        - Group B: figshare, R Package Description, ...  
+        - Group C: DataCite, Software Discovery Index, ...
     - Goal: Review, revise, and extend crosswalk
     - Groups identify:
         - Problem areas in crosswalk, where mapping is controversial
         - New additions to the crosswalk concepts
-
 - 3:30 pm: Break
 - 4:00 pm: Plenary
     - Report backs
     - Conflict merging/ consensus decisions
-
 - 7:00 pm Group Dinner (Location TBA)
 
 ## April 16
