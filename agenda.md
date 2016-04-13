@@ -1,9 +1,13 @@
+---
+layout: page
+---
+
 # CodeMeta Workshop
 
 ## Venue and logistics
 - [Portlant Paramount Hotel](http://www.portlandparamount.com/), Friday & Saturday
-- Coffee at 8am, Lewis Room
-- Sunday Workshop, see: http://sched.co/5wK5
+- Coffee at 8am , Lewis Room
+- Sunday Force19 Workshop, see: http://sched.co/5wK5
 - OHSU Collaborative Life Science Building, Rooms TBD
 
 ## Background materials and links
@@ -11,6 +15,7 @@
 - [CodeMeta Web Site](https://codemeta.github.io/)
 - [NIH Software Discovery report](http://softwarediscoveryindex.org/report/)
 - [CodeMeta Github repo](https://github.com/codemeta/codemeta)
+- [Software Metadata Crosswalk](https://github.com/codemeta/codemeta/blob/master/crosswalk.csv)
 - [Guidelines for Persistently Identifying Software Using DataCite](http://rrr.cs.st-andrews.ac.uk/wp-content/uploads/2015/10/guidelines-software-identification.pdf)
 
 ## Goals
@@ -34,7 +39,7 @@ Portland Paramount Hotel, Lewis Room
 - 11:00 am: Introduction to existing vocabularies
     - Overview of existing crosswalk table (Matt)
     - 5 minutes each: software metadata creation story and use cases
-        - Zenodo (Kris), Figshare (Mark), Software Ontology, Software Discovery Index, Data Cite (Martin), Software Entities Model (Martin?), R Packages (Carl)
+        - Zenodo (Kris), Figshare (Mark), Software Ontology, Software Discovery Index, DataCite (Martin), R Packages (Carl)
         - Schema.org, Dublin Core
 - 12:00 Lunch
 
