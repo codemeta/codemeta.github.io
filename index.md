@@ -49,7 +49,7 @@ Different software repositories, software languages and scientific domains denot
 - [Neil Chue Hong](https://twitter.com/npch) SSI
 
 
-For more detail, [visit the project on GitHub](https://github.com/codemeta/codemeta) or check back here soon!
+For more detail, [visit the project on GitHub](https://github.com/codemeta/codemeta) or check back here soon.
 
 <!--
 
