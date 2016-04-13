@@ -1,24 +1,29 @@
 # CodeMeta Workshop
 
-https://github.com/cboettig/eager/blob/master/project-description.Rmd#proposal-objectives
+## Venue and logistics
+- [Portlant Paramount Hotel](http://www.portlandparamount.com/), Friday & Saturday
+- Coffee at 8am , Lewis Room
+- Sunday Workshop, see: http://sched.co/5wK5
+- OHSU Collaborative Life Science Building, Rooms TBD
 
 ## Background materials and links
 
+- [CodeMeta Web Site](https://codemeta.github.io/)
 - [NIH Software Discovery report](http://softwarediscoveryindex.org/report/)
 - [CodeMeta Github repo](https://github.com/codemeta/codemeta)
-
+- [Guidelines for Persistently Identifying Software Using DataCite](http://rrr.cs.st-andrews.ac.uk/wp-content/uploads/2015/10/guidelines-software-identification.pdf)
 
 ## Goals
 - Consensus cross walk table
 - JSON-LD draft schema
-- Design sessions for:
-    - R software package / software implementation design criteria
-    - Lagotto software citation system
+- Consensus on software metadata
     - Outline of journal article
 
 ## April 15
 
-### Morning: Lewis Room
+Portland Paramount Hotel, Lewis Room
+
+### Morning: 
 - 8:00 am: Coffee
 - 8:30 am: Welcome and introductions (Carl and Matt and Arfon and Yolanda)
     - Plenary intro to group & goals (Carl)
@@ -58,6 +63,9 @@ https://github.com/cboettig/eager/blob/master/project-description.Rmd#proposal-o
 
 ## April 16
 
+Portland Paramount Hotel, Lewis Room
+
+
 Morning
 - 8:30 Coffee
 - 9:00: Plenary: JSON-LD: Intro to the schema (Arfon)
@@ -73,14 +81,22 @@ Morning
 - 12:00 Lunch
 
 - Afternoon
-- 1:30 pm: Application use case / vision (plenary) (who?)
-- 2:30 pm: Breakout into 3 design sessions
-  - R software package / software implementation criteria
-  - Lagotto software citation counting
-  - Journal Article: outline software metadata crosswalk paper
+- 1:30 pm: Building a software metadata consensus (plenary) (Carl)
+- 1:45 pm: Breakout into 3  sessions
+    - Consensus points: where do we have consensus?
+    - Use cases?  Relative importance of use cases...
+    - Critical minimal metadata per use case
+- 3:30 Break
+- 4:00 Plenary
+    - Reports from each group (5 mins each)
+    - Journal Article: outline software metadata needs paper
+    - Wrapup and conclusion
 
 ## April 17
 
+[Force16 Workshop: Open software, part 2: CodeMeta](http://sched.co/5wK5)
+    - OHSU Collaborative Life Science Building, Rooms TBD
+    
 - Afternooon, 1:30 to 5:00 pm, with break
 - Introductions (15 minutes)
 - Overview presentation (15+15 questions)
@@ -92,6 +108,6 @@ Morning
     - Implementation feedback, additional recommendations for SCWG, and vice versa
 - Break (3-3:30)
 - CodeMeta Use cases (75 mins)
-    - Discussion: do CodeMeta use cases adequately cover by the crosswalk
+    - Discussion: Are CodeMeta use cases adequately covered by the crosswalk
     - i.e. Software dependencies: what to include, what use cases you can adequately address, what you cannot.  (transitive credit? Installing?)
 - Concluding discussion (15 mins)
