@@ -16,6 +16,8 @@ Fortunately, a rapidly growing movement to improve preservation, discovery, reus
 
 # The Future of Software Metadata
 
+## [Agenda](/agenda)
+
 <br/>
 
 <hr/>
