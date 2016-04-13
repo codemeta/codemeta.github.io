@@ -2,7 +2,7 @@
 
 ## Venue and logistics
 - [Portlant Paramount Hotel](http://www.portlandparamount.com/), Friday & Saturday
-- Coffee at 8am , Lewis Room
+- Coffee at 8am, Lewis Room
 - Sunday Workshop, see: http://sched.co/5wK5
 - OHSU Collaborative Life Science Building, Rooms TBD
 
