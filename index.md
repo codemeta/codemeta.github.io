@@ -38,15 +38,25 @@ Different software repositories, software languages and scientific domains denot
 - [Arfon Smith](http://www.arfon.org/), GitHub
 - [Yolanda Gil](http://www.isi.edu/~gil/), USC ISI
 - [Martin Fenner](https://twitter.com/mfenner), DataCite
-- [Lars Holm Nielsen](http://www.hankat.dk/), Zenodo
+- [Krzysztof Nowak](https://github.com/krzysztof), Zenodo
 - [Mark Hahnel](https://twitter.com/markhahnel?lang=en), figshare
 - [Abby Mayes](https://twitter.com/abbycabs), Mozilla Science Foundation
+- [Luke Coy](http://lukecoy.github.io/), RIT & MSF
 - [Kyle Niemeyer](http://kyleniemeyer.com/), Oregon State
-- [Jennifer Lin](https://twitter.com/jenniferlin15), CrossRef
 - [Alice Allen](https://twitter.com/asclnet), ASCL
 - [Mercè Crosas](http://scholar.harvard.edu/mercecrosas), Harvard IQSS 
 - [Ashley Sands](https://knowledgeinfrastructures.gseis.ucla.edu/?page_id=62#Sands), UCLA
 - [Neil Chue Hong](https://twitter.com/npch) SSI
+- [Peter Slaughter](https://github.com/sbpcs59), NCEAS
+- [Patricia Cruse](https://www.datacite.org/news/datacite-appoints-patricia-cruse-executive-director.html), DataCite
+- [Carole Goble](http://www.manchester.ac.uk/research/Carole.goble/), University of Manchester
+
+
+<!--
+- [Lars Holm Nielsen](http://www.hankat.dk/), Zenodo
+- [Jennifer Lin](https://twitter.com/jenniferlin15), CrossRef
+
+-->
 
 
 For more detail, [visit the project on GitHub](https://github.com/codemeta/codemeta) or check back here soon!
