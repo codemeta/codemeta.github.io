@@ -29,7 +29,7 @@ title: Agenda
 
 Portland Paramount Hotel, Lewis Room
 
-### Morning: 
+### Morning
 - 8:00 am: Coffee
 - 8:30 am: Welcome and introductions (Carl and Matt and Arfon and Yolanda)
     - Plenary intro to group & goals (Carl)
@@ -70,7 +70,8 @@ Portland Paramount Hotel, Lewis Room
 Portland Paramount Hotel, Lewis Room
 
 
-Morning
+### Morning
+
 - 8:30 Coffee
 - 9:00: Plenary: JSON-LD: Intro to the schema (Arfon)
     - Q&A, Review/feedback of schema approach
@@ -84,7 +85,8 @@ Morning
 
 - 12:00 Lunch
 
-- Afternoon
+### Afternoon
+
 - 1:30 pm: Building a software metadata consensus (plenary) (Carl)
 - 1:45 pm: Breakout into 3  sessions
     - Consensus points: where do we have consensus?
