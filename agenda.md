@@ -99,19 +99,17 @@ Morning
 ## April 17
 
 [Force16 Workshop: Open software, part 2: CodeMeta](http://sched.co/5wK5)
-    - OHSU Collaborative Life Science Building, Rooms TBD
+    - OHSU Collaborative Life Science Building, Room
     
 - Afternooon, 1:30 to 5:00 pm, with break
 - Introductions (15 minutes)
 - Overview presentation (15+15 questions)
     - CodeMeta motivation
-    - Emphasize connections to other workshops (e.g., SCWG)
     - Present the use cases
-    - Review the crosswalk schema, and use case adequacy
-- Discussion: How can CodeMeta enable Software Citation? (45 mins)
-    - Implementation feedback, additional recommendations for SCWG, and vice versa
-- Break (3-3:30)
-- CodeMeta Use cases (75 mins)
-    - Discussion: Are CodeMeta use cases adequately covered by the crosswalk
-    - i.e. Software dependencies: what to include, what use cases you can adequately address, what you cannot.  (transitive credit? Installing?)
-- Concluding discussion (15 mins)
+    - Review the crosswalk 
+    - schema
+- Questions and discussion
+- Breakouts:
+  - Crosswalk table
+  - Schema implementation
+
