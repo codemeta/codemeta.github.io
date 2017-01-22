@@ -42,8 +42,8 @@ Different software repositories, software languages and scientific domains denot
 - [Martin Fenner](https://twitter.com/mfenner), DataCite
 - [Krzysztof Nowak](https://github.com/krzysztof), Zenodo
 - [Mark Hahnel](https://twitter.com/markhahnel?lang=en), figshare
-- [Abby Mayes](https://twitter.com/abbycabs), Mozilla Science Foundation
-- [Luke Coy](http://lukecoy.github.io/), RIT & MSF
+- [Abby Mayes](https://twitter.com/abbycabs), Mozilla Science Lab
+- [Luke Coy](http://lukecoy.github.io/), RIT & MSL
 - [Kyle Niemeyer](http://kyleniemeyer.com/), Oregon State
 - [Alice Allen](https://twitter.com/asclnet), ASCL
 - [Mercè Crosas](http://scholar.harvard.edu/mercecrosas), Harvard IQSS 
