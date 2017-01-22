@@ -1,0 +1,211 @@
+\documentclass[final,hyperref={pdfpagelabels=false},xcolor=svgnames]{beamer}
+
+\mode<presentation>
+  {
+  \usetheme{Boadilla}
+  %\usetheme{Frankfurt}
+  }
+  \newcommand{\E}{\mathrm{E}} 
+  \newcommand{\ud}{\mathrm{d}} 
+  \newcommand{\degree}{$^{\circ}$}
+  \newcommand{\tb}[1]{\textcolor{blue}{#1}} 
+
+  \bibliographystyle{evolution}
+  \usepackage{times}
+  \usepackage{amsmath,amsthm, amssymb, latexsym}
+  \usepackage{graphicx}
+  %\boldmath
+
+
+  \usepackage[english]{babel}
+  \usepackage[latin1]{inputenc}
+  \usepackage[orientation=landscape,size=E,scale=1.4,debug]{beamerposter}
+
+%	\usepackage{rotating}
+
+
+\graphicspath{{/home/cboettig/Documents/ucdavis/research/presentations/images/}}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+  \title[]{\VeryHuge \textbf{Detecting Evolutionary Regime Shifts $\phantom{longword}$ }}
+  \author{Carl Boettiger}
+  \institute{Center for Population Biology, University of California, Davis}
+  \usecolortheme[named=DarkBlue]{structure} 
+
+  \graphicspath{{/home/cboettig/Documents/ucdavis/research/presentations/images/}}
+
+\setbeamertemplate{background canvas}{\includegraphics
+	[width=\paperwidth,height=\paperheight]{fish/csgf_2011.jpg}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+  \begin{document}
+  \begin{frame}[t] 
+%  \maketitle
+
+\frametitle{\VeryHuge{\textbf{ Detecting Evolutionary Regime Shifts $\phantom{longword}$ } }\\ \LARGE{\hspace{1cm} Carl Boettiger, UC Davis}}
+\vspace{4cm}
+
+
+%%%%%%%%%%%%%%%% Two top columns %%%%%%%%%%%%%%%
+
+\begin{columns}[t] % LEFT COLUMN 
+\begin{column}{.20\paperwidth}
+{\LARGE Abstract }
+The genomic revolution has made a wealth of genetic data available over the past
+decade that has opened up a third avenue and provided a periscope into past origins of
+today's diversity. Phylogenetic trees, reconstructed from patterns of DNA in extant
+species, provide a map of how these species have evolved from their common ancestry.
+In my work on these evolutionary origins, I am developing methods that combine
+phylogenetic and present-day trait information across a range of taxa to look back into
+their past and identify key evolutionary transitions responsible for the diversity we see
+today.
+  \vspace{1cm}
+
+\begin{center}
+{\LARGE A Simple Model} 
+
+  $$  \ud X = \underbrace{\alpha}_{\textrm{selection}} (\underbrace{\theta}_{\textrm{optimum}} - X) \ud t + \underbrace{\sigma}_{\textrm{divers. rate}} \ud B_t  $$
+
+  \includegraphics[width=.15\paperwidth]{evo2011/combined_sketch3.pdf}
+
+%\vspace{1cm}
+
+% \includegraphics[width=.2\paperwidth, height=6in]{evo2011/brownie}\hspace{1cm} \includegraphics[width=.1\paperwidth, height=6in]{evo2011/ouch}
+
+ %  Differing rates of diversification | Differing selective optima
+  \end{center}
+
+
+
+\end{column}
+
+\begin{column}{.2\paperwidth} 
+	{\LARGE Results }
+
+ % \begin{block}{}
+  \begin{center}
+    Trait Diversification Rate Model 
+    \href{http://www.flickr.com/photos/cboettig/5842718829}{
+    \includegraphics[width=\textwidth]{evo2011/protrusion_sigmas.png}}
+
+    Stabilizing Selection Strength 
+    \href{http://www.flickr.com/photos/cboettig/5842718565}{
+    \includegraphics[width=\textwidth]{evo2011/protrusion_alphas.png}}
+
+  \end{center}
+%  \end{block}
+
+  \begin{block}{So which is the better model?}
+  \begin{columns}
+    \column{.5\linewidth}
+  \begin{itemize}
+    \item Differing Diversification Log Likelihood: \textbf{-94} \\  Parameters: 4
+    \item Differing Selection Log Likelihood: \textbf{-92} \\Parameters: 4
+  \end{itemize}
+  \column{.5\linewidth}
+    \begin{center}
+      \href{http://www.flickr.com/photos/cboettig/5842718351}{
+      \includegraphics[width=\textwidth]{evo2011/protrusion_alphas_v_sigmas.png}}
+    \end{center}
+  \end{columns}
+  \vspace{1cm}
+  Not enough power for this comparison in this trait.\\  
+  \end{block}
+
+\vspace{1.9in}
+{\Large Computations on treacherous surfaces}
+\large
+\begin{itemize}
+  \item Likelihood Ridges: Frequent trade-offs in parameter combinations
+  \item Rugged surfaces: assessing optimization algorithm convergence)
+  \item Unreliable asymptotic results (standard information criteria)
+\end{itemize}
+\end{column}
+
+\begin{column}{.2\paperwidth} % RIGHT COLUMN
+
+%\begin{block}{}
+  \begin{center}
+    Differing Stabilizing Selection Strength
+    \href{http://www.flickr.com/photos/cboettig/5841932378}{
+    \includegraphics[width=\textwidth]{evo2011/labrid_alpha.png}}
+
+    Differing Trait Diversification Rate
+    \href{http://www.flickr.com/photos/cboettig/5841932492}{
+    \includegraphics[width=\textwidth]{evo2011/labrid_sigma.png}}
+  \end{center}
+%\end{block}
+
+%\begin{block}{}
+  \begin{center}
+    \href{http://www.flickr.com/photos/cboettig/5841932260}{
+    \includegraphics[width=.75\textwidth]{evo2011/labrid_compare.png}}
+  \end{center}
+%\end{block}
+
+\vspace{2in}
+
+{\Large Visualizing regime shifts in simple models:}
+
+ \includegraphics[width=4in, height=4in]{evo2011/brownie}\hspace{1cm} 
+\includegraphics[width=4in, height=4in]{evo2011/ouch}
+
+\end{column}
+
+
+
+\begin{column}{.28\paperwidth} % PLACEHOLDER FOR BACKGROUND
+  \vspace{9in}
+  \begin{center}
+    {\LARGE Bayesian version by MCMC}
+    \href{http://www.flickr.com/photos/cboettig/5844577056}{
+  \includegraphics[width=\textwidth]{evo2011/mcmc_labrid_alpha.png}}
+  \end{center}
+
+
+
+  {\LARGE Summary}
+  \begin{enumerate}
+    \item Introduce phylogenetic method to detect evolutionary regime shifts.
+    \item Highlight pitfalls of inadequate infromation.
+    \item Introduce a method to quantify power and uncertainty of estimates.
+    \item Working with limits: offering smaller sub-models for smaller data sets.
+  \end{enumerate}
+		
+  \vspace{.5in}
+
+   {\LARGE Acknowledgements} \\
+		\vspace{1cm}
+		\normalsize{
+    \begin{itemize}
+      \item P. Wainwright
+      \item G. Coop
+      \item P. Ralph
+      \item S. Price
+    \end{itemize}
+
+		  \includegraphics[width=4in]{icons/csgf.png}
+
+      Development version 
+\href{https://github.com/cboettig/wrightscape}{https://github.com/cboettig/wrightscape}
+
+\vspace{-5in} \begin{flushright}\includegraphics[width=3in]{evo2011/giturl}\end{flushright}
+		}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+\end{document}
+%% Fontsize commands
+	%      \tiny
+	%      \scriptsize
+	%     \footnotesize
+	%     \normalsize
+	%      \large 
+	%      \Large
+	 %     \LARGE
+	%      \veryHuge
+	%      \VeryHuge
+	 %     \VERYHuge
+
