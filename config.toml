@@ -4,7 +4,7 @@ title = "The CodeMeta Project"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
-publishDir = "docs"
+publishDir = "../website"
 
 
 [[menu.main]]
