@@ -1,0 +1,50 @@
+baseurl = "/"
+relativeurls = true
+title = "The CodeMeta Project"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+publishDir = "docs"
+
+
+[[menu.main]]
+    name = "Home"
+    url = "/index.html"
+    weight = 1
+[[menu.main]]
+    name = "Crosswalk"
+    url = "/crosswalk/"
+    weight = 2
+[[menu.main]]
+    name = "JSON-LD"
+    url = "/jsonld/"
+    weight = 3
+[[menu.main]]
+    name = "Terms"
+    url = "/terms/"
+    weight = 4
+[[menu.main]]
+    name = "Workshop"
+    url = "/workshop"
+    weight = 5
+
+[params]
+    name =  "codemeta"
+    github =  "codemeta"
+    custom_css = ["cboettig.css"]
+    repo = "codemeta.github.io"
+
+    date_format = "Mon, Jan 2, 2006"
+    description = "A website built through Hugo and blogdown."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.10.0"
+    highlightCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
