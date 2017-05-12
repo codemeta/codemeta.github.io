@@ -14,32 +14,15 @@
 
   <div class="row"><div class="col-md-11 col-md-offset-1">
   
-    <div class="row">
-    {{ range first 3 .Paginator.Pages }}
-    <div class="col-md-4">
-      <h4><a href="{{ .RelPermalink }}">{{ .Date.Format $.Site.Params.date_format }}</a></h4>
-      {{ if .Title }}<h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>{{ end }}
-      <div class="article-style">
-        {{  .Summary | markdownify }}
-      </div>
+    {{ range .Paginator.Pages }}
+    <div class="article">
+      {{ if .Title }}<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>{{ end }}
     </div>
     {{ end }}
     </div>
 
-   {{ if gt (len .Paginator.Pages) 3 }}
-    <div class="row">
-    {{ range after 3 .Paginator.Pages }}
-    <div class="col-md-4">
-      <h4><a href="{{ .RelPermalink }}">{{ .Date.Format $.Site.Params.date_format }}</a></h4>
-      {{ if .Title }}<h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>{{ end }}
-      <div class="article-style">
-        {{  .Summary | markdownify }}
-      </div>
-    </div>
-    {{ end }}
-    </div>
-  {{ end }}
   
+
   {{ partial "pagination" . }}
 
   <br />  
