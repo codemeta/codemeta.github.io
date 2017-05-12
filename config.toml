@@ -24,9 +24,14 @@ publishDir = "../website"
     url = "/terms/"
     weight = 4
 [[menu.main]]
-    name = "Workshop"
-    url = "/workshop"
+    name = "Use Cases"
+    url = "/use-cases"
     weight = 5
+[[menu.main]]
+    name = "Examples"
+    url = "/examples"
+    weight = 5
+
 
 [params]
     name =  "codemeta"
