@@ -44,6 +44,18 @@ The CodeMeta project does not seek to create [yet another standard](https://xkcd
 - [Carole Goble](http://www.manchester.ac.uk/research/Carole.goble/), University of Manchester
 
 
+## Project Origins
+
+The CodeMeta project was first concieved at the [Open Science Codefest](http://nceas.github.io/open-science-codefest/), we met to discuss the metadata for scientific software. Participants included:
+
+- Abigail Cabunoc / @abbycabs
+- Matt Jones / @metamattj
+- Carly Strasser / @carlystrasser
+- Corinna Gries / @CorinnaGries
+
+Work was recorded on [this etherpad](https://etherpad.mozilla.org/oscodefest-softwaremetadata).
+
+
 <!--
 - [Lars Holm Nielsen](http://www.hankat.dk/), Zenodo
 - [Jennifer Lin](https://twitter.com/jenniferlin15), CrossRef

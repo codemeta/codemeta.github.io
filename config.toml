@@ -3,7 +3,7 @@ relativeurls = true
 title = "The CodeMeta Project"
 googleAnalytics = ""
 disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", "\\.csv", "\\.R"]
 publishDir = "../website"
 
 
@@ -40,7 +40,7 @@ publishDir = "../website"
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.10.0"
     highlightCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
+    highlightjsLang = ["r", "yaml", "json"]
     highlightjsTheme = "github"
 
     [params.logo]
