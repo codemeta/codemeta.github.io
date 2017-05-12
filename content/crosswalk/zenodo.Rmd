@@ -1,0 +1,21 @@
+---
+title: "Crosswalk for Zenodo metadata"
+---
+
+
+<img src="/img/zenodo.jpg" width="400" />
+
+
+[Zenodo.org](https://zenodo.org) is a data archive based at CERN which is popularly used to archive and provide DOIs to academic software from GitHub, as described in the official GitHub guide to [Making your code citable](https://guides.github.com/activities/citable-code/).
+
+
+```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
+library("tidyverse")
+crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk_v2.csv"
+cw <- read_csv(crosswalk)
+cw %>% 
+  select(Property, `Zenodo`) %>%
+  filter(!is.na(`Zenodo`)) -> df
+
+knitr::kable(df, "html", table.attr="class=\"table table-striped\"")
+```

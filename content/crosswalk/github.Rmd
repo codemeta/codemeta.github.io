@@ -1,0 +1,18 @@
+---
+title: "Crosswalk for GitHub metadata"
+---
+
+<img src="/img/github.png" width="400" />
+
+
+
+```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
+library("tidyverse")
+crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk_v2.csv"
+cw <- read_csv(crosswalk)
+cw %>% 
+  select(Property, `GitHub`) %>%
+  filter(!is.na(`GitHub`)) -> df
+
+knitr::kable(df, "html", table.attr="class=\"table table-striped\"")
+```

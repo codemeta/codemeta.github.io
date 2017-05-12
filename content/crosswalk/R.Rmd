@@ -13,5 +13,5 @@ cw %>%
   select(Property, `R Package Description`) %>%
   filter(!is.na(`R Package Description`)) -> df
 
-knitr::kable(df, "pandoc")
+knitr::kable(df, "html", table.attr="class=\"table table-striped\"")
 ```
