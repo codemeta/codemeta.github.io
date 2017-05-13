@@ -8,15 +8,21 @@
 </div>
 {{end}}
 
-
   {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+
+   <!-- List pages can get Content and yaml metadata from an _index.md -->
+  {{ with .Content }}
+  <div class="article-style" itemprop="articleBody">{{ . }}</div>
+  {{ end }}
+
+
 
 
   <div class="row"><div class="col-md-11 col-md-offset-1">
   
     {{ range .Paginator.Pages }}
     <div class="article">
-      {{ if .Title }}<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>{{ end }}
+      <h2><a href="{{ .RelPermalink }}">{{if .Params.image }} <img src="{{ .Params.image }}" height="50px"/> {{ end }}{{ .Title }}</a></h2>
     </div>
     {{ end }}
     </div>
@@ -27,11 +33,7 @@
 
   <br />  
   
-     <!-- List pages can get Content and yaml metadata from an _index.md -->
-  {{ with .Content }}
-  <div class="article-style" itemprop="articleBody">{{ . }}</div>
-  {{ end }}
-
+  
   
   </div></div>
 

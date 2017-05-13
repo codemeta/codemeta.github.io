@@ -1,14 +1,13 @@
 ---
-title: "Crosswalk for GitHub metadata"
+title: "Crosswalk for GitHub API"
+image: "/img/github.png"
 ---
-
-<img src="/img/github.png" width="400" />
 
 
 
 ```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
 library("tidyverse")
-crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk_v2.csv"
+crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk.csv"
 cw <- read_csv(crosswalk)
 cw %>% 
   select(Property, `GitHub`) %>%

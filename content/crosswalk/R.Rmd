@@ -1,5 +1,6 @@
 ---
-title: "Crosswalk for R Package DESCRIPTION file"
+title: "Crosswalk for R Packages"
+image: "/img/R.png"
 ---
 
 The following table displays the crosswalk mapping of terms from the R package DESCRIPTION file to codemeta properties.
@@ -7,7 +8,7 @@ The following table displays the crosswalk mapping of terms from the R package D
 
 ```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
 library("tidyverse")
-crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk_v2.csv"
+crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk.csv"
 cw <- read_csv(crosswalk)
 cw %>% 
   select(Property, `R Package Description`) %>%

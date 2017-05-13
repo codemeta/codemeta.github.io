@@ -222,17 +222,17 @@
   {
     "Concept": "MustBeCited",
     "Keep Concept?": "y",
-    "CodeMeta Field": "mustBeCited",
+    "CodeMeta Field": "mustBeCited"
   },
   {
     "Concept": "isMaintainer",
     "Keep Concept?": "y",
-    "CodeMeta Field": "isMaintainer",
+    "CodeMeta Field": "isMaintainer"
   },
   {
     "Concept": "isRightsHolder",
     "Keep Concept?": "y",
-    "CodeMeta Field": "isRightsHolder",
+    "CodeMeta Field": "isRightsHolder"
   },
   {
     "Concept": "IssueLink",
@@ -298,7 +298,7 @@
     "Python Distutils (PyPI)": "classifiers['Operating System']",
     "Trove Software Map": "Operating System",
     "Perl Module Description (CPAN::Meta)": "OSNAMES",
-    "JavaScript package descption (npm)": "os",
+    "JavaScript package descption (npm)": "os"
   },
   {
     "Concept": "ProgrammingLanguage",
@@ -367,14 +367,14 @@
     "Keep Concept?": "y",
     "CodeMeta Field": "relationships",
     "DataCite": "RelatedIdentifier(relationType=isPartOf), RelatedIdentifier(relationType=isVariantFormOf), RelatedIdentifier(relationType=isPreviousVersionOf), RelatedIdentifier(relationType=isNextVersionOf)",
-    "OntoSoft": "hasRelevantDataSources",
+    "OntoSoft": "hasRelevantDataSources"
 
  
   },
   {
     "Concept": "Role",
     "Keep Concept?": "y",
-    "CodeMeta Field": "role",
+    "CodeMeta Field": "role"
   },
   {
     "Concept": "SoftwareIdentifier",
@@ -495,7 +495,7 @@
     "Zenodo": "filename",
     "GitHub": "archive_url",
     "Figshare": "file",
-    "Python Distutils (PyPI)": "download_url",
+    "Python Distutils (PyPI)": "download_url"
   },
   {
     "Concept": "DevelopmentStatus",
@@ -504,7 +504,7 @@
     "OntoSoft": "activeDevelopment",
     "Python Distutils (PyPI)": "classifiers['Development Status']",
     "Trove Software Map": "Development Status",
-    "Perl Module Description (CPAN::Meta)": "release_status",
+    "Perl Module Description (CPAN::Meta)": "release_status"
   },
   {
     "Concept": "TestCoverage",

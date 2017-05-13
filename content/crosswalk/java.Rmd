@@ -1,10 +1,9 @@
 ---
-title: "Crosswalk for DataCite metadata"
-image: "/img/datacite.png"
+title: "Crosswalk for Java's Maven metadata"
+image: "/img/java.png"
 ---
 
-<img src="/img/datacite.png" width="400" />
-
+[Maven](https://maven.apache.org/what-is-maven.html) is a popular packaging/build system for Java-based projects.
 
 
 ```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
@@ -12,8 +11,8 @@ library("tidyverse")
 crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk.csv"
 cw <- read_csv(crosswalk)
 cw %>% 
-  select(Property, `DataCite`) %>%
-  filter(!is.na(`DataCite`)) -> df
+  select(Property, `Java (Maven)`) %>%
+  filter(!is.na(`Java (Maven)`)) -> df
 
 knitr::kable(df, "html", table.attr="class=\"table table-striped\"")
 ```

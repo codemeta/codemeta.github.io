@@ -1,19 +1,17 @@
 ---
-title: "Crosswalk for DataCite metadata"
-image: "/img/datacite.png"
+title: "Crosswalk for Ruby gems"
+image: "/img/ruby.png"
 ---
 
-<img src="/img/datacite.png" width="400" />
-
-
+Ruby gems [specify metadata](http://guides.rubygems.org/specification-reference/) in a `.gemspec` file.
 
 ```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
 library("tidyverse")
 crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk.csv"
 cw <- read_csv(crosswalk)
 cw %>% 
-  select(Property, `DataCite`) %>%
-  filter(!is.na(`DataCite`)) -> df
+  select(Property, `Ruby Gem`) %>%
+  filter(!is.na(`Ruby Gem`)) -> df
 
 knitr::kable(df, "html", table.attr="class=\"table table-striped\"")
 ```

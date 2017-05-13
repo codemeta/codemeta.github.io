@@ -1,11 +1,11 @@
 ---
-title: "Crosswalk for Zenodo metadata"
-image: "/img/zenodo.jpg"
+title: "Crosswalk for Dublin Core metadata"
+image: "/img/dcmi.png"
 ---
 
 
 
-<p><a href="https://zenodo.org">Zenodo.org</a> is a data archive based at CERN which is popularly used to archive and provide DOIs to academic software from GitHub, as described in the official GitHub guide to <a href="https://guides.github.com/activities/citable-code/">Making your code citable</a>.</p>
+<p><img src="/img/datacite.png" width="400" /></p>
 <table class="table table-striped">
 <thead>
 <tr>
@@ -13,25 +13,25 @@ image: "/img/zenodo.jpg"
 Property
 </th>
 <th style="text-align:left;">
-Zenodo
+Dublin Core
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-codeRepository
+creator
 </td>
 <td style="text-align:left;">
-relatedLink
+creator
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-applicationCategory
+dateCreated
 </td>
 <td style="text-align:left;">
-communities
+created
 </td>
 </tr>
 <tr>
@@ -39,23 +39,7 @@ communities
 datePublished
 </td>
 <td style="text-align:left;">
-date_published
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-funder
-</td>
-<td style="text-align:left;">
-contributors.Funder
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-keywords
-</td>
-<td style="text-align:left;">
-keywords
+date
 </td>
 </tr>
 <tr>
@@ -64,6 +48,22 @@ license
 </td>
 <td style="text-align:left;">
 license
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+publisher
+</td>
+<td style="text-align:left;">
+publisher
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+version
+</td>
+<td style="text-align:left;">
+dcterms:hasVersion
 </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ license
 description
 </td>
 <td style="text-align:left;">
-description/notes
+description
 </td>
 </tr>
 <tr>
@@ -79,7 +79,7 @@ description/notes
 identifier
 </td>
 <td style="text-align:left;">
-id
+identifier
 </td>
 </tr>
 <tr>
@@ -96,22 +96,6 @@ licenseId
 </td>
 <td style="text-align:left;">
 license
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-affiliation
-</td>
-<td style="text-align:left;">
-affiliation
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="mailto:%22@id%22">&quot;@id&quot;</a>;
-</td>
-<td style="text-align:left;">
-ORCID
 </td>
 </tr>
 </tbody>

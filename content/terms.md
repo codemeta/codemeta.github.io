@@ -6,7 +6,7 @@ title: Codemeta Terms
 
 ## Terms from Schema.org
 
-Recognized properties for CodeMeta `Code` includes the following terms from <https://schema.org>:
+Recognized properties for CodeMeta `Code` includes the following terms from <https://schema.org>.  These terms are part of the CodeMeta specification and can be used without any prefix. 
 
 {{% schematable  "https://raw.githubusercontent.com/codemeta/codemeta/master/data/schematerms.csv" %}}
 

@@ -1,10 +1,9 @@
 ---
-title: "Crosswalk for DataCite metadata"
-image: "/img/datacite.png"
+title: "Crosswalk for NodeJS package.json"
+image: "/img/npm.png"
 ---
 
-<img src="/img/datacite.png" width="400" />
-
+The `npm` package manager for NodeJS [defines](https://docs.npmjs.com/files/package.json) software metadata using a `package.json` file. 
 
 
 ```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
@@ -12,8 +11,8 @@ library("tidyverse")
 crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk.csv"
 cw <- read_csv(crosswalk)
 cw %>% 
-  select(Property, `DataCite`) %>%
-  filter(!is.na(`DataCite`)) -> df
+  select(Property, `NodeJS`) %>%
+  filter(!is.na(`NodeJS`)) -> df
 
 knitr::kable(df, "html", table.attr="class=\"table table-striped\"")
 ```

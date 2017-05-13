@@ -1,11 +1,10 @@
 ---
-
+title: "Crosswalks"
 ---
 
+The codemeta crosswalk provides an explicit map between the metadata fields used by a broad range of software repositories, registries and archives.  Here are the currently available mappings from existing standards into CodeMeta properties.  Mapping onto a common set of properties should facilitate translation between any two crosswalked standards.  The full crosswalk table is [available as a `.csv`](https://github.com/codemeta/codemeta/tree/master/crosswalk.csv) file on the CodeMeta repository.  
 
-<!-- 
-Pre-compute just the subset of each column mapped to the schema.org / codemeta properties.
-Then create sub pages where a user can click and see the mapping for each metadata standard.
+## Contribute!
 
-This should probably become a _index.md in a crosswalk dir
--->
+CodeMeta encourages submissions of additional vocabularies by making Pull Requests against the [full crosswalk table](https://github.com/codemeta/codemeta/tree/master/crosswalk.csv).  Feel free to propose corrections or extensions in the [codmeta issues tracker](https://github.com/codemeta/codemeta/issues).
+

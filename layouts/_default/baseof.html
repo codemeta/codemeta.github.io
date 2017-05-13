@@ -2,9 +2,15 @@
 {{ partial "navbar.html" . }}
 
 <div class = "container">
-{{ block "main" .}}
-<!-- -->
-{{ end }}
+   <div class="row">
+    <div class="col-md-11 col-md-offset-1">
+      <article>
+      {{ block "main" .}}
+      <!-- -->
+      {{ end }}
+      </article>
+      </div>
+    </div>
 </div>
 
 {{ partial "footer_container.html" . }}
