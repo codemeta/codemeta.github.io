@@ -1,0 +1,41 @@
+---
+title: Codemeta Terms
+
+---
+
+```{r echo=FALSE, include = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo=FALSE, message = FALSE, warning = FALSE)
+library("readr")
+library("dplyr")
+```
+
+## Terms from Schema.org
+
+Recognized properties for CodeMeta `Code` includes the following terms from <https://schema.org>.  These terms are part of the CodeMeta specification and can be used without any prefix. 
+
+```{r}
+crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk.csv"
+cw <- read_csv(crosswalk)
+cw %>% 
+  filter(grepl("schema:", `Parent Type`)) %>%
+  select(Property, Type, Description)  %>%
+knitr::kable("html", table.attr="class=\"table table-striped\"")
+
+```
+
+These terms are all recognized properties of <https://schema.org/SoftwareSourceCode> or <https://schema.org/SoftwareApplication> Types. Note that while most properties take basic data types as values (`Text`, `URL`), several take other node types, such as `Person` or `Organization`.  Recommended fields for these node types in CodeMeta documents are given below.
+
+## Codemeta terms
+
+The CodeMeta project also introduces the following additional properties, which lack clear equivalents in <https://schema.org> but can play an important role in software metadata records covered by the CodeMeta crosswalk.
+
+```{r}
+cw %>% 
+  filter(grepl("codemeta:", `Parent Type`)) %>%
+  select(Property, Type, Description)  %>%
+knitr::kable("html", table.attr="class=\"table table-striped\"")
+
+```
+
+
+Please suggest additional terms or adjustments to this representation in the [codmeta issues](https://github.com/codemeta/codemeta/issues)
