@@ -193,10 +193,10 @@ Software application help.
 softwareRequirements
 </td>
 <td style="text-align:left;">
-Text or URL
+SoftwareSourceCode
 </td>
 <td style="text-align:left;">
-Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime). Supersedes requirements.
+Required software dependencies
 </td>
 </tr>
 <tr>
@@ -597,7 +597,7 @@ An organization that this person is affiliated with. For example, a school/unive
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="mailto:%22@id%22">&quot;@id&quot;</a>;
+identifier
 </td>
 <td style="text-align:left;">
 URL
@@ -641,17 +641,6 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-depends
-</td>
-<td style="text-align:left;">
-SoftwareSourceCode
-</td>
-<td style="text-align:left;">
-Required software dependencies
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 suggests
 </td>
 <td style="text-align:left;">
@@ -681,17 +670,6 @@ URL
 </td>
 <td style="text-align:left;">
 link to continuous integration service
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-licenseId
-</td>
-<td style="text-align:left;">
-Text
-</td>
-<td style="text-align:left;">
-Abbreviation for an open source license, ideally an SPDX code. (Compare to schema:license which is <span class="citation">@type</span> URL or CreativeWork)
 </td>
 </tr>
 <tr>
@@ -740,17 +718,6 @@ Funding source (e.g. specific grant)
 </tr>
 <tr>
 <td style="text-align:left;">
-packageSystem
-</td>
-<td style="text-align:left;">
-Organization or URL
-</td>
-<td style="text-align:left;">
-package distribution system, such as CRAN url, Node registry, etc. Consider using schema:provider instead?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 issueTracker
 </td>
 <td style="text-align:left;">
@@ -762,7 +729,7 @@ link to software bug reporting or issue tracking system
 </tr>
 <tr>
 <td style="text-align:left;">
-relatedPublications
+referencePublication
 </td>
 <td style="text-align:left;">
 ScholarlyArticle
@@ -780,39 +747,6 @@ URL
 </td>
 <td style="text-align:left;">
 link to software Readme file
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-relatedIdentifer
-</td>
-<td style="text-align:left;">
-codemeta:Relationship
-</td>
-<td style="text-align:left;">
-A DataCite relationship triple of relationshipType, relatedIdentifier, and relatedIdentifierType
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-relatedIdentiferType
-</td>
-<td style="text-align:left;">
-Text
-</td>
-<td style="text-align:left;">
-Part of the DataCite triple defining a relationship. Identifier type may be URN, UUID, DOI, ORCID, etc
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-relationshipType
-</td>
-<td style="text-align:left;">
-Text
-</td>
-<td style="text-align:left;">
-controlled vocabullary term defining the nature of the relationship (e.g. “cites”)
 </td>
 </tr>
 </tbody>
