@@ -487,6 +487,17 @@ Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Re
 </tr>
 <tr>
 <td style="text-align:left;">
+position
+</td>
+<td style="text-align:left;">
+Integer or Text
+</td>
+<td style="text-align:left;">
+The position of an item in a series or sequence of items. (While schema.org considers this a property of CreativeWork, it is also the way to indicate ordering in any list (e.g. the Authors list). By default arrays are unordered in JSON-LD
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 description
 </td>
 <td style="text-align:left;">
@@ -617,6 +628,17 @@ Text
 The name of an Organization, or if separate given and family names cannot be resolved for a Person
 </td>
 </tr>
+<tr>
+<td style="text-align:left;">
+address
+</td>
+<td style="text-align:left;">
+PostalAddress or Text
+</td>
+<td style="text-align:left;">
+Physical address of the item.
+</td>
+</tr>
 </tbody>
 </table>
 <p>These terms are all recognized properties of <a href="https://schema.org/SoftwareSourceCode" class="uri">https://schema.org/SoftwareSourceCode</a> or <a href="https://schema.org/SoftwareApplication" class="uri">https://schema.org/SoftwareApplication</a> Types. Note that while most properties take basic data types as values (<code>Text</code>, <code>URL</code>), several take other node types, such as <code>Person</code> or <code>Organization</code>. Recommended fields for these node types in CodeMeta documents are given below.</p>
@@ -641,7 +663,7 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-suggests
+softwareSuggestions
 </td>
 <td style="text-align:left;">
 SoftwareSourceCode
