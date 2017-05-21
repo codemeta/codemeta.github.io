@@ -3,7 +3,6 @@ title: "Crosswalk for Dublin Core metadata"
 image: "/img/dcmi.png"
 ---
 
-<img src="/img/datacite.png" width="400" />
 
 
 
