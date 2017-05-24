@@ -16,20 +16,16 @@ publishDir = "../website"
     url = "/crosswalk/"
     weight = 2
 [[menu.main]]
-    name = "JSON-LD"
-    url = "/jsonld/"
-    weight = 3
-[[menu.main]]
     name = "Terms"
     url = "/terms/"
+    weight = 3
+[[menu.main]]
+    name = "User Guide"
+    url = "/user-guide"
     weight = 4
 [[menu.main]]
-    name = "Use Cases"
-    url = "/use-cases"
-    weight = 5
-[[menu.main]]
-    name = "Examples"
-    url = "/examples"
+    name = "Developer Guide"
+    url = "/developer-guide"
     weight = 5
 
 
