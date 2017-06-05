@@ -1,0 +1,20 @@
+---
+title: "Crosswalk for The Software Ontology"
+image: "/img/swo.png"
+---
+
+The [Software Ontology (SWO)](http://theswo.sourceforge.net/) is a resource for describing software tools, their types, tasks, versions, provenance and data associated. SWO is part of the JISC funded SWORD project (Software Ontology for Resource Description), an inter-disciplinary effort to capture software descriptions used in the preservation of data. The work is a collaboration between the European Bioinformatics Institute and the University of Manchester.
+
+
+
+
+```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
+library("tidyverse")
+crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk.csv"
+cw <- read_csv(crosswalk)
+cw %>% 
+  select(Property, `Software Ontology`) %>%
+  filter(!is.na(`Software Ontology`)) -> df
+
+knitr::kable(df, "html", table.attr="class=\"table table-striped\"")
+```
