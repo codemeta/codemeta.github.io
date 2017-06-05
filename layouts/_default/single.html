@@ -1,7 +1,7 @@
 
 {{ define "main" }}
  
-      {{ with .Title }}<h1>{{ . }}</h1> {{ end }}
+      <h1>{{if .Params.image }}<img src="{{ .Params.image }}" height="50px"/>  {{ end }}{{ with .Title }}{{ . }} {{ end }}</h1>
         
       {{ .Content }}
   
