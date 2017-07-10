@@ -27,6 +27,10 @@ publishDir = "../website"
     name = "Developer Guide"
     url = "/developer-guide"
     weight = 5
+[[menu.main]]
+    name = "JSON-LD Context"
+    url = "/jsonld"
+    weight = 6
 
 
 [params]
