@@ -31,6 +31,10 @@ publishDir = "../website"
     name = "JSON-LD"
     url = "/jsonld"
     weight = 6
+[[menu.main]]
+    name = "Tools"
+    url = "/tools"
+    weight = 7
 
 
 [params]
