@@ -1,5 +1,5 @@
 ---
-title: "Crosswalk for Python disutils"
+title: "Crosswalk for Python distutils"
 image: "/img/python.png"
 date: "2017-06-01"
 
