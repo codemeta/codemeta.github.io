@@ -16,7 +16,7 @@ tool | language | codemeta version | maintainer | notes
 -----|----------|------------------|------------|--------------
 [CodeMeta file generator](https://gist.github.com/arfon/478b2ed49e11f984d6fb) | Ruby | 0.1.0 | [arfon](http://github.com/arfon) | (no support for current schema)
 [Bolognese](https://github.com/datacite/bolognese) | Ruby | 1.0.0 | [mfenner](https://github.com/mfenner) | primarily a tool for conversion between formats provided by DataCite, including codemeta and schema.org
-[codemetar](https://codemeta.github.io/codemetar) | R | 2.0.0 | [cboettig](https://github.com/cboettig) | Generate codemeta for R packages; + generic codemeta manipulation
+[codemetar](https://ropensci.github.io/codemetar) | R | 2.0.0 | [cboettig](https://github.com/cboettig) | Generate codemeta for R packages; + generic codemeta manipulation
 
 
 
