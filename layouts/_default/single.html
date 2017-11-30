@@ -1,9 +1,0 @@
-
-{{ define "main" }}
- 
-      <h1>{{if .Params.image }}<img src="{{ .Params.image }}" height="50px"/>  {{ end }}{{ with .Title }}{{ . }} {{ end }}</h1>
-        
-      {{ .Content }}
-  
-{{ end }}
-   

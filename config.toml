@@ -1,3 +1,4 @@
+theme = "hugo-now-ui"
 baseurl = "/"
 relativeurls = true
 title = "The CodeMeta Project"
@@ -42,9 +43,10 @@ publishDir = "../website"
     github =  "codemeta"
     custom_css = ["cboettig.css"]
     repo = "codemeta.github.io"
+    background = "img/pyramids.jpg"
 
     date_format = "Mon, Jan 2, 2006"
-    description = "A website built through Hugo and blogdown."
+    description = "A Rosetta Stone for Software Metadata"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.10.0"
