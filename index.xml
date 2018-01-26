@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The CodeMeta Project</title>
+    <link>/</link>
+    <description>Recent content on The CodeMeta Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 04 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crosswalk for WikiData Properties</title>
+      <link>/crosswalk/wikidata/</link>
+      <pubDate>Sun, 04 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/wikidata/</guid>
+      <description>Wikidata provides internationalized set of properties for machine-readable linked data. (Surprisingly wikidata does not have a native JSON-LD format, distributing in plain json.)
+  Property  Wikidata      codeRepository  source code repository    programmingLanguage  programming language    operatingSystem  operating system    softwareRequirements  depends on software    softwareVersion  software version    datePublished  publication date    editor  editor    license  license    url  official website    issueTracker  bug tracking system     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for DOAP Ontology</title>
+      <link>/crosswalk/doap/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/doap/</guid>
+      <description>DOAP (Description of a Project) is an XML/RDF vocabulary to describe software projects, and in particular open source projects.
+  Property  DOAP      codeRepository  repository    programmingLanguage  programming-language    runtimePlatform  platform    downloadUrl  download-page    installUrl  download-mirror    operatingSystem  os    softwareVersion  release    author  developer    contributor  developer    keywords  category    license  license    publisher  vendor    url  homepage    maintainer  maintainer    issueTracker  bug-database    referencePublication  blog     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for DataCite metadata</title>
+      <link>/crosswalk/datacite/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/datacite/</guid>
+      <description>  Property  DataCite      programmingLanguage  Format    author  creators    dateCreated  date    dateModified  date    datePublished  publicationYear    fileFormat  Format    license  rights    publisher  publisher    version  version    description  description    identifier  identifier    relatedLink  RelateIdentifier    givenName  givenName    familyName  familyName    affiliation  affiliation    identifier  nameIdentifier     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for Debian packages</title>
+      <link>/crosswalk/debian/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/debian/</guid>
+      <description>The Debian package system defines archive metadata that is used by the popular apt package managment system on Debian and Ubuntu Linux distributions.
+  Property  Debian Package      codeRepository  HomePage    dateCreated  Date    version  numeric_version    description  Description    identifier  Package     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for GitHub API</title>
+      <link>/crosswalk/github/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/github/</guid>
+      <description>  Property  GitHub      codeRepository  html_url    programmingLanguage  languages_url    downloadUrl  archive_url    author  login    dateCreated  created_at    dateModified  updated_at    license  license    description  description    identifier  id    name  full_name    issueTracker  issues_url     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for Java&#39;s Maven metadata</title>
+      <link>/crosswalk/java/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/java/</guid>
+      <description>Maven is a popular packaging/build system for Java-based projects.
+  Property  Java (Maven)      codeRepository  repositories    softwareRequirements  prerequisites    license  licesnse    version  version    description  description    identifier  groupId    name  name    contIntegration  ciManagement    issueTracker  issuesManagement     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for NodeJS package.json</title>
+      <link>/crosswalk/node/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/node/</guid>
+      <description>The npm package manager for NodeJS defines software metadata using a package.json file.
+  Property  NodeJS      codeRepository  repository    operatingSystem  os    processorRequirements  cpu / engines    softwareRequirements  dependencies / bundledDependencies / peerDependencies    author  author    contributor  contributor    creator  author    keywords  keywords    license  license    version  version    description  description    identifier  name    name  name    email  author.</description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for Python distutils</title>
+      <link>/crosswalk/python/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/python/</guid>
+      <description>Python distutils allows users to associate a range of metadata information when packaging and distributing python-based applications or source code.
+  Property  Python Distutils (PyPI)      codeRepository  url    programmingLanguage  classifiers[‘Programming Language’]    applicationCategory  classifiers[‘Topic’]    operatingSystem  classifiers[‘Operating System’]    softwareRequirements  install_requires    keywords  keywords    license  license    version  Version    description  description, long_description    name  name    email  author_email    developmentStatus  classifiers[‘Development Status’]     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for R Packages</title>
+      <link>/crosswalk/r/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/r/</guid>
+      <description>The following table displays the crosswalk mapping of terms from the R package DESCRIPTION file to codemeta properties.
+  Property  R Package Description      codeRepository  URL    softwareRequirements  Depends, SystemRequirements    author  [aut] in Author    contributor  [ctb] in Author    creator  [cre] in Author    datePublished  Date    license  License    description  Description    identifier  Package    name  Title    url  URL    givenName  givenName    familyName  familyName    email  email    softwareSuggestions  Suggests    maintainer  Maintainer    issueTracker  BugReports     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for Ruby gems</title>
+      <link>/crosswalk/ruby/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/ruby/</guid>
+      <description>Ruby gems specify metadata in a .gemspec file.
+  Property  Ruby Gem      codeRepository  homepage    runtimePlatform  platform    softwareRequirements  requirements, add_runtime_dependency    author  author    license  license/licenses    version  version    description  summary, description    name  name    email  email    softwareSuggestions  add_development_dependency     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk</title>
+      <link>/crosswalk/swo/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/swo/</guid>
+      <description>The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and data associated. SWO is part of the JISC funded SWORD project (Software Ontology for Resource Description), an inter-disciplinary effort to capture software descriptions used in the preservation of data. The work is a collaboration between the European Bioinformatics Institute and the University of Manchester.
+  Property  Software Ontology      programmingLanguage  programming language    license  software license    publisher  software publisher organization    version  Version    description  software    name  SoftwareTitle     </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/codemetar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/codemetar/</guid>
+      <description>      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/developer-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/developer-guide/</guid>
+      <description>CodeMeta Developer Guide This guide is intended for software developers who require detailed information about the CodeMeta project&amp;rsquo;s usage of JavaScript Object Notation for Linked Data (JSON-LD) for defining a methodology for creating software package descriptions. For example, this guide may be helpful for developers that are designing software to generate or read CodeMeta JSON software descriptions.
+Users that only require instructions for manually creating CodeMeta software descriptions may wish to review the upcoming User Guide.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tools/</guid>
+      <description>Tools This page lists some existing tools to help with CodeMeta files
+File Generation Some of the early tools still need a little updating to use the latest version of the codemeta context.
+  tool language codemeta version maintainer notes     CodeMeta file generator Ruby 0.1.0 arfon (no support for current schema)   Bolognese Ruby 1.0.0 mfenner primarily a tool for conversion between formats provided by DataCite, including codemeta and schema.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/use-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/use-cases/</guid>
+      <description>Edited Use cases CodeMeta meeting in Portland Created 20160415 (use cases group pulled from here 230pm 20160516) https://docs.google.com/document/d/1SalOP_tLw7FC6jnoz5hJBB2jA7xBClKqc88wgmJu5Ro/edit
+The “six” Use Case categories: from Matt and Carl’s slide summary 20160417 * Facilitate citation * Enable credit, compliance, and quality * Facilitate discovery and access * Understand software functionality * Enable interoperability * Enable transparency and reproducibility
+THE ‘ORIGINAL’ 13 CASES: 20160415 Then determine a final set of categorized use cases based on these 3 different sets</description>
+    </item>
+    
+    <item>
+      <title>Agenda</title>
+      <link>/agenda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/agenda/</guid>
+      <description>CodeMeta Workshop Venue and logistics  Portlant Paramount Hotel, Friday &amp;amp; Saturday  Coffee at 8am, Lewis Room  Sunday Force16 Workshop  OHSU Collaborative Life Science Building, Rooms TBD   Background materials and links  CodeMeta Web Site NIH Software Discovery report CodeMeta Github repo Software Metadata Crosswalk Guidelines for Persistently Identifying Software Using DataCite  Goals  Consensus cross walk table JSON-LD draft schema Consensus on software metadata  Outline of journal article   April 15 Portland Paramount Hotel, Lewis Room</description>
+    </item>
+    
+    <item>
+      <title>Codemeta Terms</title>
+      <link>/terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/terms/</guid>
+      <description>Terms from Schema.org Recognized properties for CodeMeta Code includes the following terms from https://schema.org. These terms are part of the CodeMeta specification and can be used without any prefix.
+  Property  Type  Description      codeRepository  URL  Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.).    programmingLanguage  ComputerLanguage or Text  The computer programming language.</description>
+    </item>
+    
+    <item>
+      <title>Codemeta Workshop</title>
+      <link>/workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workshop/</guid>
+      <description>April 15 - 17 2016 Portland, Oregon The Future of Software Metadata Agenda 
+ The CodeMeta Project Workshop The CodeMeta project does not seek to create yet another standard. Rather, we&amp;rsquo;re aiming to create a crosswalk table between standards already in use &amp;ndash; think of this as a Rosetta stone of software metadata. Beginning in an Open Science Code-fest discussion lead by Abby Mayes and now thanks to a generous NSF EAGER Grant to Carl Boettiger (UC Berkeley) &amp;amp; Matt Jones (NCEAS &amp;amp; UC Santa Barbara), we will bring together leaders of software and data repositories with academic researchers to develop this crosswalk table for software metadata.</description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for Dublin Core metadata</title>
+      <link>/crosswalk/dublincore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/dublincore/</guid>
+      <description>  Property  Dublin Core      creator  creator    dateCreated  created    datePublished  date    license  license    publisher  publisher    version  dcterms:hasVersion    description  description    identifier  identifier    name  title     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for Trove Software Map</title>
+      <link>/crosswalk/trove/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/trove/</guid>
+      <description>Trove Software Map. Trove is the system used by SourgeForce.net to classify software projects.
+  Property  Trove Software Map      programmingLanguage  Programming Language    applicationCategory  Topic    operatingSystem  Operating System    softwareRequirements  Database Environment    dateModified  last-updated    license  license    version  version    description  description    name  Title    developmentStatus  Development Status     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for Zenodo metadata</title>
+      <link>/crosswalk/zenodo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/zenodo/</guid>
+      <description>Zenodo.org is a data archive based at CERN which is popularly used to archive and provide DOIs to academic software from GitHub, as described in the official GitHub guide to Making your code citable.
+  Property  Zenodo      codeRepository  relatedLink    applicationCategory  communities    author  creators    datePublished  date_published    funder  contributors.</description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for figshare metadata</title>
+      <link>/crosswalk/figshare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/figshare/</guid>
+      <description>figshare is a general purpose scientific data repository that provides DataCite DOIs.
+  Property  Figshare      codeRepository  relatedLink    applicationCategory  categories    datePublished  date_retrieved    keywords  tags    license  License    description  Description    name  Title    identifier  ORCID    name  name    embargoDate  embargo_date     </description>
+    </item>
+    
+    <item>
+      <title>Examples</title>
+      <link>/examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/examples/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Codemeta JSON-LD Representation</title>
+      <link>/jsonld/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/jsonld/</guid>
+      <description>CodeMeta uses JSON-LD to represent and translate between software metadata formats. JSON-LD lead developer Manu Sporny explains how JSON-LD works in this short clip:
+  The JSON-LD Context File The current codemeta context file can be found at 
+CodeMeta properties are built on and extend software properties from https://schema.org. A list of all properties provided by the current CodeMeta context file can be found on the terms page.</description>
+    </item>
+    
+    <item>
+      <title>user guide</title>
+      <link>/user-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/user-guide/</guid>
+      <description>Creating A CodeMeta Instance File A CodeMeta instance file describes the metadata associated with a software object using JSON&amp;rsquo;s linked data (JSON-LD) notation. A codemeta file can contain any of the properties described on the CodeMeta terms page.
+When creating a CodeMeta document, note that they contain JSON name (&amp;ldquo;property&amp;rdquo; in linked-data), value pairs where the values can be simple values, arrays or JSON objects. A simple value is a number, string, or one the literal values false, null true, for example:</description>
+    </item>
+    
+  </channel>
+</rss>
