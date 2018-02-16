@@ -54,7 +54,7 @@ Every CodeMeta document must refer to the context file *codemeta.jsonld*, for ex
 
 
 The context file may be modified and updated in the future, if new JSON properties are added or existing ones modified.
-The CodeMeta github repository defines tags to allow specific versions of a file to be referenced, and assigns 
+The CodeMeta GitHub repository defines tags to allow specific versions of a file to be referenced, and assigns 
 *digital object identifiers*, or DOIs, to each release tag. Please use the [appropriate release](https://github.com/codemeta/codemeta/releases) of the CodeMeta schema in order to refer to the
 appropriate context file, e.g.
 
