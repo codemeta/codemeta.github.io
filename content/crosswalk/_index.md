@@ -6,5 +6,5 @@ The codemeta crosswalk provides an explicit map between the metadata fields used
 
 ## Contribute!
 
-CodeMeta encourages submissions of additional vocabularies by making Pull Requests against the [full crosswalk table](https://github.com/codemeta/codemeta/tree/master/crosswalk.csv).  Feel free to propose corrections or extensions in the [codmeta issues tracker](https://github.com/codemeta/codemeta/issues).
+CodeMeta encourages submissions of additional vocabularies by making Pull Requests against the [full crosswalk table](https://github.com/codemeta/codemeta/tree/master/crosswalk.csv).  Feel free to propose corrections or extensions in the [codemeta issues tracker](https://github.com/codemeta/codemeta/issues).
 

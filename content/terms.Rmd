@@ -38,4 +38,4 @@ knitr::kable("html", table.attr="class=\"table table-striped\"")
 ```
 
 
-Please suggest additional terms or adjustments to this representation in the [codmeta issues](https://github.com/codemeta/codemeta/issues)
+Please suggest additional terms or adjustments to this representation in the [codemeta issues](https://github.com/codemeta/codemeta/issues)
