@@ -175,7 +175,7 @@ THE ‘ORIGINAL’ 13 CASES: 20160415 Then determine a final set of categorized 
       
       <guid>/terms/</guid>
       <description>Terms from Schema.org Recognized properties for CodeMeta Code includes the following terms from https://schema.org. These terms are part of the CodeMeta specification and can be used without any prefix.
-  Property  Type  Description      codeRepository  URL  Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.).    programmingLanguage  ComputerLanguage or Text  The computer programming language.</description>
+  Property  Type  Description      codeRepository  URL  Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex).    programmingLanguage  ComputerLanguage or Text  The computer programming language.</description>
     </item>
     
     <item>
