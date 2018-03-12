@@ -13,11 +13,11 @@ review the upcoming [User Guide](/user-guide/).
 
 The CodeMeta project strives to promote the citation and reuse of software authored for scientific research by developing a mechanism to assist the transfer of software and software metadata between the entities that author, archive, index and distribute and use the software. Our approach is not to create a new metadata standard or schema, but instead to define a crosswalk between existing software metadata schemas, and to provide a uniform method to package and transfer this metadata between entities.
 
-(A complete description of the CodeMeta project can be found here https://github.com/codemeta/codemeta-paper.)
+(A complete description of the CodeMeta project can be found here [https://github.com/codemeta/codemeta-paper](https://github.com/codemeta/codemeta-paper).)
 
 The mechanism to package and transfer software descriptions that the CodeMeta project has adopted uses [JSON-LD](http://json-ld.org/),
 which is a W3C standard that enables JSON based documents to be universally understandable and processable
-by adhering to principles outlined for linked data](https://en.wikipedia.org/wiki/Linked_data):
+by adhering to principles outlined for [linked data](https://en.wikipedia.org/wiki/Linked_data):
 
 - Use URIs to name (identify) resources so that they can be located and retrieved.
 - Provide useful information about what a name identifies when it's looked up, using open standards.
