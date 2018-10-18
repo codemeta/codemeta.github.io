@@ -91,6 +91,10 @@
   </url>
   
   <url>
+    <loc>/create/</loc>
+  </url>
+  
+  <url>
     <loc>/crosswalk/dublincore/</loc>
   </url>
   

@@ -1,0 +1,52 @@
+const schema =  {
+	"id": "SoftwareSourceCode.json",
+	"title": "SoftwareSourceCode",
+	"format": "http://schema.org/SoftwareSourceCode",
+	"media": {"type": "application/json;profile=http://schema.org/SoftwareSourceCode"},
+	"type": "object",
+	"properties": {
+
+
+	"codeRepository": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"format": "uri",
+				"links": [{
+					"rel": "http://schema.org/codeRepository",
+					"href": "{+$}",
+					"linkSource": 2
+				}]
+			}
+		},
+		"programmingLanguage": {"type": "string"},
+		"targetProduct": {"type": "string"},
+		"runtimePlatform": {
+			"description": "Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0)",
+			"type": "string"
+		},
+		
+		
+		"sameAs": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"format": "uri"
+			}
+		},
+		"url": {
+			"type": "string",
+			"format": "uri"
+	  },
+	  "description": {
+			"title": "Description",
+			"description": "A short description of the item.",
+			"type": "string"
+		},
+		"name": {
+			"title": "Name",
+			"description": "The name of the item.",
+			"type": "string"
+		}
+	}
+};
