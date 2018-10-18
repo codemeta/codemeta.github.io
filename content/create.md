@@ -4,4 +4,3 @@ title: "Create a CodeMeta file"
 ---
 
 {{< react-schema >}}
-

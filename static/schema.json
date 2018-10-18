@@ -5,7 +5,8 @@ const schema =  {
 	"media": {"type": "application/json;profile=http://schema.org/SoftwareSourceCode"},
 	"type": "object",
 	"properties": {
-
+    "@context": {"type": "string", "format": "uri"},
+    "@type": {"type": "string"},
     "name": {"type": "string", "description": "Name of the software"},
     "codeRepository": {
 	    "type": "string",
