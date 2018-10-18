@@ -14,7 +14,21 @@ const schema =  {
 		},
 		"programmingLanguage": {"type": "string"},
 		"license": {"type": "string"},
-		
+		"creator": {
+			"title": "Creator",
+			"type": "array",
+			"items": {   	
+			  "format": "http://schema.org/Person",
+      	"type": "object",
+      	"properties": {
+      	  "givenName": {"type": "string"},
+      		"familyName": {	"type": "string" },
+      		"address": {"type": "string"},
+      		"email": {"type": "string"},
+          "id": {"description": "ORCID ID", "type": "string", "format": "uri"}
+      	}
+      }
+		},
 		"sameAs": {
 				"type": "string",
 				"format": "uri"
@@ -30,3 +44,4 @@ const schema =  {
 		}
 	}
 };
+

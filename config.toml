@@ -41,7 +41,7 @@ publishDir = "../website"
 [params]
     name =  "codemeta"
     github =  "codemeta"
-    #custom_css = ["cboettig.css"]
+    custom_css = ["glyphicon.css"]
     repo = "codemeta.github.io"
     background = "img/pyramids.jpg"
 
