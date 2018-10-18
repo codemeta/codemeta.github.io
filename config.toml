@@ -1,4 +1,4 @@
-theme = "hugo-now-ui"
+theme = "hugo-material"
 baseurl = "/"
 relativeurls = true
 title = "The CodeMeta Project"
@@ -41,7 +41,7 @@ publishDir = "../website"
 [params]
     name =  "codemeta"
     github =  "codemeta"
-    custom_css = ["cboettig.css"]
+    #custom_css = ["cboettig.css"]
     repo = "codemeta.github.io"
     background = "img/pyramids.jpg"
 

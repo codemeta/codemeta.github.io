@@ -1,0 +1,32 @@
+const schema =  {
+	"id": "SoftwareSourceCode.json",
+	"title": "SoftwareSourceCode",
+	"format": "http://schema.org/SoftwareSourceCode",
+	"media": {"type": "application/json;profile=http://schema.org/SoftwareSourceCode"},
+	"type": "object",
+	"properties": {
+    "@context": {"type": "string", "format": "uri"},
+    "@type": {"type": "string"},
+    "name": {"type": "string", "description": "Name of the software"},
+    "codeRepository": {
+	    "type": "string",
+			"format": "uri"
+		},
+		"programmingLanguage": {"type": "string"},
+		"license": {"type": "string"},
+		
+		"sameAs": {
+				"type": "string",
+				"format": "uri"
+		},
+		"url": {
+			"type": "string",
+			"format": "uri"
+	  },
+	  "description": {
+			"title": "Description",
+			"description": "A short description of the item.",
+			"type": "string"
+		}
+	}
+};
