@@ -14,6 +14,7 @@ const schema =  {
 		},
 		"programmingLanguage": {"type": "string"},
 		"license": {"type": "string"},
+	  "description": {"type": "string" },
 		"creator": {
 			"title": "Creator",
 			"type": "array",
@@ -23,25 +24,12 @@ const schema =  {
       	"properties": {
       	  "givenName": {"type": "string"},
       		"familyName": {	"type": "string" },
-      		"address": {"type": "string"},
       		"email": {"type": "string"},
-          "id": {"description": "ORCID ID", "type": "string", "format": "uri"}
+          "id": {"description": "Author's ORCID ID, see <https://orcid.org>.", "type": "string", "format": "uri"}
       	}
       }
-		},
-		"sameAs": {
-				"type": "string",
-				"format": "uri"
-		},
-		"url": {
-			"type": "string",
-			"format": "uri"
-	  },
-	  "description": {
-			"title": "Description",
-			"description": "A short description of the item.",
-			"type": "string"
 		}
+
 	}
 };
 
