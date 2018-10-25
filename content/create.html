@@ -1,0 +1,75 @@
+---
+title: "Create a CodeMeta file"
+#layout: login
+---
+
+<div class="section">
+  
+<div class="alert alert-warning">
+  <div class="container-fluid">
+	  <div class="alert-icon">
+		  <i class="material-icons">warning</i>
+		</div>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true"><i class="material-icons">clear</i></span>
+		</button>
+	  <b>Warning:</b>  This generator is an experimental beta!
+  </div>
+</div>  
+</div>
+
+To get started creating a codemeta file, simply fill out the fields below. While all fields are recommended, there are no strictly required fields in the standard at this time. When you hit the "submit" button, the form will validate the fields provided and allow you save your <code>codemeta.json</code> to your computer.  
+
+
+<div class="section">
+<div id="app"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/react-jsonschema-form/dist/react-jsonschema-form.js"></script>
+<script type="text/javascript" src="/schema.json"></script>
+<script type="text/javascript" src="/uiSchema.json"></script>
+
+<script>
+  const Form = JSONSchemaForm.default;
+  
+  
+
+  const formData= {
+      "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+      "@type": "SoftwareSourceCode"
+  }
+
+  const log = (type) => console.log.bind(console, type);
+
+  function saveData(data, fileName) {
+      log("submitted")
+      var content = JSON.stringify(data, null, 2);
+      var a = document.createElement("a");
+      var file = new Blob([content], {type: "application/json"});
+      a.href = URL.createObjectURL(file);
+      a.download = fileName;
+      a.click();
+  };
+  const onSubmit = ({formData}) => saveData(formData, "codemeta.json");
+
+  
+  var fileName = "codemeta.json";
+  ReactDOM.render(React.createElement(Form, {
+                schema: schema,
+                uiSchema: uiSchema,
+                formData: formData,
+                onChange: log("changed"),
+                onSubmit: onSubmit,
+                onError: log("errors")
+            }), document.getElementById("app"));
+  
+  
+</script>
+</div>
+
+<div class="section">
+  Note that the full codemeta specification allows for many more fields than indicated here.
+  
+Data entered in this from remains on your own computer and is not submitted to any central server.  The CodeMeta project recommends adding your <code>codemeta.json</code> file to the source code repository of your software.  
+</div>
