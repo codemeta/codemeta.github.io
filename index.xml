@@ -194,7 +194,7 @@ THE ‘ORIGINAL’ 13 CASES: 20160415 Then determine a final set of categorized 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/create/</guid>
-      <description>const Form = JSONSchemaForm.default; const formData= { &#34;@context&#34;: &#34;https://doi.org/10.5063/schema/codemeta-2.0&#34;, &#34;@type&#34;: &#34;SoftwareSouceCode&#34; } const log = (type) = console.log.bind(console, type); function saveData(data, fileName) { log(&#34;submitted&#34;) var content = JSON.stringify(data, null, 2); var a = document.createElement(&#34;a&#34;); var file = new Blob([content], {type: &#34;application/json&#34;}); a.href = URL.createObjectURL(file); a.download = fileName; a.click(); }; const onSubmit = ({formData}) = saveData(formData, &#34;codemeta.json&#34;); var fileName = &#34;codemeta.json&#34;; ReactDOM.render(React.createElement(Form, { schema: schema, uiSchema: uiSchema, formData: formData, onChange: log(&#34;</description>
+      <description>warning  clear  Warning: This generator is an experimental beta!    To get started creating a codemeta file, simply fill out the fields below. While all fields are recommended, there are no strictly required fields in the standard at this time. When you hit the &#34;submit&#34; button, the form will validate the fields provided and allow you save your codemeta.json to your computer.        const Form = JSONSchemaForm.</description>
     </item>
     
     <item>

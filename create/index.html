@@ -135,7 +135,26 @@
     <div class="section section-basic">
       <div class="container">
 
-      <div id="app"></div>
+      <div class="section">
+  
+<div class="alert alert-warning">
+  <div class="container-fluid">
+	  <div class="alert-icon">
+		  <i class="material-icons">warning</i>
+		</div>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true"><i class="material-icons">clear</i></span>
+		</button>
+	  <b>Warning:</b>  This generator is an experimental beta!
+  </div>
+</div>  
+</div>
+
+To get started creating a codemeta file, simply fill out the fields below. While all fields are recommended, there are no strictly required fields in the standard at this time. When you hit the "submit" button, the form will validate the fields provided and allow you save your <code>codemeta.json</code> to your computer.  
+
+
+<div class="section">
+<div id="app"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js"></script>
@@ -150,7 +169,7 @@
 
   const formData= {
       "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
-      "@type": "SoftwareSouceCode"
+      "@type": "SoftwareSourceCode"
   }
 
   const log = (type) => console.log.bind(console, type);
@@ -177,12 +196,15 @@
                 onError: log("errors")
             }), document.getElementById("app"));
   
-    
-
-
   
 </script>
+</div>
 
+<div class="section">
+  Note that the full codemeta specification allows for many more fields than indicated here.
+  
+Data entered in this from remains on your own computer and is not submitted to any central server.  The CodeMeta project recommends adding your <code>codemeta.json</code> file to the source code repository of your software.  
+</div>
       
       </div>
     </div>
