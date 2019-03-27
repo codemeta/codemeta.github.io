@@ -5,13 +5,8 @@ const schema =  {
 	"media": {"type": "application/json;profile=http://schema.org/SoftwareSourceCode"},
 	"type": "object",
 	"properties": {
-<<<<<<< HEAD
     "@context": {"type": "string", "format": "uri", "default": "http://schema.org"},
     "@type": {"type": "string", "default": "SoftwareSourceCode"},
-=======
-    "@context": {"type": "string", "format": "uri"},
-    "@type": {"type": "string"},
->>>>>>> hugo
     "name": {"type": "string", "description": "Name of the software"},
     "codeRepository": {
 	    "type": "string",
@@ -19,7 +14,6 @@ const schema =  {
 		},
 		"programmingLanguage": {"type": "string"},
 		"license": {"type": "string"},
-<<<<<<< HEAD
 	  "description": {"type": "string" },
 		"creator": {
 			"title": "Creator",
@@ -39,22 +33,3 @@ const schema =  {
 
 	}
 };
-
-=======
-		
-		"sameAs": {
-				"type": "string",
-				"format": "uri"
-		},
-		"url": {
-			"type": "string",
-			"format": "uri"
-	  },
-	  "description": {
-			"title": "Description",
-			"description": "A short description of the item.",
-			"type": "string"
-		}
-	}
-};
->>>>>>> hugo
