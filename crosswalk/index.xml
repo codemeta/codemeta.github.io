@@ -16,7 +16,7 @@
       <pubDate>Sun, 04 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/wikidata/</guid>
-      <description>Wikidata provides internationalized set of properties for machine-readable linked data. (Surprisingly wikidata does not have a native JSON-LD format, distributing in plain json.)
+      <description> Wikidata provides internationalized set of properties for machine-readable linked data. (Surprisingly wikidata does not have a native JSON-LD format, distributing in plain json.)
   Property  Wikidata      codeRepository  source code repository    programmingLanguage  programming language    operatingSystem  operating system    softwareRequirements  depends on software    softwareVersion  software version    datePublished  publication date    editor  editor    license  license    url  official website    issueTracker  bug tracking system     </description>
     </item>
     
@@ -26,7 +26,7 @@
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/doap/</guid>
-      <description>DOAP (Description of a Project) is an XML/RDF vocabulary to describe software projects, and in particular open source projects.
+      <description> DOAP (Description of a Project) is an XML/RDF vocabulary to describe software projects, and in particular open source projects.
   Property  DOAP      codeRepository  repository    programmingLanguage  programming-language    runtimePlatform  platform    downloadUrl  download-page    installUrl  download-mirror    operatingSystem  os    softwareVersion  release    author  developer    contributor  developer    keywords  category    license  license    publisher  vendor    url  homepage    maintainer  maintainer    issueTracker  bug-database    referencePublication  blog     </description>
     </item>
     
@@ -36,7 +36,7 @@
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/datacite/</guid>
-      <description>  Property  DataCite      programmingLanguage  Format    author  creators    dateCreated  date    dateModified  date    datePublished  publicationYear    fileFormat  Format    license  rights    publisher  publisher    version  version    description  description    identifier  identifier    relatedLink  RelateIdentifier    givenName  givenName    familyName  familyName    affiliation  affiliation    identifier  nameIdentifier     </description>
+      <description>   Property  DataCite      programmingLanguage  Format    author  creators    dateCreated  date    dateModified  date    datePublished  publicationYear    fileFormat  Format    license  rights    publisher  publisher    version  version    description  description    identifier  identifier    relatedLink  RelateIdentifier    givenName  givenName    familyName  familyName    affiliation  affiliation    identifier  nameIdentifier     </description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/debian/</guid>
-      <description>The Debian package system defines archive metadata that is used by the popular apt package managment system on Debian and Ubuntu Linux distributions.
+      <description> The Debian package system defines archive metadata that is used by the popular apt package managment system on Debian and Ubuntu Linux distributions.
   Property  Debian Package      codeRepository  HomePage    dateCreated  Date    version  numeric_version    description  Description    identifier  Package     </description>
     </item>
     
@@ -55,7 +55,7 @@
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/github/</guid>
-      <description>  Property  GitHub      codeRepository  html_url    programmingLanguage  languages_url    downloadUrl  archive_url    author  login    dateCreated  created_at    dateModified  updated_at    license  license    description  description    identifier  id    name  full_name    issueTracker  issues_url     </description>
+      <description>   Property  GitHub      codeRepository  html_url    programmingLanguage  languages_url    downloadUrl  archive_url    author  login    dateCreated  created_at    dateModified  updated_at    license  license    description  description    identifier  id    name  full_name    issueTracker  issues_url     </description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/java/</guid>
-      <description>Maven is a popular packaging/build system for Java-based projects.
+      <description> Maven is a popular packaging/build system for Java-based projects.
   Property  Java (Maven)      codeRepository  repositories    softwareRequirements  prerequisites    license  licesnse    version  version    description  description    identifier  groupId    name  name    contIntegration  ciManagement    issueTracker  issuesManagement     </description>
     </item>
     
@@ -84,7 +84,7 @@
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/python/</guid>
-      <description>Python distutils allows users to associate a range of metadata information when packaging and distributing python-based applications or source code.
+      <description> Python distutils allows users to associate a range of metadata information when packaging and distributing python-based applications or source code.
   Property  Python Distutils (PyPI)      codeRepository  url    programmingLanguage  classifiers[‘Programming Language’]    applicationCategory  classifiers[‘Topic’]    operatingSystem  classifiers[‘Operating System’]    softwareRequirements  install_requires    keywords  keywords    license  license    version  Version    description  description, long_description    name  name    email  author_email    developmentStatus  classifiers[‘Development Status’]     </description>
     </item>
     
@@ -94,7 +94,7 @@
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/r/</guid>
-      <description>The following table displays the crosswalk mapping of terms from the R package DESCRIPTION file to codemeta properties.
+      <description> The following table displays the crosswalk mapping of terms from the R package DESCRIPTION file to codemeta properties.
   Property  R Package Description      codeRepository  URL    softwareRequirements  Depends, SystemRequirements    author  [aut] in Author    contributor  [ctb] in Author    creator  [cre] in Author    datePublished  Date    license  License    description  Description    identifier  Package    name  Title    url  URL    givenName  givenName    familyName  familyName    email  email    softwareSuggestions  Suggests    maintainer  Maintainer    issueTracker  BugReports     </description>
     </item>
     
@@ -104,7 +104,7 @@
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/ruby/</guid>
-      <description>Ruby gems specify metadata in a .gemspec file.
+      <description> Ruby gems specify metadata in a .gemspec file.
   Property  Ruby Gem      codeRepository  homepage    runtimePlatform  platform    softwareRequirements  requirements, add_runtime_dependency    author  author    license  license/licenses    version  version    description  summary, description    name  name    email  email    softwareSuggestions  add_development_dependency     </description>
     </item>
     
@@ -114,7 +114,7 @@
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/swo/</guid>
-      <description>The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and data associated. SWO is part of the JISC funded SWORD project (Software Ontology for Resource Description), an inter-disciplinary effort to capture software descriptions used in the preservation of data. The work is a collaboration between the European Bioinformatics Institute and the University of Manchester.
+      <description> The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and data associated. SWO is part of the JISC funded SWORD project (Software Ontology for Resource Description), an inter-disciplinary effort to capture software descriptions used in the preservation of data. The work is a collaboration between the European Bioinformatics Institute and the University of Manchester.
   Property  Software Ontology      programmingLanguage  programming language    license  software license    publisher  software publisher organization    version  Version    description  software    name  SoftwareTitle     </description>
     </item>
     
@@ -124,7 +124,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/dublincore/</guid>
-      <description>  Property  Dublin Core      creator  creator    dateCreated  created    datePublished  date    license  license    publisher  publisher    version  dcterms:hasVersion    description  description    identifier  identifier    name  title     </description>
+      <description>   Property  Dublin Core      creator  creator    dateCreated  created    datePublished  date    license  license    publisher  publisher    version  dcterms:hasVersion    description  description    identifier  identifier    name  title     </description>
     </item>
     
     <item>
@@ -133,7 +133,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/trove/</guid>
-      <description>Trove Software Map. Trove is the system used by SourgeForce.net to classify software projects.
+      <description> Trove Software Map. Trove is the system used by SourgeForce.net to classify software projects.
   Property  Trove Software Map      programmingLanguage  Programming Language    applicationCategory  Topic    operatingSystem  Operating System    softwareRequirements  Database Environment    dateModified  last-updated    license  license    version  version    description  description    name  Title    developmentStatus  Development Status     </description>
     </item>
     
@@ -153,7 +153,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/crosswalk/figshare/</guid>
-      <description>figshare is a general purpose scientific data repository that provides DataCite DOIs.
+      <description> figshare is a general purpose scientific data repository that provides DataCite DOIs.
   Property  Figshare      codeRepository  relatedLink    applicationCategory  categories    datePublished  date_retrieved    keywords  tags    license  License    description  Description    name  Title    identifier  ORCID    name  name    embargoDate  embargo_date     </description>
     </item>
     
