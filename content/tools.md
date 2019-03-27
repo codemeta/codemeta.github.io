@@ -31,7 +31,7 @@ existing codemeta.json files automatically.
 
 Name | Description |  Authors | Language | Codemeta Version
 -----|-------------|----------|----------|--------------------
-[Fidget](https://github.com/arfon/fidgit): | An ungodly union of GitHub and Figshare | Arfon Smith, Kaitlin Thaney, Mark Hahnel | Ruby | 0.1.0
+[Fidgit](https://github.com/arfon/fidgit): | An ungodly union of GitHub and Figshare | Arfon Smith, Kaitlin Thaney, Mark Hahnel | Ruby | 0.1.0
 
 
 Pending:
