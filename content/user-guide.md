@@ -6,7 +6,17 @@ title: user guide
 
 ## Creating A CodeMeta Instance File
 
-A CodeMeta instance file describes the metadata associated with a software object using JSON's linked data (JSON-LD) notation.  A codemeta file can contain any of the properties described on the [CodeMeta terms page](/terms/).
+A CodeMeta instance file describes the metadata associated with a software object using JSON's linked data (JSON-LD) notation.  A codemeta file can contain any of the properties described on the [CodeMeta terms page](/terms/). Most codemeta files are called `codemeta.json` by convention.
+
+Here is an example of a basic `codemeta.json` that you can put at the root of a Github repo ([link to full example](https://ropensci.github.io/codemetar/articles/codemeta-intro.html)):
+```json
+{
+    "@context": ["http://schema.org", {"author": {"@id": "schema:author", "@container": "@list"} } ] ,
+    "name": "Generate CodeMeta Metadata for R Packages",
+    "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
+    "identifier": "http://dx.doi.org/10.5281/zenodo.XXXX"
+}
+```
 
 
 When creating a CodeMeta document, note that they contain JSON name ("property" in linked-data), value pairs where the values can be simple values, arrays or JSON objects. A simple value is a number, string, or one the literal values *false*, *null* *true*, for example:
