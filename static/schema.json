@@ -5,8 +5,8 @@ const schema =  {
 	"media": {"type": "application/json;profile=http://schema.org/SoftwareSourceCode"},
 	"type": "object",
 	"properties": {
-    "@context": {"type": "string", "format": "uri"},
-    "@type": {"type": "string"},
+    "@context": {"type": "string", "format": "uri", "default": "http://schema.org"},
+    "@type": {"type": "string", "default": "SoftwareSourceCode"},
     "name": {"type": "string", "description": "Name of the software"},
     "codeRepository": {
 	    "type": "string",
@@ -14,19 +14,22 @@ const schema =  {
 		},
 		"programmingLanguage": {"type": "string"},
 		"license": {"type": "string"},
-		
-		"sameAs": {
-				"type": "string",
-				"format": "uri"
-		},
-		"url": {
-			"type": "string",
-			"format": "uri"
-	  },
-	  "description": {
-			"title": "Description",
-			"description": "A short description of the item.",
-			"type": "string"
+	  "description": {"type": "string" },
+		"creator": {
+			"title": "Creator",
+			"type": "array",
+			"items": {   	
+			  "format": "http://schema.org/Person",
+      	"type": "object",
+      	"properties": {
+      	  "@type": {"type": "string", "default": "Person"},
+      	  "givenName": {"type": "string"},
+      		"familyName": {	"type": "string" },
+      		"email": {"type": "string"},
+          "id": {"description": "Author's ORCID ID, see <https://orcid.org>.", "type": "string", "format": "uri"}
+      	}
+      }
 		}
+
 	}
 };
