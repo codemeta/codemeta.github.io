@@ -8,8 +8,13 @@
   </url>
   
   <url>
-    <loc>/crosswalk/doap/</loc>
-    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
+    <loc>/crosswalk/</loc>
+    <lastmod>2017-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -19,6 +24,11 @@
   
   <url>
     <loc>/crosswalk/debian/</loc>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/crosswalk/doap/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -59,10 +69,12 @@
   
   <url>
     <loc>/codemetar/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/developer-guide/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -71,6 +83,7 @@
   
   <url>
     <loc>/use-cases/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -79,7 +92,6 @@
   
   <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -99,6 +111,10 @@
   </url>
   
   <url>
+    <loc>/crosswalk/figshare/</loc>
+  </url>
+  
+  <url>
     <loc>/crosswalk/trove/</loc>
   </url>
   
@@ -107,26 +123,11 @@
   </url>
   
   <url>
-    <loc>/crosswalk/figshare/</loc>
-  </url>
-  
-  <url>
-    <loc>/crosswalk/</loc>
-    <lastmod>2017-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/examples/</loc>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2017-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>

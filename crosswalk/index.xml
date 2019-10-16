@@ -17,17 +17,7 @@
       
       <guid>/crosswalk/wikidata/</guid>
       <description> Wikidata provides internationalized set of properties for machine-readable linked data. (Surprisingly wikidata does not have a native JSON-LD format, distributing in plain json.)
-  Property  Wikidata      codeRepository  source code repository    programmingLanguage  programming language    operatingSystem  operating system    softwareRequirements  depends on software    softwareVersion  software version    datePublished  publication date    editor  editor    license  license    url  official website    issueTracker  bug tracking system     </description>
-    </item>
-    
-    <item>
-      <title>Crosswalk for DOAP Ontology</title>
-      <link>/crosswalk/doap/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/crosswalk/doap/</guid>
-      <description> DOAP (Description of a Project) is an XML/RDF vocabulary to describe software projects, and in particular open source projects.
-  Property  DOAP      codeRepository  repository    programmingLanguage  programming-language    runtimePlatform  platform    downloadUrl  download-page    installUrl  download-mirror    operatingSystem  os    softwareVersion  release    author  developer    contributor  developer    keywords  category    license  license    publisher  vendor    url  homepage    maintainer  maintainer    issueTracker  bug-database    referencePublication  blog     </description>
+  Property  Wikidata      codeRepository  P1324    programmingLanguage  P277    runtimePlatform  P400    downloadUrl  P4945    fileSize  P3575    operatingSystem  P306    softwareRequirements  P1547    softwareVersion  P348    author  P50    citation  P2860    contributor  P767    dateCreated  P571    dateModified  P5017    datePublished  P577    editor  P98    fileFormat  P2701    funder  P859    keywords  P921    license  P275    producer  P162    publisher  P123    isPartOf  P361    hasPart  P527    sameAs  P2888    url  P856    givenName  P735    familyName  P734    email  P968    issueTracker  bug tracking system     </description>
     </item>
     
     <item>
@@ -47,6 +37,16 @@
       <guid>/crosswalk/debian/</guid>
       <description> The Debian package system defines archive metadata that is used by the popular apt package managment system on Debian and Ubuntu Linux distributions.
   Property  Debian Package      codeRepository  HomePage    dateCreated  Date    version  numeric_version    description  Description    identifier  Package     </description>
+    </item>
+    
+    <item>
+      <title>Crosswalk for DOAP Ontology</title>
+      <link>/crosswalk/doap/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/doap/</guid>
+      <description> DOAP (Description of a Project) is an XML/RDF vocabulary to describe software projects, and in particular open source projects.
+  Property  DOAP      codeRepository  repository    programmingLanguage  programming-language    runtimePlatform  platform    downloadUrl  download-page    installUrl  download-mirror    operatingSystem  os    softwareVersion  release    author  developer    contributor  developer    keywords  category    license  license    publisher  vendor    url  homepage    maintainer  maintainer    issueTracker  bug-database    referencePublication  blog     </description>
     </item>
     
     <item>
@@ -128,6 +128,16 @@
     </item>
     
     <item>
+      <title>Crosswalk for figshare metadata</title>
+      <link>/crosswalk/figshare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/figshare/</guid>
+      <description> figshare is a general purpose scientific data repository that provides DataCite DOIs.
+  Property  Figshare      codeRepository  relatedLink    applicationCategory  categories    datePublished  date_retrieved    keywords  tags    license  License    description  Description    name  Title    identifier  ORCID    name  name    embargoDate  embargo_date     </description>
+    </item>
+    
+    <item>
       <title>Crosswalk for Trove Software Map</title>
       <link>/crosswalk/trove/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -145,16 +155,6 @@
       <guid>/crosswalk/zenodo/</guid>
       <description>Zenodo.org is a data archive based at CERN which is popularly used to archive and provide DOIs to academic software from GitHub, as described in the official GitHub guide to Making your code citable.
   Property  Zenodo      codeRepository  relatedLink    applicationCategory  communities    author  creators    datePublished  date_published    funder  contributors.</description>
-    </item>
-    
-    <item>
-      <title>Crosswalk for figshare metadata</title>
-      <link>/crosswalk/figshare/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/crosswalk/figshare/</guid>
-      <description> figshare is a general purpose scientific data repository that provides DataCite DOIs.
-  Property  Figshare      codeRepository  relatedLink    applicationCategory  categories    datePublished  date_retrieved    keywords  tags    license  License    description  Description    name  Title    identifier  ORCID    name  name    embargoDate  embargo_date     </description>
     </item>
     
   </channel>
