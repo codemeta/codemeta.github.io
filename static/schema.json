@@ -15,8 +15,8 @@ const schema =  {
 		"programmingLanguage": {"type": "string"},
 		"license": {"type": "string"},
 	  "description": {"type": "string" },
-		"creator": {
-			"title": "Creator",
+		"author": {
+			"title": "Author(s)",
 			"type": "array",
 			"items": {   	
 			  "format": "http://schema.org/Person",
