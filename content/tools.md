@@ -18,6 +18,7 @@ tool | language | codemeta version | maintainer | notes
 [Bolognese](https://github.com/datacite/bolognese) | Ruby | 1.0.0 | [mfenner](https://github.com/mfenner) | primarily a tool for conversion between formats provided by DataCite, including codemeta and schema.org
 [codemetar](https://ropensci.github.io/codemetar) | R | 2.0.0 | [cboettig](https://github.com/cboettig) | Generate codemeta for R packages; + generic codemeta manipulation
 [codemetapy](https://github.com/proycon/codemetapy) | Python | 2.0.0 | [proycon](https://github.com/proycon) | Generate codemeta for Python packages
+[CodeMeta generator](https://codemeta.github.io/codemeta-generator/) | Javascript | 2.0.0 | [ProgVal](https://github.com/ProgVal) | Online form to create or complete a codemeta file
 
 
 
@@ -32,6 +33,7 @@ existing codemeta.json files automatically.
 Name | Description |  Authors | Language | Codemeta Version
 -----|-------------|----------|----------|--------------------
 [Fidgit](https://github.com/arfon/fidgit): | An ungodly union of GitHub and Figshare | Arfon Smith, Kaitlin Thaney, Mark Hahnel | Ruby | 0.1.0
+[Software Heritage](https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html#adding-support-for-additional-ecosystem-specific-metadata)|The metadata indexers | SWH team | Python | 2.0
 
 
 Pending:
