@@ -3,8 +3,11 @@ title: user guide
 
 ---
 
+## Generating a CodeMeta file
 
-## Creating A CodeMeta Instance File
+You can use the [codemeta-generator](https://codemeta.github.io/codemeta-generator/) directly at <https://codemeta.github.io/codemeta-generator/>
+
+## Creating A CodeMeta Instance File Manually
 
 A CodeMeta instance file describes the metadata associated with a software object using JSON's linked data (JSON-LD) notation.  A codemeta file can contain any of the properties described on the [CodeMeta terms page](/terms/). Most codemeta files are called `codemeta.json` by convention.
 
