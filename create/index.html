@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
-  <meta name="generator" content="Hugo 0.57.2" />
+  <meta name="generator" content="Hugo 0.67.1" />
   <meta name="author" content="codemeta">
   
 
@@ -135,53 +135,12 @@
     <div class="section section-basic">
       <div class="container">
 
-      <div id="app"></div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/react-jsonschema-form/dist/react-jsonschema-form.js"></script>
-<script type="text/javascript" src="../schema.json"></script>
-<script type="text/javascript" src="../uiSchema.json"></script>
-
-<script>
-  const Form = JSONSchemaForm.default;
-  
-  
-
-  const formData= {
-      "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
-      "@type": "SoftwareSourceCode"
-  }
-
-  const log = (type) => console.log.bind(console, type);
-
-  function saveData(data, fileName) {
-      log("submitted")
-      var content = JSON.stringify(data, null, 2);
-      var a = document.createElement("a");
-      var file = new Blob([content], {type: "application/json"});
-      a.href = URL.createObjectURL(file);
-      a.download = fileName;
-      a.click();
-  };
-  const onSubmit = ({formData}) => saveData(formData, "codemeta.json");
-
-  
-  var fileName = "codemeta.json";
-  ReactDOM.render(React.createElement(Form, {
-                schema: schema,
-                uiSchema: uiSchema,
-                formData: formData,
-                onChange: log("changed"),
-                onSubmit: onSubmit,
-                onError: log("errors")
-            }), document.getElementById("app"));
-  
-    
+      <p>Need to generate a CodeMeta compliant metadata file? Try out the <a href="https://codemeta.github.io/codemeta-generator">CodeMeta Generator</a>, which was created by the folks at <a href="https://www.softwareheritage.org">Software Heritage</a>.</p>
 
 
-  
-</script>
+  <a href="https://www.softwareheritage.org">
+  <img src="https://www.softwareheritage.org/wp-content/uploads/2015/08/swh-logo.png" style="height: 50px;"/> Software Heritage</a>
+
 
       
       </div>
