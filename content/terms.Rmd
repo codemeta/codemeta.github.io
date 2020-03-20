@@ -32,6 +32,7 @@ The CodeMeta project also introduces the following additional properties, which 
 ```{r}
 cw %>% 
   filter(grepl("codemeta:", `Parent Type`)) %>%
+  mutate(Description = gsub("repostatus.org", "[repostatus.org](http://www.repostatus.org/)", `Description`)) %>%
   select(Property, Type, Description)  %>%
 knitr::kable("html", table.attr="class=\"table table-striped\"")
 
