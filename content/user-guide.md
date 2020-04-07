@@ -15,12 +15,15 @@ Here is an example of a basic `codemeta.json` that you can put at the root of a 
 ```json
 {
     "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
-    "name": "Generate CodeMeta Metadata for R Packages",
+    "@type": "SoftwareSourceCode",
+    "name": "CodemetaR",
     "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
+    "license": "https://spdx.org/licenses/GPL-3.0",
     "identifier": "http://dx.doi.org/10.5281/zenodo.XXXX"
 }
 ```
 
+### Basics
 
 When creating a CodeMeta document, note that they contain JSON name ("property" in linked-data), value pairs where the values can be simple values, arrays or JSON objects. A simple value is a number, string, or one the literal values *false*, *null* *true*, for example:
 
@@ -28,21 +31,46 @@ When creating a CodeMeta document, note that they contain JSON name ("property" 
 "name" : "R Interface to the DataONE REST API"
 ```
 
-A JSON array is surrounded by the characters `[` and `]`, and can contain multiple values:
+There must be a comma between of these key-value pairs, and no comma at the end before the closing bracket (`}`).
+
+### Arrays
+
+A JSON array is surrounded by the characters `[` and `]`, and can contain multiple values separated by commas:
 
 ```
 "keywords": [ "data sharing", "data repository", "DataONE" ]
 ```
 
+As with any JSON documents, you can add line breaks between values for improved quality. For example, the former key-value pair is this is equivalent to:
+
+```
+"keywords": [
+    "data sharing",
+    "data repository",
+    "DataONE"
+]
+```
+
+All fields that accept a value of a given type accept an array of values of this type, and vice-versa. For example, a software with two licenses could have this attribute:
+
+```
+"license": [
+    "https://spdx.org/licenses/GPL-3.0",
+    "https://spdx.org/licenses/BSD-3-Clause"
+]
+```
+
+### Objects
+
 Some properties, such as `author`, can refer to other JSON objects surrounded by curly braces and can contain other JSON values or objects, for example:
 
 ```
 "author": {
-   "@id":"http://orcid.org/0000-0003-0077-4738",
-   "@type":"Person",
-   "email":"slaughter@nceas.ucsb.edu",
-   "givenName":"Peter",
-   "familyName: "Slaughter"
+    "@id": "http://orcid.org/0000-0003-0077-4738",
+    "@type": "Person",
+    "email": "slaughter@nceas.ucsb.edu",
+    "givenName": "Peter",
+    "familyName": "Slaughter"
 }
 ```
 
@@ -57,9 +85,121 @@ The "author" JSON object illustrates the use of the JSON-LD keyword "@id", which
 "maintainer": "http://orcid.org/0000-0003-0077-4738"
 ```
 
-(Note: this should be added at the top level of the document, indicating that this individual is the `maintainer` of the software being described.)  JSON-LD operations can later *expand* this reference and *embed* the full information at both locations.  
+This should be added at the top level of the document, indicating that this individual is the `maintainer` of the software being described, like this:
+
+```json
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "name": "CodemetaR",
+
+    "author": {
+        "@id": "http://orcid.org/0000-0003-0077-4738",
+        "@type": "Person",
+        "email": "slaughter@nceas.ucsb.edu",
+        "givenName": "Peter",
+        "familyName": "Slaughter"
+    },
+    "maintainer": "http://orcid.org/0000-0003-0077-4738"
+}
+```
+
+JSON-LD operations can later *expand* this reference and *embed* the full information at both locations. This means the example above is equivalent to:
+
+```json
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "name": "CodemetaR",
+
+    "author": {
+        "@id": "http://orcid.org/0000-0003-0077-4738",
+        "@type": "Person",
+        "email": "slaughter@nceas.ucsb.edu",
+        "givenName": "Peter",
+        "familyName": "Slaughter"
+    },
+    "maintainer": {
+        "@id": "http://orcid.org/0000-0003-0077-4738",
+        "@type": "Person",
+        "email": "slaughter@nceas.ucsb.edu",
+        "givenName": "Peter",
+        "familyName": "Slaughter"
+    }
+}
+```
 
 
+### Nesting objects
+
+We saw before a simple (root) SoftwareSourceCode object:
+
+```json
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "name": "CodemetaR"
+}
+```
+
+and this root object can refer to other objects, for example recommend a SoftwareApplication:
+
+```json
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "name": "CodemetaR",
+
+    "softwareSuggestions": {
+        "@type": "SoftwareApplication",
+        "name": "rmarkdown"
+    }
+}
+```
+
+And you may in turn want to add attributes to this application:
+
+```json
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "name": "CodemetaR",
+
+    "softwareSuggestions": {
+        "@type": "SoftwareApplication",
+        "name": "rmarkdown",
+        "provider": {
+            "@type": "Organization",
+            "name": "Central R Archive Network (CRAN)",
+            "url": "https://cran.r-project.org"
+        }
+    }
+}
+```
+
+It is important to mind the order of curly brackets (an object begins with a `{` and ends with a matching `}`) and indentation (spaces at the beginning of a line) to reflect the hierarchy: "Central R Archive Network (CRAN)" is the name of the provider of "rmarkdown", which is a softwareSuggestion of CodemetaR.
+
+For example, the above code is not equivalent to:
+
+```json
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "name": "CodemetaR",
+
+    "softwareSuggestions": {
+        "@type": "SoftwareApplication",
+        "name": "rmarkdown",
+        "provider": {
+            "@type": "Organization",
+            "name": "Central R Archive Network (CRAN)"
+        },
+        "url": "https://cran.r-project.org"
+    }
+}
+```
+
+because in the latter, `"https://cran.r-project.org"` is the `"url"` of `rmarkdown`, instead of being the url of `Central R Archive Network (CRAN)`.
 
 ## The context
 
@@ -82,4 +222,4 @@ Release candidate versions may be referred to consistently using their git tag f
 
 ## Testing An Instance file
 
- [ TBD ]
+Our [codemeta-generator](https://codemeta.github.io/codemeta-generator/) can also check a codemeta.json file you wrote is valid. To do that, copy-paste your code in the bottom box, and click "Validate codemeta.json".
