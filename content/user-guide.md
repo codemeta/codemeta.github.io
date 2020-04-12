@@ -14,7 +14,7 @@ A CodeMeta instance file describes the metadata associated with a software objec
 Here is an example of a basic `codemeta.json` that you can put at the root of a Github repo ([link to full example](https://codemeta.github.io/codemetar/articles/codemeta-intro.html)):
 ```json
 {
-    "@context": ["http://schema.org", {"author": {"@id": "schema:author", "@container": "@list"} } ] ,
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
     "name": "Generate CodeMeta Metadata for R Packages",
     "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
     "identifier": "http://dx.doi.org/10.5281/zenodo.XXXX"
@@ -73,7 +73,7 @@ appropriate context file, e.g.
 
 
 ```
-"@context": "https://doi.org/10.5063/SCHEMA/CODEMETA-1.0"
+"@context": "https://doi.org/10.5063/schema/codemeta-2.0"
 ```
 
 Release candidate versions may be referred to consistently using their git tag for the raw version, e.g. <https://raw.githubusercontent.com/codemeta/codemeta/2.0-rc/codemeta.jsonld>.  *Please do not refer to the raw GitHub URL for the master branch*, as this is subject to change and will not guarantee a stable metadata file.  
