@@ -11,7 +11,7 @@ You can use the [codemeta-generator](https://codemeta.github.io/codemeta-generat
 
 A CodeMeta instance file describes the metadata associated with a software object using JSON's linked data (JSON-LD) notation.  A codemeta file can contain any of the properties described on the [CodeMeta terms page](/terms/). Most codemeta files are called `codemeta.json` by convention.
 
-Here is an example of a basic `codemeta.json` that you can put at the root of a Github repo ([link to full example](https://codemeta.github.io/codemetar/articles/codemeta-intro.html)):
+Here is an example of a basic `codemeta.json` that you can put at the root of a Github repo ([link to full example](https://github.com/ropensci/codemetar/blob/master/codemeta.json)):
 ```json
 {
     "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
