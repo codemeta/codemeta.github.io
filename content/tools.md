@@ -18,6 +18,8 @@ tool | language | codemeta version | maintainer | notes
 [Bolognese](https://github.com/datacite/bolognese) | Ruby | 1.0.0 | [mfenner](https://github.com/mfenner) | primarily a tool for conversion between formats provided by DataCite, including codemeta and schema.org
 [codemetar](https://ropensci.github.io/codemetar) | R | 2.0.0 | [cboettig](https://github.com/cboettig) | Generate codemeta for R packages; + generic codemeta manipulation
 [codemetapy](https://github.com/proycon/codemetapy) | Python | 2.0.0 | [proycon](https://github.com/proycon) | Generate codemeta for Python packages
+[tributors](https://con.github.io/tributors/) | Python | 2.0.0 | [vsoch](https://github.com/vsoch) | Generate codemeta contributors section from GitHub API and Orcid API
+[cff-converter](https://github.com/citation-file-format/cff-converter-python) | Python | 2.0.0 | [jspaaks](https://github.com/jspaaksh) | Convert `CITATION.cff` files to codemeta
 [CodeMeta generator](https://codemeta.github.io/codemeta-generator/) | Javascript | 2.0.0 | [ProgVal](https://github.com/ProgVal) | Online form to create or complete a codemeta file
 
 
