@@ -17,9 +17,10 @@ tool | language | codemeta version | maintainer | notes
 [CodeMeta file generator](https://gist.github.com/arfon/478b2ed49e11f984d6fb) | Ruby | 0.1.0 | [arfon](http://github.com/arfon) | (no support for current schema)
 [Bolognese](https://github.com/datacite/bolognese) | Ruby | 1.0.0 | [mfenner](https://github.com/mfenner) | primarily a tool for conversion between formats provided by DataCite, including codemeta and schema.org
 [codemetar](https://ropensci.github.io/codemetar) | R | 2.0.0 | [cboettig](https://github.com/cboettig) | Generate codemeta for R packages; + generic codemeta manipulation
-[codemetapy](https://github.com/proycon/codemetapy) | Python | 2.0.0 | [proycon](https://github.com/proycon) | Generate codemeta for Python packages
+[codemetapy](https://github.com/proycon/codemetapy) | Python | 2.0.0 | [proycon](https://github.com/proycon) | Generate codemeta for Python, NodeJS, Java packages and others; + generic codemeta manipulation
 [CodeMeta generator](https://codemeta.github.io/codemeta-generator/) | Javascript | 2.0.0 | [ProgVal](https://github.com/ProgVal) | Online form to create or complete a codemeta file
-
+[codemeta-harvester](https://github.com/proycon/codemeta-harvester) | POSIX Shell | 2.0.0 | [proycon](https://github.com/proycon) | Automatic software metadata conversion pipeline that uses codemetapy and other tools
+[codemeta-server](https://github.com/proycon/codemeta-server) | Python | 2.0.0 | [proycon](https://github.com/proycon) | Webservice offering an API (including SPARQL) and simple human web-interface so search and browse software metadata
 
 
 #### Integrations
@@ -42,6 +43,6 @@ Pending:
 - JOSS
 - Zenodo
 - DataCite
-- Figshare 
+- Figshare
 
 
