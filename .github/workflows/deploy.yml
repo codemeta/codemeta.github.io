@@ -36,6 +36,9 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
+      - name: Prepare data files
+        run: |
+          make
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
