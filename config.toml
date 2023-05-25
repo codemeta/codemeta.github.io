@@ -64,3 +64,8 @@ publishDir = "../website"
     width = 50
     height = 50
     alt = "Logo"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
