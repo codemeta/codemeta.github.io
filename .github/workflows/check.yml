@@ -25,6 +25,9 @@ jobs:
           DEBIAN_FRONTEND=noninteractive sudo apt-get install -y hugo
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Prepare data files
+        run: |
+          make
       - name: Build with Hugo
         run: |
           hugo
