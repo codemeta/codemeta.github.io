@@ -8,13 +8,4 @@ date: "2017-06-04"
 [Wikidata](https://www.wikidata.org/wiki/Wikidata:Introduction)  provides internationalized set of properties for machine-readable linked data.  (Surprisingly wikidata does not have a native JSON-LD format, [distributing in plain json](https://www.wikidata.org/wiki/Wikidata:Database_download).)
 
 
-```{r echo = FALSE, message=FALSE, warning=FALSE, output="asis"}
-library("tidyverse")
-crosswalk <- "https://github.com/codemeta/codemeta/raw/master/crosswalk.csv"
-cw <- read_csv(crosswalk)
-cw %>% 
-  select(Property, `Wikidata`) %>%
-  filter(!is.na(`Wikidata`)) -> df
-
-knitr::kable(df, "html", table.attr="class=\"table table-striped\"")
-```
+{{< crosswalk name="Wikidata" >}}
