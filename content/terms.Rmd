@@ -38,6 +38,9 @@ knitr::kable("html", table.attr="class=\"table table-striped\"")
 
 The CodeMeta project also introduces the following additional properties, which lack clear equivalents in <https://schema.org> but can play an important role in software metadata records covered by the CodeMeta crosswalk.
 
+* Namespace: <https://codemeta.github.io/terms/>
+  - **Warning**: This namespace will change to be w3id-based for CodeMeta 4.0
+
 ```{r}
 cw %>%
   filter(grepl("codemeta:", `Parent Type`)) %>%
