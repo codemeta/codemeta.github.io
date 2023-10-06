@@ -9,6 +9,9 @@ library("readr")
 library("dplyr")
 ```
 
+* Permalink: <https://w3id.org/codemeta/3.0>
+* CodeMeta version: 3.0
+
 ## Terms from Schema.org
 
 Recognized properties for CodeMeta `SoftwareSourceCode` and `SoftwareApplication` includes the following terms from <https://schema.org>.  These terms are part of the CodeMeta specification and can be used without any prefix.
