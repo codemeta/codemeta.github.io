@@ -1,2 +1,4 @@
 crosswalk.csv
 crosswalk.json
+properties_description.json
+properties_description/*.csv
