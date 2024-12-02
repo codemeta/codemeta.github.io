@@ -23,7 +23,7 @@ tool | language | codemeta version | maintainer | notes
 [CodeMeta generator](https://codemeta.github.io/codemeta-generator/) | Javascript | 2.0.0 | [ProgVal](https://github.com/ProgVal) | Online form to create or complete a codemeta file
 [codemeta-harvester](https://github.com/proycon/codemeta-harvester) | POSIX Shell | 2.0.0 | [proycon](https://github.com/proycon) | Automatic software metadata conversion pipeline that uses codemetapy and other tools
 [codemeta-server](https://github.com/proycon/codemeta-server) | Python | 2.0.0 | [proycon](https://github.com/proycon) | Webservice offering an API (including SPARQL) and simple human web-interface so search and browse software metadata
-[FACILE-RS](https://git.opencarp.org/openCARP/FACILE-RS) | Python | 2.0.0 | [MarieHouillon](https://github.com/MarieHouillon) | Metadata conversion (Citation File Format (CFF), DataCite, BagIt and BagPack) and software publication pipelines based on CodeMeta.
+[FACILE-RS](https://git.opencarp.org/openCARP/FACILE-RS) | Python | 2.0.0 | [MarieHouillon](https://github.com/MarieHouillon) | Metadata conversion (to Citation File Format (CFF), DataCite, BagIt and BagPack) and software publication pipelines based on CodeMeta
 
 
 #### Integrations
