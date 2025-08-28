@@ -1,7 +1,3 @@
----
-markup: mmark
----
-
 ### Tools
 
 This page lists some existing tools to help with CodeMeta files
