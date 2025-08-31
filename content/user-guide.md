@@ -11,15 +11,23 @@ You can use the [codemeta-generator](https://codemeta.github.io/codemeta-generat
 
 A CodeMeta instance file describes the metadata associated with a software object using JSON's linked data (JSON-LD) notation.  A codemeta file can contain any of the properties described on the [CodeMeta terms page](/terms/). Most codemeta files are called `codemeta.json` by convention.
 
-Here is an example of a basic `codemeta.json` that you can put at the root of a Github repo ([link to full example](https://github.com/ropensci/codemetar/blob/master/codemeta.json)):
+Here is an example of a basic `codemeta.json` that you can put at the root of a Github repo ([link to full example](https://github.com/gem-pasteur/macsyfinder/blob/master/codemeta.json)):
+
 ```json
 {
-    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
-    "@type": "SoftwareSourceCode",
-    "name": "CodemetaR",
-    "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
-    "license": "https://spdx.org/licenses/GPL-3.0",
-    "identifier": "http://dx.doi.org/10.5281/zenodo.XXXX"
+    "@context": "https://w3id.org/codemeta/3.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "Biology",
+    "codeRepository": "https://github.com/gem-pasteur/macsyfinder",
+    "description": "MacSyFinder is a program to model and detect macromolecular systems, genetic pathways… in prokaryotes protein datasets.",
+    "downloadUrl": "https://pypi.org/project/MacSyFinder/",
+    "license": "https://spdx.org/licenses/GPL-3.0+",
+    "name": "macsyfinder",
+    "version": "2.1.4",
+    "continuousIntegration": "https://github.com/gem-pasteur/macsyfinder/actions",
+    "developmentStatus": "active",
+    "issueTracker": "https://github.com/gem-pasteur/macsyfinder/issues",
+    "referencePublication": "https://doi.org/10.24072/pcjournal.250"
 }
 ```
 
@@ -89,7 +97,7 @@ This should be added at the top level of the document, indicating that this indi
 
 ```json
 {
-    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@context": "https://w3id.org/codemeta/3.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -108,7 +116,7 @@ JSON-LD operations can later *expand* this reference and *embed* the full inform
 
 ```json
 {
-    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@context": "https://w3id.org/codemeta/3.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -136,7 +144,7 @@ We saw before a simple (root) SoftwareSourceCode object:
 
 ```json
 {
-    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@context": "https://w3id.org/codemeta/3.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR"
 }
@@ -146,7 +154,7 @@ and this root object can refer to other objects, for example recommend a Softwar
 
 ```json
 {
-    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@context": "https://w3id.org/codemeta/3.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -161,7 +169,7 @@ And you may in turn want to add attributes to this application:
 
 ```json
 {
-    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@context": "https://w3id.org/codemeta/3.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -183,7 +191,7 @@ For example, the above code is not equivalent to:
 
 ```json
 {
-    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@context": "https://w3id.org/codemeta/3.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -213,7 +221,7 @@ appropriate context file, e.g.
 
 
 ```
-"@context": "https://doi.org/10.5063/schema/codemeta-2.0"
+"@context": "https://w3id.org/codemeta/3.0"
 ```
 
 Release candidate versions may be referred to consistently using their git tag for the raw version, e.g. <https://raw.githubusercontent.com/codemeta/codemeta/2.0-rc/codemeta.jsonld>.  *Please do not refer to the raw GitHub URL for the master branch*, as this is subject to change and will not guarantee a stable metadata file.  
