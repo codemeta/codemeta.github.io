@@ -15,7 +15,7 @@ SPDX 2.3 supports multiple serialization formats and often uses the following fi
 | RDF (RDF/XML)        | `*.spdx.rdf`, `*.spdx.rdf.xml` |
 | XLS spreadsheet      | `*.spdx.xls`, `*.spdx.xlsx`    |
 | XML                  | `*.spdx.xml`                   |
-| YAML 1.2             | `*.spdx.yaml`, `*.spdx.yml`   |
+| YAML 1.2             | `*.spdx.yaml`, `*.spdx.yml`    |
 
 The crosswalk for the SPDX 2.3 SBOM is as follows:
 
