@@ -19,4 +19,4 @@ SPDX 2.3 supports multiple serialization formats and often uses the following fi
 
 The crosswalk for the SPDX 2.3 SBOM is as follows:
 
-{{< crosswalk name="SPDX_2_3" >}}
+{{< crosswalk name="SPDX 2.3" >}}
