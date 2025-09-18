@@ -8,14 +8,14 @@ The [Software Package Data Exchange® (SPDX®)](https://spdx.dev/) specification
 
 SPDX 2.3 supports multiple serialization formats and often uses the following file extensions:
 
-| Serialization format | File extension(s)           |
-|----------------------|-----------------------------|
-| tag:value            | `*.spdx`                    |
-| JSON                 | `*.spdx.json`               |
-| RDF                  | `*.spdx.rdf`                |
-| XLS spreadsheet      | `*.spdx.xls`, `*.spdx.xlsx` |
-| XML                  | `*.spdx.xml`                |
-| YAML 1.2             | `*.spdx.yaml`, `*.spdx.yml` |
+| Serialization format | File extension(s)              |
+|----------------------|--------------------------------|
+| tag:value            | `*.spdx`                       |
+| JSON                 | `*.spdx.json`                  |
+| RDF (RDF/XML)        | `*.spdx.rdf`, `*.spdx.rdf.xml` |
+| XLS spreadsheet      | `*.spdx.xls`, `*.spdx.xlsx`    |
+| XML                  | `*.spdx.xml`                   |
+| YAML 1.2             | `*.spdx.yaml`, `*.spdx.yml`   |
 
 The crosswalk for the SPDX 2.3 SBOM is as follows:
 
