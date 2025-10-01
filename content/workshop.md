@@ -1,6 +1,5 @@
 ---
-title: Codemeta Workshop
-
+title: CodeMeta Workshop
 ---
 
 
@@ -46,7 +45,7 @@ The CodeMeta project does not seek to create [yet another standard](https://xkcd
 
 ## Project Origins
 
-The CodeMeta project was first concieved at the [Open Science Codefest](http://nceas.github.io/open-science-codefest/), we met to discuss the metadata for scientific software. Participants included:
+The CodeMeta project was first conceived at the [Open Science Codefest](http://nceas.github.io/open-science-codefest/), we met to discuss the metadata for scientific software. Participants included:
 
 - Abigail Cabunoc / @abbycabs
 - Matt Jones / @metamattj

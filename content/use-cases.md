@@ -96,7 +96,7 @@ Then determine a final set of categorized use cases based on these 3 different s
 
 
 
-Codemeta Meeting Portland, Edited Use cases, Working Document                        1
+CodeMeta Meeting Portland, Edited Use cases, Working Document                        1
 Day 2, PM 20160416 : Carole Goble, Alice Allen, Ashley Sands, Patricia Cruse
 Edited Use cases
 Created 20160415 (use cases group pulled from here 3pm 20160516)

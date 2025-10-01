@@ -1,14 +1,10 @@
----
-markup: mmark
----
-
-### Tools
+# Tools
 
 This page lists some existing tools to help with CodeMeta files
 
-#### File Generation
+## File Generation
 
- Some of the early tools still need a little updating to use the latest version of the codemeta context.
+Some of the early tools still need a little updating to use the latest version of the codemeta context.
 
 {.table .table-striped}
 
@@ -24,28 +20,24 @@ tool | language | codemeta version | maintainer | notes
 [codemeta-harvester](https://github.com/proycon/codemeta-harvester) | POSIX Shell | 2.0.0 | [proycon](https://github.com/proycon) | Automatic software metadata conversion pipeline that uses codemetapy and other tools
 [codemeta-server](https://github.com/proycon/codemeta-server) | Python | 2.0.0 | [proycon](https://github.com/proycon) | Webservice offering an API (including SPARQL) and simple human web-interface so search and browse software metadata
 [openCARP-CI](https://opencarp.org/CI) | Python | openCARP developers | GitLab CI pipelines including the conversion from CodeMeta to other formats (Citation File Format (CFF), DataCite, BagIt and BagPack)
+[AutoCodemeta Generator](https://w3id.org/autocodemeta) | Javascript | 3.0.0 | [dgarijo](http://github.com/dgarijo) | Optimized version of CodeMeta Generator that automatically creates a codemeta file from a given repository
+[Somef](https://github.com/KnowledgeCaptureAndDiscovery/somef) | Python | OEG developers | [dgarijo](http://github.com/dgarijo) | Tool that automatically extracts software metadata from repositories and scientific publications.
 
-
-#### Integrations
-
+## Integrations
 
 Integrations indicate existing platforms & services which understand CodeMeta descriptions. These do not provide a user-facing software tool for generating codemeta.json, but can ingest
 existing codemeta.json files automatically.
 
 {.table .table-striped}
 
-Name | Description |  Authors | Language | Codemeta Version
+Name | Description |  Authors | Language | CodeMeta Version
 -----|-------------|----------|----------|--------------------
 [Fidgit](https://github.com/arfon/fidgit): | An ungodly union of GitHub and Figshare | Arfon Smith, Kaitlin Thaney, Mark Hahnel | Ruby | 0.1.0
 [Software Heritage](https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html#adding-support-for-additional-ecosystem-specific-metadata)|The metadata indexers | SWH team | Python | 2.0
 
-
 Pending:
-
 
 - JOSS
 - Zenodo
 - DataCite
 - Figshare
-
-

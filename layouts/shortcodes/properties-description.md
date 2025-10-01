@@ -9,7 +9,7 @@ Property
 <th>
 Type
 </th>
-<th title="What Codemeta versions support this property">
+<th title="What CodeMeta versions support this property">
 Versions
 </th>
 <th>

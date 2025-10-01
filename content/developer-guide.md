@@ -7,7 +7,7 @@ methodology for creating software package descriptions. For example, this guide 
 designing software to generate or read CodeMeta JSON software descriptions.
 
 Users that only require instructions for manually creating CodeMeta software descriptions may wish to
-review the upcoming [User Guide](/user-guide/). 
+review the upcoming [User Guide](/user-guide/).
 
 ## CodeMeta Overview
 
@@ -47,27 +47,31 @@ An example usage of the CodeMeta document is for the author of research software
 
 The producer of an  CodeMeta Document, i.e. the creators of the software, must use the JSON names from the CodeMeta context file. The consumer of the  CodeMeta Document can use these same JSON names from the  CodeMeta Document for any necessary processing tasks.
 
-As an alternative to using the producer supplied JSON names, the consumer can use the [JSON-LD API](https://www.w3.org/TR/json-ld-api/) to translate the JSON names to their own local JSON names that may be in use by their local processing scripts. This is done by first using the JSON-LD *expand* function that replaces each JSON name in the  CodeMeta Document with it's corresponding IRI from the CodeMeta context file. For example, the producer's  CodeMeta Document may contain the following line:
+As an alternative to using the producer supplied JSON names, the consumer can use the [JSON-LD API](https://www.w3.org/TR/json-ld-api/) to translate the JSON names to their own local JSON names that may be in use by their local processing scripts. This is done by first using the JSON-LD *expand* function that replaces each JSON name in the  CodeMeta Document with it's corresponding IRI from the CodeMeta context file. For example, the producer's CodeMeta Document may contain the following line:
 
+```json
       "codeRepository": "https://github.com/DataONEorg/rdataone"
+```
 
 Using the JSON-LD API *expand* function, this is converted to:
 
-     "http://schema.org/codeRepository": "https://github.com/DataONEorg/rdataone
+```json
+     "http://schema.org/codeRepository": "https://github.com/DataONEorg/rdataone"
+```
 
 Next, the consumer can use their own context file that maps from each IRI to their own local JSON names. For example, the consumer may have a context that maps the local JSON name 'repository' (as in `package.json` documents used by NPM, see [/crosswalk/node/]) to "http://schema.org/codeRepository", so using the JSON API *compact* function would result in a new  CodeMeta Document with the entry:
 
+```json
      "repository": "https://github.com/DataONEorg/rdataone"
+```
 
 When the CodeMeta Document has been compacted, it can then be used by the consumer for any necessary processing, using the local JSON names.
 
 Note that this expansion and compaction process assumes that both the producer and consumer JSON-LD context files share overlapping sets of IRIs.
 
-
 ## Crosswalk Table
 
 ## Tools and Integrations
-
 
 To facilitate automated ingest of research software into repositories such as [figshare](https://figshare.com/), [Zenodo](https://zenodo.org/), the [Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/) and others, these repositories will update
 their submission processes to use CodeMeta Document which will provide the metadata necessary for the submission and indexing of the software.  
@@ -76,14 +80,13 @@ Tools will be created that assist in the generation of CodeMeta documents. For e
 
 ## Generating Citations from a CodeMeta documents
 
- [ TBD ]
-
+[ TBD ]
 
 ## Extending the CodeMeta Context
 
-CodeMeta explicitly defines the terms it uses from <http://schema.org>, rather than merely extending <http://schema.org> with a few additional terms.  To use additional terms from <http://schema.org> not listed on the [terms page](/terms/) (or terms from any other context), you must extend your context appropriately.  For instance, to combine codemeta (v2.0-rc) with all terms available in schema.org, you would do: 
+CodeMeta explicitly defines the terms it uses from <http://schema.org>, rather than merely extending <http://schema.org> with a few additional terms.  To use additional terms from <http://schema.org> not listed on the [terms page](/terms/) (or terms from any other context), you must extend your context appropriately.  For instance, to combine codemeta (v2.0-rc) with all terms available in schema.org, you would do:
 
-```
+```json
 "@context": ["https://raw.githubusercontent.com/codemeta/codemeta/2.0-rc/codemeta.jsonld", "http://schema.org/"]
 ```
 
@@ -96,7 +99,7 @@ The intent of JSON-LD is to provide a mechanism to represent linked data using s
 For example, in the CodeMeta document, the JSON-LD "@id" keyword is used to associate an IRI with a JSON object. When the JSON-LD CodeMeta document is serialized to RDF, this becomes the graph node identifier, or the subject of the resulting RDF triple. If an @id is not specified for a JSON object, then a blank node identifier is assigned to the resulting graph node for the output RDF graph. The JSON object `role` from the example
 CodeMeta document:
 
-```
+```json
       "roleCode":[
          "originator",
          ...
@@ -105,19 +108,19 @@ CodeMeta document:
 
 is serialized to RDF as:
 
-```
+```n3
 _:b1 <https://codemeta.github.io/terms/roleCode> "originator" .
 ```
 
 When the JSON-LD "@type" keyword is applied to a simple JSON type, the serialized RDF will have that type appended to the object, for example, the following entry from the example CodeMeta document:
 
-```
+```json
 "dateCreated":"2016-05-27"
 ```
 
 is serialized to the following RDF ([N-Triples format](https://www.w3.org/TR/n-triples/)):
 
-```
+```n3
 _:b0 <http://schema.org/dateCreated> "2016-05-27"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 ```
 
@@ -126,7 +129,7 @@ In this case, the "@type" was specified in the context file.
 When the JSON-LD "@type" is applied to a JSON object, the type information is serialized to RDF with
 an RDF type statement, for example, this JSON object from the sample CodeMeta document:
 
-```
+```json
 "author":[
   {
      "@id":"http://orcid.org/0000-0002-3957-2474",
@@ -139,10 +142,9 @@ an RDF type statement, for example, this JSON object from the sample CodeMeta do
 
 is serialized to RDF as:
 
-```
+```n3
 <http://orcid.org/0000-0002-3957-2474> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
 
 ```
 
 This example shows the "@type" keyword being used in the CodeMeta document.
-

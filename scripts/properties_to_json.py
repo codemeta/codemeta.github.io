@@ -1,4 +1,4 @@
-"""Transforms a set of ``properties_Description.csv`` files from the main Codemeta repo
+"""Transforms a set of ``properties_Description.csv`` files from the main CodeMeta repo
 into JSON processable by Hugo.
 
 For example, this turns this :file:`v3.0.csv`:
@@ -82,13 +82,13 @@ for csv_path in paths:
         if item["Property"] == "":
             continue  # skip empty rows
 
-        # Look for a similar existing item from a newer Codemeta version
+        # Look for a similar existing item from a newer CodeMeta version
         for existing_item in json_items:
             if existing_item.items() >= item.items():
                 # We found an existing item, add this version to its list
                 assert (
                     version not in existing_item["versions"]
-                ), f"Codemeta {version} has duplicated property {item}"
+                ), f"CodeMeta {version} has duplicated property {item}"
                 existing_item["versions"].append(version)
                 break
         else:

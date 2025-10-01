@@ -1,6 +1,6 @@
 # CodeMeta Website
 
-This website is written in [Hugo](https://hugodocs.info).  Hugo is a static website engine, which is fast, popular, and easy to install and theme. See the [Hugo docs](https://hugodocs.info) for a quick orientation on how the site is organized.
+This website is written in [Hugo](https://gohugo.io/).  Hugo is a static website engine, which is fast, popular, and easy to install and theme. See the [Hugo docs](https://gohugo.io/documentation/) for a quick orientation on how the site is organized.
 
 Before building the site, you should run the `make` command, in order to download the crosswalk locally; which is used by Hugo to generate the content of crosswalk pages.
 

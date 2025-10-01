@@ -1,5 +1,5 @@
 ---
-title: "The Codemeta JSON-LD Representation"
+title: "The CodeMeta JSON-LD Representation"
 ---
 
 
