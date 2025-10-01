@@ -56,7 +56,7 @@ As an alternative to using the producer supplied JSON names, the consumer can us
 Using the JSON-LD API *expand* function, this is converted to:
 
 ```json
-     "http://schema.org/codeRepository": "https://github.com/DataONEorg/rdataone
+     "http://schema.org/codeRepository": "https://github.com/DataONEorg/rdataone"
 ```
 
 Next, the consumer can use their own context file that maps from each IRI to their own local JSON names. For example, the consumer may have a context that maps the local JSON name 'repository' (as in `package.json` documents used by NPM, see [/crosswalk/node/]) to "http://schema.org/codeRepository", so using the JSON API *compact* function would result in a new  CodeMeta Document with the entry:
