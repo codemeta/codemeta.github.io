@@ -202,7 +202,7 @@ because in the latter, `"https://cran.r-project.org"` is the `"url"` of `rmarkdo
 
 ## The context
 
-Every CodeMeta document must refer to the context file *codemeta.jsonld*, for example via a URL.  This indicates that all terms in the document should be interpreted in the "context" of CodeMeta.  Most terms are chosen to match the equivalent terms in <http://schema.org>, but CodeMeta provides a few additional terms not found in <http://schema.org> which may be helpful for software projects.  CodeMeta also restricts the context to use only those <https://schema.org> terms that are explicitly listed on the [terms](/terms/) page.  Users wanting to include additional terms must extend the context (see [developer-guide](/developer-guide/)).  
+Every CodeMeta document must refer to the context file *codemeta.jsonld*, for example via a URL.  This indicates that all terms in the document should be interpreted in the "context" of CodeMeta.  Most terms are chosen to match the equivalent terms in <http://schema.org>, but CodeMeta provides a few additional terms not found in <http://schema.org> which may be helpful for software projects.  CodeMeta also restricts the context to use only those <https://schema.org> terms that are explicitly listed on the [terms](/terms/) page.  Users wanting to include additional terms must extend the context (see [developer-guide](/developer-guide/)).
 
 The context file may be modified and updated in the future, if new JSON properties are added or existing ones modified.
 The CodeMeta GitHub repository defines tags to allow specific versions of a file to be referenced, and assigns
