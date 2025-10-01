@@ -47,7 +47,6 @@ An example usage of the CodeMeta document is for the author of research software
 
 The producer of an  CodeMeta Document, i.e. the creators of the software, must use the JSON names from the CodeMeta context file. The consumer of the  CodeMeta Document can use these same JSON names from the  CodeMeta Document for any necessary processing tasks.
 
-As an alternative to using the producer supplied JSON names, the consumer can use the [JSON-LD API](https://www.w3.org/TR/json-ld-api/) to translate the JSON names to their own local JSON names that may be in use by their local processing scripts. This is done by first using the JSON-LD *expand* function that replaces each JSON name in the  CodeMeta Document with it's corresponding IRI from the CodeMeta context file. For example, the producer's  CodeMeta Document may contain the following line:
 As an alternative to using the producer supplied JSON names, the consumer can use the [JSON-LD API](https://www.w3.org/TR/json-ld-api/) to translate the JSON names to their own local JSON names that may be in use by their local processing scripts. This is done by first using the JSON-LD *expand* function that replaces each JSON name in the  CodeMeta Document with it's corresponding IRI from the CodeMeta context file. For example, the producer's CodeMeta Document may contain the following line:
 
 ```json
