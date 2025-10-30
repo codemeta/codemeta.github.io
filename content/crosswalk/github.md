@@ -8,4 +8,4 @@ date: "2017-06-01"
 
 [GitHub API](https://docs.github.com/en/rest) provides a programmatic way to retrieve repository metadata.
 
-{{< crosswalk name="GitHub" >}}
+{{% crosswalk name="GitHub" %}}

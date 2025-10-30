@@ -10,4 +10,4 @@ The `Cargo.toml` file for each package is called its manifest. Cargo uses the me
 
 The manifest format is described in [the Cargo Book](https://doc.rust-lang.org/cargo/reference/manifest.html).
 
-{{< crosswalk name="Rust Package Manager" >}}
+{{% crosswalk name="Rust Package Manager" %}}

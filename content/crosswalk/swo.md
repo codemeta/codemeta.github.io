@@ -8,4 +8,4 @@ The [Software Ontology (SWO)](http://theswo.sourceforge.net/) is a resource for 
 SWO is part of the JISC funded [SWORD project](https://www.software.ac.uk/blog/sword-software-ontology-research-description) (Software Ontology for Resource Description), an inter-disciplinary effort to capture software descriptions used in the preservation of data.
 The work is a collaboration between the European Bioinformatics Institute and the University of Manchester.
 
-{{< crosswalk name="Software Ontology" >}}
+{{% crosswalk name="Software Ontology" %}}

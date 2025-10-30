@@ -8,4 +8,4 @@ The `npm` package manager for JavaScript [defines](https://docs.npmjs.com/files/
 
 `npm` is the default package manager for the JavaScript runtime environment Node.js.
 
-{{< crosswalk name="NodeJS" >}}
+{{% crosswalk name="NodeJS" %}}
