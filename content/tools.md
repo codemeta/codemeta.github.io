@@ -9,8 +9,6 @@ This page lists some existing tools to help with CodeMeta files.
 
 Some of the early tools still need a little updating to use the latest version of the CodeMeta context.
 
-{.table .table-striped}
-
 Name | Language | CodeMeta versions | Maintainers | Description
 -----|----------|-------------------|-------------|------------
 [AutoCodemeta Generator](https://w3id.org/autocodemeta) | JavaScript | 3.0.0 | [dgarijo](http://github.com/dgarijo) | Optimized version of CodeMeta Generator that automatically creates a CodeMeta file from a given repository
@@ -25,6 +23,7 @@ Name | Language | CodeMeta versions | Maintainers | Description
 [FACILE-RS](https://git.opencarp.org/openCARP/FACILE-RS) | Python | 2.0.0 | [MarieHouillon](https://github.com/MarieHouillon) | Metadata conversion (to Citation File Format (CFF), DataCite, BagIt and BagPack) and software publication pipelines based on CodeMeta. Previously known as openCARP-CI.
 [Somef](https://github.com/KnowledgeCaptureAndDiscovery/somef) | Python | OEG developers | [dgarijo](http://github.com/dgarijo) | Tool that automatically extracts software metadata from repositories and scientific publications
 [tributors](https://con.github.io/tributors/) | Python | 2.0.0 | [vsoch](https://github.com/vsoch) | Generate CodeMeta contributors section from GitHub API and ORCID API
+{.table .table-striped}
 
 ## Integrations
 
@@ -32,12 +31,11 @@ Integrations indicate existing platforms & services which understand CodeMeta de
 These do not provide a user-facing software tool for generating codemeta.json, but can ingest
 existing codemeta.json files automatically.
 
-{.table .table-striped}
-
 Name | Language | CodeMeta versions | Maintainers | Description
 -----|----------|-------------------|-------------|------------
 [Fidgit](https://github.com/arfon/fidgit) | Ruby | 0.1.0 | Arfon Smith, Kaitlin Thaney, Mark Hahnel | An ungodly union of GitHub and Figshare
 [Software Heritage](https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html#adding-support-for-additional-ecosystem-specific-metadata) | Python | 2.0 | SWH team | The metadata indexers
+{.table .table-striped}
 
 Pending:
 

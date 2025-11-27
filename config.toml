@@ -81,3 +81,6 @@ publishDir = "../website"
       unsafe = true
   [markup.highlight]
     style = 'pygments'
+
+[markup.goldmark.parser.attribute]
+    block = true # default is false
