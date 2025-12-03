@@ -7,35 +7,46 @@
 </div>
 {{end}}
 
-  {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
 
    <!-- List pages can get Content and yaml metadata from an _index.md -->
   {{ with .Content }}<div class="article-style" itemprop="articleBody">{{ . }}</div>{{ end }}
 
 
   <div class="row">
-    <div class="col-11">
+    <table class="col-11">
     {{ range .Paginator.Pages }}
-    <div class="article">
-      <h2><a href="{{ .RelPermalink }}">{{if .Params.image }} <img alt="{{ substr .Params.image 5 -4 }} logo" src="{{ .Params.image }}" height="50px"/> {{ end }}{{ .Title }}</a></h2>
-    </div>
+    <tr class="article">
+      <td class="col-2 p-2 text-center">
+      {{if .Params.image }}
+          <img style="height:auto;max-width:75px;" alt="{{ substr .Params.image 5 -4 }} logo" src="{{ .Params.image }}" height="50px"/>
+      {{ end }}
+      </td>
+      <td>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      </td>
+    </tr>
     {{ end }}
-    </div>
+    </table>
 
+	{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+	<nav class="mt-5">
+	  <table class="col-12">
+	  <tr class="pager">
+	    <td class="col-4 text-end">
+	    {{ if .Paginator.HasPrev }}
+                <a href="{{ .Paginator.Prev.URL | relURL }}">&laquo; Previous</a>
+            {{ end }}
+            </td>
+            <td class="col-4 text-center">
+                {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</td>
+	    <td class="col-4 text-start">
+	    {{ if .Paginator.HasNext }}
+		<a href="{{ .Paginator.Next.URL | relURL }}">Next &raquo;</a>
+	    {{ end }}
+            </td>
+	  </tr>
+          </table>
+	</nav>
+	{{ end }}
 
-
-{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-<nav>
-  <ul class="pager">
-    {{ if .Paginator.HasPrev }}
-    <li><a href="{{ .Paginator.Prev.URL | relURL }}">&laquo; Previous</a></li>
-    {{ end }}
-    {{ if .Paginator.HasNext }}
-    <li><a href="{{ .Paginator.Next.URL | relURL }}">Next &raquo;</a></li>
-    {{ end }}
-  </ul>
-</nav>
-{{ end }}
-
-  <br />  
   </div>
