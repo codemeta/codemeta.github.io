@@ -1,0 +1,47 @@
+name: Bug Report
+description: File a bug report for codemeta.github.io
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for your attention to detail!"
+  - type: checkboxes
+    attributes:
+      label: Is this the right place?
+      description: CodeMeta is developed across several repositories, lets check that this is where your issue belongs.
+      options:
+        - label: "This is NOT an addition, alteration or removal of CodeMeta terms. Please raise terms issues in [the main CodeMeta repository](https://github.com/codemeta/codemeta)."
+          required: true
+        - label: "This is NOT about the CodeMeta Generator. Please raise Generator issues in [the Codemeta-Generator repository](https://github.com/codemeta/codemeta-generator)."
+          required: true
+  - type: textarea
+    id: which-pages
+    attributes:
+      label: Which pages are affected?
+      description: Please double-check for additional occurrences of the problem. Attach any screenshots here.
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Which browsers are you seeing the problem on?
+      description: Use shift+click to select multiple options.
+      multiple: true
+      options:
+        - Firefox (Windows)
+        - Firefox (Linux)
+        - Firefox (MacOS)
+        - Chrome (Windows)
+        - Chrome (Linux)
+        - Chrome (MacOS)
+        - Safari
+        - Microsoft Edge
+        - Other (describe in next section)
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Any other information?
+      description: Please provide browser info, console logs, or any other info that you think could help us.
+      render: shell
+

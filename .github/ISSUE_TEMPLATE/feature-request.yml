@@ -1,0 +1,31 @@
+name: Feature Request
+description: Request a new feature for codemeta.github.io
+title: "[Request]: "
+labels: ["request"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for your interest in improving [the CodeMeta website](https://codemeta.gihub.io)."
+  - type: checkboxes
+    attributes:
+      label: Is this the right place?
+      description: CodeMeta is developed across several repositories, lets check that this is where your issue belongs.
+      options:
+        - label: "This is NOT suggesting an addition, alteration or removal of CodeMeta terms. Please request terms changes in [the main CodeMeta repository](https://github.com/codemeta/codemeta)."
+          required: true
+        - label: "This is NOT a request for the CodeMeta Generator. Please request Generator changes in [the Codemeta-Generator repository](https://github.com/codemeta/codemeta-generator)."
+          required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What change or feature would you like to request?
+      description: Please describe the change you are requesting. Feel free to illustrate your request.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this needed.
+      description: Please provide a reason for this feature.
+    validations:
+      required: true
