@@ -50,8 +50,7 @@ filenames are valid, they will be less recognisable and may be overlooked.
 
 CodeMeta files contain JSON *key-value pairs*, sometimes referred to as
 *name-value pairs* where the values can be *simple values*, *arrays*, or *JSON
-objects*. Key-value pairs are known as *property-value pairs* in JSON-LD
-linked-data.
+objects*. Keys are also known as *properties* in linked data.
 
 #### Simple Values
 
