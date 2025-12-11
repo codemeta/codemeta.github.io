@@ -322,6 +322,10 @@ dl, li {
   font-size: 14px;
 }
 
+p img {
+  margin: 25px 0px;
+}
+
 /*!
  * infobox paragraphs and blockquotes
  */

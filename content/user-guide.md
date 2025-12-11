@@ -115,34 +115,35 @@ objects. For example:
 #### Keywords
 
 JSON-LD has the concept of Keywords, which are properties prefaced with a `@`.
+Keywords instruct the processor how to *expand* the document with linked data.
 
-These references work similar to includes in a programming language.
+Keywords can pull in other data; like programming language includes, work
+like functions; repeating the same data in multiple places, or act like a
+setting; changing the rules for the data.
 {.tip}
 
-Keywords are instructions for the processor of the file to refer to
-previously stored information. This means that the exact same information can
-be included multiple times, and pulled from a consistent source.
+Some refer to external resources (such as `@context`), some (like `@list` and
+`@type`) add new constraints on the values for the property, while others
+include a copy of previously recorded information (`@id`).
 
-The source can be an external resource, as depicted in the diagram below:
+The diagram below visualises how `@context` instructs the externally stored
+definition for CodeMeta to be *embedded* to *expand* the `codemeta.json`
+document:
 
 ![Diagram of a JSON-LD reference pulling data in from an external data source](/img/jsonld-references-diagram.svg)
 
-The JSON-LD "@type" keyword associates a JSON value or object with a well
+The JSON-LD `@type` keyword associates a JSON value or object with a well
 known type. In the previous example, the statement `"@type":"Person"`
-associates the `author` object with `http://schema.org/Person`. It is good
-practice to always provide the `@type` for any property which specifies a node
-(JSON object). The [terms page](/terms/) indicates these node types.
+associates the `author` object with `http://schema.org/Person`. The
+`@type` for any property which specifies a node (JSON object) should be
+provided. The [terms page](/terms/) indicates these node types.
 
-Keywords also provide similiar utility to a function in a programming
-language; they prompt the processor to output the same data in another place
-in the file.
-{.tip}
-
-The "author" JSON object illustrates the use of the JSON-LD keyword "@id",
+The `author` JSON object illustrates the use of the JSON-LD keyword `@id`,
 which is used to associate an IRI with the JSON object. Any such node object
-can be assigned an `@id`, and we may use the `@id` to refer to this same
-object (the person, Peter), elsewhere in the document; e.g. we can indicate
-the same individual is also the `maintainer` by adding:
+can be assigned an `@id`, and future uses of the `@id` property's *value* will
+refer to this same object, (the person, Peter), elsewhere in the document. For
+example, we can indicate the same individual is also the `maintainer` by
+adding:
 
 ```json
 "maintainer": "http://orcid.org/0000-0003-0077-4738"
@@ -167,7 +168,6 @@ individual is the `maintainer` of the software being described, like this:
     "maintainer": "http://orcid.org/0000-0003-0077-4738"
 }
 ```
-
 
 JSON-LD operations can later *expand* this reference and *embed* the full
 information at both locations.
@@ -290,8 +290,7 @@ represented as the `"url"` of `rmarkdown`, instead of being the url of
 ### Example of a CodeMeta file
 
 The following is an example of a basic `codemeta.json` that can be put at the
-root of a code repository.
-([link to full example](https://github.com/gem-pasteur/macsyfinder/blob/master/codemeta.json)):
+root of a code repository:
 
 ```json
 {
@@ -310,6 +309,8 @@ root of a code repository.
     "referencePublication": "https://doi.org/10.24072/pcjournal.250"
 }
 ```
+
+([Link to full example](https://github.com/gem-pasteur/macsyfinder/blob/master/codemeta.json)).
 
 ## The context
 
