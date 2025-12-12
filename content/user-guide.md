@@ -115,16 +115,14 @@ objects. For example:
 #### Keywords
 
 JSON-LD has the concept of Keywords, which are properties prefaced with a `@`.
-Keywords instruct the processor how to *expand* the document with linked data.
+Keywords which give instructions to the processor instead of describing relations
+between entities.
 
-Keywords can pull in other data; like programming language includes, work
-like functions; repeating the same data in multiple places, or act like a
-setting; changing the rules for the data.
-{.tip}
+This includes:
 
-Some refer to external resources (such as `@context`), some (like `@list` and
-`@type`) add new constraints on the values for the property, while others
-include a copy of previously recorded information (`@id`).
+* defining shorthands (`@context`, `@vocab`),
+* changing value semantics (`@list` and `@set`, `@value`, `@language`, ...),
+* intrinsically describing objects (`@id` and `@type`)
 
 The diagram below visualises how `@context` instructs the externally stored
 definition for CodeMeta to be *embedded* to *expand* the `codemeta.json`
