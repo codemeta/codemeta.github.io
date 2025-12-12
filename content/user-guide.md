@@ -115,7 +115,7 @@ objects. For example:
 #### Keywords
 
 JSON-LD has the concept of Keywords, which are properties prefaced with a `@`.
-Keywords which give instructions to the processor instead of describing relations
+Keywords give instructions to the processor instead of describing relations
 between entities.
 
 This includes:
