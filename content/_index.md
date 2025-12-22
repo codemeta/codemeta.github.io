@@ -5,9 +5,7 @@ layout: landing
 
 ## Introducing CodeMeta
 
-Software development creates changes, and scientific research requires
-reproducibility. Since software is routinely used in research projects,
-this can cause problems.
+CodeMeta provides a shared, minimal metadata vocabulary for software, designed to support research, discovery, citation, and interoperability across platforms. It is currently being used in major initiatives such as FAIRCORE4EOSC to make research software FAIR (Findable, Accessible, Interoperable, Reusable).
 
 _**CodeMeta acts as a vital bridge between these disciplines.**_
 
@@ -29,21 +27,26 @@ recommendations:
 
 {{< rsmd >}}
 
-## Use Cases
+## Why CodeMeta? — Key Use Cases
 
-Credit
-: CodeMeta's _citation_ metadata is useful for ensuring that authors get
-credit for their software, when it is used for published research.
+Enabling Reliable Software Citation
+: Consistent software citation remains a challenge in scholarly communication. CodeMeta supports structured metadata that enables software to be cited, indexed, and credited correctly. This aspect is highlighted by FAIRCORE4EOSC’s integration of CodeMeta into software archival and citation workflows.
 
-Reproducibility
-: Tracking the software libraries and applications used in research, using
-CodeMeta's _versions_ and _dependencies_ metadata, ensures that important
-findings can be reviewed and verified with greater accuracy.
+Standardizing Software Metadata
+: Software metadata is often scattered across incompatible formats and tools. CodeMeta defines a common, machine-readable vocabulary (JSON-LD) that enables software metadata to be shared consistently across repositories, registries, and platforms — making it possible for large infrastructures like EOSC to standardize metadata at scale.
 
-Discovery
-: Finding software is easier with CodeMeta's _keywords_ and _descriptions_
-metadata. These terms allow everyone to discover relevant software, and use
-or contribute to it.
+Improving Discovery and Reuse
+: By using a common metadata schema, software becomes easier to discover both by humans and machines. CodeMeta metadata in APIs and connectors improve interoperability, discovery and sharing of research software across repositories and services.
+
+Supporting Interoperability Between Systems
+: CodeMeta acts as a “metadata exchange layer” linking diverse systems. This enables metadata to flow between repositories, publishers and aggregators, improving exchange and integration without bespoke converters.
+
+Enhancing Transparency and Reproducibility
+: Clear software metadata helps others understand what software does, how it was created, and how it can be used — which is critical for reproducible science. Users can now leverage standardized metadata for archiving, describing, and citing software artifacts in a FAIR-compliant ecosystems.
+
+##### **Learn more**: For a full list of CodeMeta use cases
+* See: Full list of CodeMeta [use cases](/use-cases/)
+* See also:FAIRCORE4EOSC – [Core Components for a FAIR EOSC](https://faircore4eosc.eu/)
 
 ## Connecting via Crosswalks
 
