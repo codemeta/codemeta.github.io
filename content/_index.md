@@ -7,12 +7,12 @@ layout: landing
 
 CodeMeta provides a shared, minimal metadata vocabulary for software, designed to support research, discovery, citation, and interoperability across platforms. It is currently being used in major initiatives such as FAIRCORE4EOSC to make research software FAIR (Findable, Accessible, Interoperable, Reusable).
 
-_**CodeMeta acts as a vital bridge between these disciplines.**_
+_**CodeMeta acts as a vital bridge between software development and academic disciplines.**_
 
-[Aiming to solve this problem](/background), CodeMeta was founded in 2016
-by a consortium of researchers. Using existing standards such as Schema.org
-terms and JSON-LD, CodeMeta is now a recognised framework that is employed
-by a worldwide community of developers, researchers, and archivists.
+[Aiming to ease conflicting priorities](/background), CodeMeta was founded
+in 2016 by a consortium of researchers. Using existing standards such as
+Schema.org terms and JSON-LD, CodeMeta is now a recognised framework that is
+employed by a worldwide community of developers, researchers, and archivists.
 
 When used and maintained in code repositories and software distribution
 systems, CodeMeta enables the exact version of a library or application,
