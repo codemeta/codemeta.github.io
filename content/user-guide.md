@@ -124,12 +124,6 @@ This includes:
 * changing value semantics (`@list` and `@set`, `@value`, `@language`, ...),
 * intrinsically describing objects (`@id` and `@type`)
 
-The diagram below visualises how `@context` instructs the externally stored
-definition for CodeMeta to be *embedded* to *expand* the `codemeta.json`
-document:
-
-![Diagram of a JSON-LD reference pulling data in from an external data source](/img/jsonld-references-diagram.svg)
-
 The JSON-LD `@type` keyword associates a JSON value or object with a well
 known type. In the previous example, the statement `"@type":"Person"`
 associates the `author` object with `http://schema.org/Person`. The
