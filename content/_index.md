@@ -44,9 +44,10 @@ Supporting Interoperability Between Systems
 Enhancing Transparency and Reproducibility
 : Clear software metadata helps others understand what software does, how it was created, and how it can be used — which is critical for reproducible science. Users can now leverage standardized metadata for archiving, describing, and citing software artifacts in a FAIR-compliant ecosystems.
 
-##### **Learn more**: For a full list of CodeMeta use cases
-* See: Full list of CodeMeta [use cases](/use-cases/)
-* See also:FAIRCORE4EOSC – [Core Components for a FAIR EOSC](https://faircore4eosc.eu/)
+##### **Learn more**: Additional use cases and related research
+
+* See a [full list of CodeMeta use cases](/use-cases/)
+* Learn about FAIRCORE4EOSC and their [Core Components for a FAIR EOSC](https://faircore4eosc.eu/)
 
 ## Connecting via Crosswalks
 
