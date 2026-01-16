@@ -315,9 +315,12 @@ but CodeMeta provides a few additional terms not found in <http://schema.org>
 which may be helpful for software projects.
 
 CodeMeta also restricts the context to use only those <https://schema.org>
-terms that are explicitly listed on the [terms](/terms/) page.  Users wanting
-to include additional terms must extend the context (see
-[the developer guide](/developer-guide/)).
+terms that are explicitly listed on the [terms](/terms/) page. Users wanting
+to include additional terms may:
+
+* Use the `schema:` prefix to define them as <https://schema.org> terms (for
+example `"schema:Person"`), or
+* Extend the context (see [the developer guide](/developer-guide/)).
 
 The context file may be modified and updated in the future, if new JSON
 properties are added or existing ones modified.
