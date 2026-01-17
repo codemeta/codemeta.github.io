@@ -128,7 +128,8 @@ The JSON-LD `@type` keyword associates a JSON value or object with a well
 known type. In the previous example, the statement `"@type":"Person"`
 associates the `author` object with `http://schema.org/Person`. The
 `@type` for any property which specifies a node (JSON object) should be
-provided. The [terms page](/terms/) indicates these node types.
+provided. The `Type` column of [the terms page](/terms/) indicates the
+options appropriate for each term.
 
 The `author` JSON object illustrates the use of the JSON-LD keyword `@id`,
 which is used to associate an IRI with the JSON object. Any such node object
