@@ -90,6 +90,13 @@ for csv_path in paths:
                     version not in existing_item["versions"]
                 ), f"CodeMeta {version} has duplicated property {item}"
                 existing_item["versions"].append(version)
+
+                # values from newer versions of properties_description.json take precedence
+                # over new ones
+                if item["Type"]:
+                    existing_item["Type"] = item["Type"]
+                if item["Description"]:
+                    existing_item["Description"] = item["Description"]
                 break
         else:
             # No similar item, create a new one
