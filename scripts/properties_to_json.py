@@ -85,19 +85,26 @@ for csv_path in paths:
         # Look for a similar existing item from a newer CodeMeta version
         for existing_item in json_items:
             if existing_item.items() >= item.items():
-                # We found an existing item, add this version to its list
+                # We found an identical existing item, add this version to its list
                 assert (
                     version not in existing_item["versions"]
                 ), f"CodeMeta {version} has duplicated property {item}"
                 existing_item["versions"].append(version)
-
-                # values from newer versions of properties_description.json take precedence
-                # over new ones
-                if item["Type"]:
-                    existing_item["Type"] = item["Type"]
-                if item["Description"]:
-                    existing_item["Description"] = item["Description"]
+            # check for existing properties that have differing types or descriptions
+            # values from newer versions of properties_description.json take precedence
+            # over new ones.
+            # update the versions for these here and break to avoid duplicate rows
+            if item["Property"] == existing_item["Property"]:
+                if item["Type"] != existing_item["Type"]:
+                    item["Type"] = existing_item["Type"]
+                    if version not in existing_item["versions"]:
+                        existing_item["versions"].append(version)
+                if item["Description"] != existing_item["Description"]:
+                    item["Description"] = existing_item["Description"]
+                    if version not in existing_item["versions"]:
+                        existing_item["versions"].append(version)
                 break
+
         else:
             # No similar item, create a new one
             item["versions"] = [version]
