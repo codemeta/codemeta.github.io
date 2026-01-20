@@ -310,7 +310,7 @@ root of a code repository:
 
 ## The context
 
-Every CodeMeta document must refer to the context file *codemeta.jsonld*, for
+Every CodeMeta document must refer to the context file `codemeta.jsonld`, for
 example via a URL. This indicates that all terms in the document should be
 interpreted in the "context" of CodeMeta.
 
@@ -318,7 +318,7 @@ Most terms are chosen to match the equivalent terms in <http://schema.org>,
 but CodeMeta provides a few additional terms not found in <http://schema.org>
 which may be helpful for software projects.
 
-CodeMeta also restricts the context to use only those <https://schema.org>
+CodeMeta also restricts the context to use only those <http://schema.org>
 terms that are explicitly listed on the [terms](/terms/) page. Users wanting
 to include additional terms may:
 
@@ -329,11 +329,14 @@ as `"schema:releaseNotes"` [in this example](https://github.com/SciCodes/somef-c
 The context file may be modified and updated in the future, if new JSON
 properties are added or existing ones modified.
 
-The CodeMeta GitHub repository defines tags to allow specific versions of a
-file to be referenced, and assigns *digital object identifiers*, or DOIs, to
-each release tag. Please use the
-[appropriate release](https://github.com/codemeta/codemeta/releases) of the
-CodeMeta schema in order to refer to the appropriate context file, e.g.
+The CodeMeta GitHub repository [defines tags](https://github.com/codemeta/codemeta/tags)
+to allow specific versions of a file to be referenced, and assigns permanant
+identifiers for each release tag. Early releases used Digital Object
+Identifiers (DOIs), and recent releases use W3IDs. Please use the
+[appropriate release](https://github.com/codemeta/codemeta/releases)
+of the CodeMeta schema in order to refer to the appropriate context file.
+
+For example, use the following for the latest release:
 
 ```json
 "@context": "https://w3id.org/codemeta/3.1"
@@ -341,9 +344,10 @@ CodeMeta schema in order to refer to the appropriate context file, e.g.
 
 ## Referencing CodeMeta
 
-Release candidate versions may be referred to consistently using their
-[git tag](https://github.com/codemeta/codemeta/tags) for the raw version, e.g.
-<https://raw.githubusercontent.com/codemeta/codemeta/2.0-rc/codemeta.jsonld>.
+All versions, including release candidates, may be referred to consistently
+using their [git tag](https://github.com/codemeta/codemeta/tags) for the raw
+version, e.g. <https://raw.githubusercontent.com/codemeta/codemeta/2.0-rc/codemeta.jsonld>.
+
 *Please do not refer to the raw GitHub URL for the master branch*, as this is
 subject to change and will not guarantee a stable metadata file.
-
+{.warning}
