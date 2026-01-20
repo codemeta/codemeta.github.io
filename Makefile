@@ -14,6 +14,11 @@ data/crosswalk.json: scripts/crosswalk_to_json.py data/crosswalk.csv
 data/properties_description/v2.0.csv:
 	wget https://github.com/codemeta/codemeta/raw/2.1/properties_description.csv -O $@
 
+# likewise, 3.1 is needed instead of 3.0 due to a missing type value for reviewBody
+# causing a display issue on the terms page. No other definition changes between them.
+data/properties_description/v3.0.csv:
+	wget https://github.com/codemeta/codemeta/raw/3.1/properties_description.csv -O $@
+
 # Download properties descriptions for other versions
 data/properties_description/v%.csv:
 	wget https://github.com/codemeta/codemeta/raw/$*/properties_description.csv -O $@
