@@ -25,6 +25,9 @@ Instructions for [using the CodeMeta Generator](create) are available.
 
 A _*beta*_ version of an automatic generator is also linked on that page.
 
+Other utilities that can help with generating `codemeta.json` files are
+listed on the [tools page](tools).
+
 ### Testing a CodeMeta instance file
 
 Your CodeMeta files can be validated using the
