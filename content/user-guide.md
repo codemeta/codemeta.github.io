@@ -345,5 +345,5 @@ Release candidate versions may be referred to consistently using their
 [git tag](https://github.com/codemeta/codemeta/tags) for the raw version, e.g.
 <https://raw.githubusercontent.com/codemeta/codemeta/2.0-rc/codemeta.jsonld>.
 *Please do not refer to the raw GitHub URL for the master branch*, as this is
-/subject to change and will not guarantee a stable metadata file.
+subject to change and will not guarantee a stable metadata file.
 
