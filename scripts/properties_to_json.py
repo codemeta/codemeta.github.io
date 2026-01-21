@@ -74,7 +74,7 @@ paths = sorted(
 
 def canonicalize(s):
     """strips non-letters and lower-cases"""
-    return re.sub("\\W", "", item["Type"]).lower()
+    return re.sub("\\W", "", s).lower()
 
 for csv_path in paths:
     version = csv_path.stem
