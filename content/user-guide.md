@@ -399,10 +399,42 @@ refer to a consistent identity of an individual.
 
 ### Roles
 
-The `Role` type property is used within the `author` property to define the
-participation of a `Person`.
+The `Role` type property is used within the `author` or `contributor`
+properties to further define the participation of a `Person`. The property is
+intended to clarify the functional area the individual with the free-form
+value of the `roleName` property.
 
-This is distinct from the `contributor` and `maintainer` properties.
+An example author role:
+
+```json
+"author": [
+...
+    {
+      "roleName": "User Experience Design",
+      "schema:author": "https://github.com/octocat",
+      "type": "Role"
+    },
+...
+]
+```
+
+Or a contributor:
+
+```json
+"contributor": [
+...
+    {
+      "roleName": "Documentation",
+      "schema:author": "https://github.com/octocat",
+      "type": "Role"
+    },
+...
+]
+```
+
+This is distinct from the `maintainer` property, which should be defined
+independently as a top-level property of the document, containing at least
+one `Person`.
 
 The `Role` must link to a `Person` previously defined in the top-level
 property. The example below demonstrates the `id` and `schema:author` values
@@ -416,17 +448,13 @@ providing this link.
         "givenName": "Ruthvik",
         "type": "Person"
     },
-
 ...
-
     {
       "roleName": "Tech Lead",
       "schema:author": "https://github.com/ruthvikm",
       "type": "Role"
     },
-
 ...
-
 ]
 
 ```
