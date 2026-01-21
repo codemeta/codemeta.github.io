@@ -72,6 +72,10 @@ paths = sorted(
     CSV_PATH.glob("*.csv"), key=lambda p: float(p.stem.lstrip("v")), reverse=True
 )
 
+def canonicalize(s):
+    """strips non-letters and lower-cases"""
+    return re.sub("\\W", "", item["Type"]).lower()
+
 for csv_path in paths:
     version = csv_path.stem
     # header = ["Parent Type", "Property", "Type", "Description"]
@@ -96,10 +100,12 @@ for csv_path in paths:
             # over new ones.
             # update the versions for these here and break to avoid duplicate rows
             if item["Property"] == existing_item["Property"] and item["Parent Type"] == existing_item["Parent Type"]:
-                if re.sub("\\W", "", item["Type"]).lower() != re.sub("\\W", "", existing_item["Type"]).lower():
+                if canonicalize(item["Type"]) != canonicalize(existing_item["Type"]):
+                    # both types meaningfully differ
                     item["versions"] = [version]
                     json_items.append(item)
                 elif item["Type"] == existing_item["Type"]:
+                    # both types differ, but it's probably just typesetting. keep the newest one
                     item["Type"] = existing_item["Type"]
                     if version not in existing_item["versions"]:
                         existing_item["versions"].append(version)
