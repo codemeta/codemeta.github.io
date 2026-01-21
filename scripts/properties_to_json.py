@@ -58,6 +58,7 @@ into:
 import csv
 import json
 import pathlib
+import re
 
 DIR = pathlib.Path(__file__).parent.parent
 CSV_PATH = DIR / "data/properties_description/"
@@ -94,15 +95,20 @@ for csv_path in paths:
             # values from newer versions of properties_description.json take precedence
             # over new ones.
             # update the versions for these here and break to avoid duplicate rows
-            if item["Property"] == existing_item["Property"]:
-                if item["Type"] != existing_item["Type"]:
+            if item["Property"] == existing_item["Property"] and item["Parent Type"] == existing_item["Parent Type"]:
+                if re.sub("\\W", "", item["Type"]).lower() != re.sub("\\W", "", existing_item["Type"]).lower():
+                    item["versions"] = [version]
+                    json_items.append(item)
+                elif item["Type"] == existing_item["Type"]:
                     item["Type"] = existing_item["Type"]
                     if version not in existing_item["versions"]:
                         existing_item["versions"].append(version)
-                if item["Description"] != existing_item["Description"]:
+
+                if item["Description"] != existing_item["Description"] and item["Type"] == existing_item["Type"]:
                     item["Description"] = existing_item["Description"]
                     if version not in existing_item["versions"]:
                         existing_item["versions"].append(version)
+
                 break
 
         else:
