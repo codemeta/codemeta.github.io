@@ -63,7 +63,7 @@ publishDir = "../website"
     
     newslimit = 5
     feeds = [
-        "https://softwareheritage.org/tag/codemeta/feed/"
+        "https://www.softwareheritage.org/tag/codemeta/feed/"
     ]
 
     date_format = "Mon, Jan 2, 2006"

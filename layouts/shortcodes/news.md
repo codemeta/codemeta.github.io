@@ -18,13 +18,13 @@
 
 {{ $combi := sort $combi ".pubDate" "desc" }}
 
-    {{ range $combi }}
-    <li class="ps-2 pb-2">
-      <h3><a class="list-group-item newslink p-2" href="{{ .link }}">{{ .title }}</a></h3>
-      <small class="ps-2 text-secondary-emphasis">{{ .pubDate | time.Format "Jan 02, 2006 3:04 PM MST"  }}</small>
-      <div class="ps-2 pt-2">{{ .description }}</div>
-    </li>
-    {{ end }}
+{{ range $combi }}
+  <li class="ps-2 pb-2">
+    <h3><a class="list-group-item newslink p-2" href="{{ .link }}">{{ .title }}</a></h3>
+    <small class="ps-2 text-secondary-emphasis">{{ .pubDate | time.Format "Jan 02, 2006 3:04 PM MST"  }}</small>
+    <div class="ps-2 pt-2">{{ .description }}</div>
+  </li>
+{{ end }}
   </ul>
 <script src="../js/news.js"></script>
 <script>
