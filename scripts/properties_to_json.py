@@ -104,8 +104,7 @@ for csv_path in paths:
                     # both types meaningfully differ
                     item["versions"] = [version]
                     json_items.append(item)
-                elif item["Type"] == existing_item["Type"]:
-                    # both types differ, but it's probably just typesetting. keep the newest one
+                else:
                     item["Type"] = existing_item["Type"]
                     if version not in existing_item["versions"]:
                         existing_item["versions"].append(version)
