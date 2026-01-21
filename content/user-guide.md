@@ -353,7 +353,7 @@ the `author` object. For example:
 
 ```json
 "author": {
-    "@id": "http://orcid.org/0000-0003-0077-4738",
+    "id": "http://orcid.org/0000-0003-0077-4738",
     "@type": "Person",
     "email": "slaughter@nceas.ucsb.edu",
     "givenName": "Peter",
@@ -367,7 +367,7 @@ array (`[`, `]`) of objects, as follows:
 ```json
 "author": [
     {
-        "id": "https://orcid.org/0000-0002-0220-0482",
+        "id": "https://orcid.org/0000-0002-1825-0097",
         "type": "Person",
         "affiliation": {
             "type": "Organization",
@@ -378,7 +378,7 @@ array (`[`, `]`) of objects, as follows:
         "givenName": "Bertrand"
     },
     {
-        "id": "https://orcid.org/0000-0002-5231-3346",
+        "id": "https://orcid.org/0000-0002-2771-9344",
         "type": "Person",
         "affiliation": {
             "type": "Organization",
@@ -431,7 +431,7 @@ providing this link.
 
 ```
 
-[Full example](https://github.com/oss-slu/Pi4Micronaut/blob/main/codemeta.json).
+[Full example](https://github.com/oss-slu/Pi4Micronaut/blob/de4305bec9afe7f7c948e9cc97b9105fd55121f7/codemeta.json).
 
 ### Organizations
 
@@ -484,7 +484,7 @@ root of a code repository:
 }
 ```
 
-([Link to full example](https://github.com/gem-pasteur/macsyfinder/blob/master/codemeta.json)).
+([Link to full example](https://github.com/gem-pasteur/macsyfinder/blob/69c22b065065105e6c5ac8dcbff00a804a0a34fc/codemeta.json)).
 
 ## Referencing CodeMeta
 
