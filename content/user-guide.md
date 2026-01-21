@@ -473,7 +473,7 @@ has with various organizations. Like the `author` property, the properties
 can contain values, or an array of objects with those same values for multiple
 affiliations.
 
-The [second example in the "People" section](user-guide/#people) contains a
+The [second example in the "People" section](#people) contains a
 use of the affiliation property, with `Organization` as its type.
 
 ## Describing the Software
