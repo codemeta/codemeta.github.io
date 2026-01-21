@@ -283,32 +283,7 @@ The change in hierarchy means that `"https://cran.r-project.org"` is
 represented as the `"url"` of `rmarkdown`, instead of being the url of
 `Central R Archive Network (CRAN)`.
 
-### Example of a CodeMeta file
-
-The following is an example of a basic `codemeta.json` that can be put at the
-root of a code repository:
-
-```json
-{
-    "@context": "https://w3id.org/codemeta/3.1",
-    "type": "SoftwareSourceCode",
-    "applicationCategory": "Biology",
-    "codeRepository": "https://github.com/gem-pasteur/macsyfinder",
-    "description": "MacSyFinder is a program to model and detect macromolecular systems, genetic pathways… in prokaryotes protein datasets.",
-    "downloadUrl": "https://pypi.org/project/MacSyFinder/",
-    "license": "https://spdx.org/licenses/GPL-3.0+",
-    "name": "macsyfinder",
-    "version": "2.1.4",
-    "continuousIntegration": "https://github.com/gem-pasteur/macsyfinder/actions",
-    "developmentStatus": "active",
-    "issueTracker": "https://github.com/gem-pasteur/macsyfinder/issues",
-    "referencePublication": "https://doi.org/10.24072/pcjournal.250"
-}
-```
-
-([Link to full example](https://github.com/gem-pasteur/macsyfinder/blob/master/codemeta.json)).
-
-## The context
+## Context
 
 Every CodeMeta document must refer to the context file `codemeta.jsonld`, for
 example via a URL. This indicates that all terms in the document should be
@@ -341,6 +316,175 @@ For example, use the following for the latest release:
 ```json
 "@context": "https://w3id.org/codemeta/3.1"
 ```
+
+## Attributions
+
+Giving attribution to people and organizations who have made a software
+application is a large part of many `codemeta.json` files, especially if
+projects involve a community.
+
+It is important to give proper attribution to the contributions that have been
+made. This includes using stable identifiers where possible and meaningful
+descriptions of each party's participation.
+
+This is done primarily with the use of `Person`, `Role`, and `Organization`
+properties types.
+
+### People
+
+The properties listed in the [terms](terms) tables with a type `Person`
+can list one or more objects of the `Person` type that describe the various
+individuals who made the software. They have the `@type` or `type` value of
+`Person`.
+
+They are top-level properties and should, where possible, contain an `@id`
+value that consistently identifies the individual and can be used for
+JSON-LD linking operations.
+
+The distinction between an `author` and a `contributor` is not strictly
+defined and each project can assign it according to their preference. The
+properties describe a `contributor` as someone considered a "secondary
+contributor", perhaps to be reserved for non-code contributions.
+
+A `maintainer` should include a method of contact, such as an email address.
+
+Applications with one `author` may list the individual values directly within
+the `author` object. For example:
+
+```json
+"author": {
+    "@id": "http://orcid.org/0000-0003-0077-4738",
+    "@type": "Person",
+    "email": "slaughter@nceas.ucsb.edu",
+    "givenName": "Peter",
+    "familyName": "Slaughter"
+}
+```
+
+Applications with multiple `author` individuals must describe them within an
+array (`[`, `]`) of objects, as follows:
+
+```json
+"author": [
+    {
+        "id": "https://orcid.org/0000-0002-0220-0482",
+        "type": "Person",
+        "affiliation": {
+            "type": "Organization",
+            "name": "Institut Pasteur, Université Paris Cité, Bioinformatics and Biostatistics HUB, Paris, France "
+        },
+        "email": "bneron@pasteur.fr",
+        "familyName": "Néron",
+        "givenName": "Bertrand"
+    },
+    {
+        "id": "https://orcid.org/0000-0002-5231-3346",
+        "type": "Person",
+        "affiliation": {
+            "type": "Organization",
+            "name": " Univ. Grenoble Alpes, CNRS, UMR 5525, VetAgro Sup, Grenoble INP, TIMC, 38000 Grenoble, France "
+        },
+        "email": "sophie.abby@univ-grenoble-alpes.fr",
+        "familyName": "Abby",
+        "givenName": "Sophie"
+    },
+...
+]
+```
+
+The specific values of the properties, such as `familyName` and `givenName`
+are free-form, and often contain pseudonyms or group names. `codemeta.json`
+files with such values are still valid, but where possible the values should
+refer to a consistent identity of an individual.
+
+### Roles
+
+The `Role` type property is used within the `author` property to define the
+participation of a `Person`.
+
+This is distinct from the `contributor` and `maintainer` properties.
+
+The `Role` must link to a `Person` previously defined in the top-level
+property. The example below demonstrates the `id` and `schema:author` values
+providing this link.
+
+```json
+"author": [
+    {
+        "familyName": "Mannem",
+        "id": "https://github.com/ruthvikm",
+        "givenName": "Ruthvik",
+        "type": "Person"
+    },
+
+...
+
+    {
+      "roleName": "Tech Lead",
+      "schema:author": "https://github.com/ruthvikm",
+      "type": "Role"
+    },
+
+...
+
+]
+
+```
+
+[Full example](https://github.com/oss-slu/Pi4Micronaut/blob/main/codemeta.json).
+
+### Organizations
+
+The properties listed in the [terms](terms) tables with a type `Organization`
+can list one or more organizations. They have the `type` value of
+`Organization`.
+
+The `affiliation` property within a `Person` property is a common example of
+this object type. `affiliation` defines the associations that the individual
+has with various organizations. Like the `author` property, the properties
+can contain values, or an array of objects with those same values for multiple
+affiliations.
+
+The [second example in the "People" section](user-guide/#people) contains a
+use of the affiliation property, with `Organization` as its type.
+
+## Describing the Software
+
+A minimum viable CodeMeta file needs only a `@context`, a `type` and a `name`.
+While valid, this is not a useful description of the software.
+
+Each project's `codemeta.json` should represent that project's lifecycle,
+resources, and people. It should be considered a living document. Properties
+representing dynamic information such as `version` and `authors` should be
+updated as the software changes for the document to be most useful.
+
+Useful properties include the ones in the example in the next section. Refer
+to the [terms](terms) page for all CodeMeta properties.
+
+## Example of a CodeMeta file
+
+The following is an example of a basic `codemeta.json` that can be put at the
+root of a code repository:
+
+```json
+{
+    "@context": "https://w3id.org/codemeta/3.1",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "Biology",
+    "codeRepository": "https://github.com/gem-pasteur/macsyfinder",
+    "description": "MacSyFinder is a program to model and detect macromolecular systems, genetic pathways… in prokaryotes protein datasets.",
+    "downloadUrl": "https://pypi.org/project/MacSyFinder/",
+    "license": "https://spdx.org/licenses/GPL-3.0+",
+    "name": "macsyfinder",
+    "version": "2.1.4",
+    "continuousIntegration": "https://github.com/gem-pasteur/macsyfinder/actions",
+    "developmentStatus": "active",
+    "issueTracker": "https://github.com/gem-pasteur/macsyfinder/issues",
+    "referencePublication": "https://doi.org/10.24072/pcjournal.250"
+}
+```
+
+([Link to full example](https://github.com/gem-pasteur/macsyfinder/blob/master/codemeta.json)).
 
 ## Referencing CodeMeta
 
