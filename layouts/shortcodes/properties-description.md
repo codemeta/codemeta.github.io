@@ -21,7 +21,7 @@ Description
 {{ range $property := .Site.Data.properties_description }}
 {{ $parentType := index $property "Parent Type" }}
 {{ if findRE $matchParentType $parentType }}
-<tr>
+<tr{{ if eq $matchParentType "codemeta:" }} id="{{ index $property "Property" }}"{{ end }}>
 <td>
 {{ index $property "Property" }}
 </td>
