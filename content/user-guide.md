@@ -21,12 +21,13 @@ is valid.
 
 CodeMeta files can be generated using the
 [CodeMeta Generator](https://codemeta.github.io/codemeta-generator/).
-Instructions for [using the CodeMeta Generator](create) are available.
+Instructions for [using the CodeMeta Generator](/create) are available.
 
-A _*beta*_ version of an automatic generator is also linked on that page.
+[A _*beta*_ version of an automatic generator](https://autocodemeta.linkeddata.es/)
+is also available.
 
 Other utilities that can help with generating `codemeta.json` files are
-listed on the [tools page](tools).
+listed on the [tools page](/tools).
 
 ### Testing a CodeMeta instance file
 
@@ -131,7 +132,7 @@ The JSON-LD `@type` keyword associates a JSON value or object with a well
 known type. In the previous example, the statement `"@type":"Person"`
 associates the `author` object with `http://schema.org/Person`. The
 `@type` for any property which specifies a node (JSON object) should be
-provided. The `Type` column of [the terms page](/terms/) indicates the
+provided. The `Type` column of [the terms page](/terms) indicates the
 options appropriate for each term.
 
 The `author` JSON object illustrates the use of the JSON-LD keyword `@id`,
@@ -294,12 +295,12 @@ but CodeMeta provides a few additional terms not found in <http://schema.org>
 which may be helpful for software projects.
 
 CodeMeta also restricts the context to use only those <http://schema.org>
-terms that are explicitly listed on the [terms](/terms/) page. Users wanting
+terms that are explicitly listed on the [terms](/terms) page. Users wanting
 to include additional terms may:
 
 * Use the `schema:` prefix to define them as <http://schema.org> terms, (such
 as `"schema:releaseNotes"` [in this example](https://github.com/SciCodes/somef-core/blob/f0481b6f28166e1c5a95919d2767f1aaa5b3fa87/codemeta.json#L85)), or
-* Extend the context (see [the developer guide](/developer-guide/)).
+* Extend the context (see [the developer guide](/developer-guide)).
 
 The context file may be modified and updated in the future, if new JSON
 properties are added or existing ones modified.
@@ -463,7 +464,7 @@ providing this link.
 
 ### Organizations
 
-The properties listed in the [terms](terms) tables with a type `Organization`
+The properties listed in the [terms](/terms) tables with a type `Organization`
 can list one or more organizations. They have the `type` value of
 `Organization`.
 
@@ -473,7 +474,7 @@ has with various organizations. Like the `author` property, the properties
 can contain values, or an array of objects with those same values for multiple
 affiliations.
 
-The [second example in the "People" section](#people) contains a
+The [second example in the "People" section](/user-guide#people) contains a
 use of the affiliation property, with `Organization` as its type.
 
 ## Describing the Software
@@ -487,7 +488,7 @@ representing dynamic information such as `version` and `authors` should be
 updated as the software changes for the document to be most useful.
 
 Useful properties include the ones in the example in the next section. Refer
-to the [terms](terms) page for all CodeMeta properties.
+to the [terms](/terms) page for all CodeMeta properties.
 
 ## Example of a CodeMeta file
 
