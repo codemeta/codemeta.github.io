@@ -38,7 +38,7 @@ if len(cw_stems) > 0:
         stem_slug = re.sub(r'[^a-zA-Z0-9]+', '-', stem_clean)
 
         # Find our stem in the overrides file
-        match = next((item for item in orides if (item["stem"] == real_stem) or (["short"] == real_stem) or (["name"] == real_stem)), None)
+        match = next((item for item in orides if (item["stem"] == real_stem) or (item["short"] == real_stem) or (item["name"] == real_stem)), None)
 
         # If a name exists, use it or stick with the cleaned stem name
         try:
