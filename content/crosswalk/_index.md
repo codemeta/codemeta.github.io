@@ -6,25 +6,28 @@ layout: list
 ## What are they?
 
 CodeMeta Crosswalks provide an explicit map between the fields of existing
-metadata standards, as used by a broad range of software repositories, 
-registries, and archives. When mapped by a Crosswalk, CodeMeta's terms act as
-a common set of properties, providing a pathway for metadata to be translated
-between standards.
+metadata standards. These other standards are used by software repositories,
+registries, archives, and more.
 
-Crosswalks are not required to have a one-to-one mapping for every field.
-Because Crosswalks only map fields common between a standard and CodeMeta, the
-subset of common fields may differ a lot between Crosswalks. The diagram below
-demonstrates how CodeMeta maps between standards when there are differences.
+Once mapped by a Crosswalk, CodeMeta's terms act as a common set of properties,
+providing a way for metadata to be translated between standards. The
+[user guide](/user-guide) explains some key concepts to help with understanding
+the CodeMeta metadata.
+
+Crosswalks do not need a one-to-one mapping for every field. Because Crosswalks
+only map fields common between a standard and CodeMeta, the subset of common
+fields may differ a lot between Crosswalks. The diagram below shows how CodeMeta
+maps between standards when there are differences.
 
 ![Diagram of CodeMeta mapping between two metadata standards. It shows a common term, terms unique to each standard, and terms common to only CodeMeta and each standard.](/img/crosswalkdiagram.svg)
 
 ## How to use Crosswalks
 
-Various [tools](/tools) for CodeMeta use Crosswalk mappings to convert existing
-metadata into a `codemeta.json` file.
+By comparing Vocabulary A to CodeMeta and comparing CodeMeta to Vocabulary
+B, you are able to see if there is a term equivalent, and what it is.
 
-The [user guide](/user-guide) explains some concepts to help you understand how
-CodeMeta works.
+If manual conversion is not what you want, there are also [tools](/tools) to
+convert between some formats, or to create a `codemeta.json` file.
 
 ### How to contribute?
 
