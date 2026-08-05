@@ -3,6 +3,8 @@ title: "Crosswalks"
 layout: list
 ---
 
+## What are they?
+
 CodeMeta Crosswalks provide an explicit map between the fields of existing
 metadata standards, as used by a broad range of software repositories, 
 registries, and archives. When mapped by a Crosswalk, CodeMeta's terms act as
@@ -16,20 +18,28 @@ demonstrates how CodeMeta maps between standards when there are differences.
 
 ![Diagram of CodeMeta mapping between two metadata standards. It shows a common term, terms unique to each standard, and terms common to only CodeMeta and each standard.](/img/crosswalkdiagram.svg)
 
-### Contribute!
+## How to use Crosswalks
 
-CodeMeta encourages submissions of additional vocabularies. Refer to the
-[CodeMeta repository contribution guide](https://github.com/codemeta/codemeta?tab=contributing-ov-file#contributing-a-new-mapping)
-to submit a new Crosswalks.
+Various [tools](/tools) for CodeMeta use Crosswalk mappings to convert existing
+metadata into a `codemeta.json` file.
 
-Crosswalks are not automatically listed on this website.
-[The guide for contributing to this website](https://github.com/codemeta/codemeta.github.io?tab=contributing-ov-file#adding-new-crosswalks)
-explains how to set that up.
+The [user guide](/user-guide) explains some concepts to help you understand how
+CodeMeta works.
 
-Please feel welcome to propose corrections or extensions in the [CodeMeta issues tracker](https://github.com/codemeta/codemeta/issues).
+### How to contribute?
+
+To contribute a new Crosswalk mapping, refer to the
+[CodeMeta repository contribution guide](https://github.com/codemeta/codemeta?tab=contributing-ov-file#contributing-a-new-mapping).
+Suggest changes in the [CodeMeta issues tracker](https://github.com/codemeta/codemeta/issues).
+
+
+Improve other information about a Crosswalk in the directory below by
+[reporting an issue](https://github.com/codemeta/codemeta.github.io/issues)
+or [by submitting a change](https://github.com/codemeta/codemeta.github.io?tab=contributing-ov-file#adding-new-crosswalks).
+
 
 ## Crosswalk directory
 
-This directory contains many of the available Crosswalks. The full Crosswalk table is
+the full Crosswalk table is
 [available as a `.csv`](https://github.com/codemeta/codemeta/tree/master/crosswalk.csv)
 file in the CodeMeta repository.
