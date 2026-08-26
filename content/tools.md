@@ -14,6 +14,7 @@ Name | Language | CodeMeta versions | Maintainers | Description
 [AutoCodemeta Generator](https://w3id.org/autocodemeta) | JavaScript | 3.0.0 | [dgarijo](http://github.com/dgarijo) | Optimized version of CodeMeta Generator that automatically creates a CodeMeta file from a given repository
 [Bolognese](https://github.com/datacite/bolognese) | Ruby | 1.0.0 | [mfenner](https://github.com/mfenner) | Primarily a tool for conversion between formats provided by DataCite, including CodeMeta and schema.org
 [cff-converter](https://github.com/citation-file-format/cff-converter-python) | Python | 2.0.0 | [jspaaks](https://github.com/jspaaksh) | Convert `CITATION.cff` files to codemeta
+[codefair-app](https://github.com/fairdataihub/codefair-app) | Vue | 3.0.0 | [FAIR Data Innovations Hub](https://github.com/fairdataihub) | A coding assistant GitHub app that automatically generates a CodeMeta.json for a GitHub repository
 [CodeMeta file generator](https://gist.github.com/arfon/478b2ed49e11f984d6fb) | Ruby | 0.1.0 | [arfon](http://github.com/arfon) | (no support for current schema)
 [CodeMeta generator](https://codemeta.github.io/codemeta-generator/) | JavaScript | 2.0.0, 3.0.0 | [ProgVal](https://github.com/ProgVal) | Online form to create or complete a CodeMeta file
 [codemeta-harvester](https://github.com/proycon/codemeta-harvester) | POSIX Shell | 2.0.0, 3.0.0 | [proycon](https://github.com/proycon) | Automatic software metadata conversion pipeline that uses codemetapy and other tools
