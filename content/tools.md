@@ -3,43 +3,49 @@ title: Tools
 layout: sidenav
 ---
 
-This page lists some existing tools to help with CodeMeta files.
+This page lists some existing tools to help with CodeMeta files. They range from scripts to services, and can help you create, convert, validate, and visualize CodeMeta data.
 
-## File Generation
+The list is not exhaustive. You are invited to submit new tools, or update the listings for existing tools! This can be done in [this website's repository](https://github.com/codemeta/codemeta.github.io).
 
-Some of the early tools still need a little updating to use the latest version of the CodeMeta context.
+## Choosing Tools
 
-Name | Language | CodeMeta versions | Maintainers | Description
------|----------|-------------------|-------------|------------
-[AutoCodemeta Generator](https://w3id.org/autocodemeta) | JavaScript | 3.0.0 | [dgarijo](http://github.com/dgarijo) | Optimized version of CodeMeta Generator that automatically creates a CodeMeta file from a given repository
-[Bolognese](https://github.com/datacite/bolognese) | Ruby | 1.0.0 | [mfenner](https://github.com/mfenner) | Primarily a tool for conversion between formats provided by DataCite, including CodeMeta and schema.org
-[cff-converter](https://github.com/citation-file-format/cff-converter-python) | Python | 2.0.0 | [jspaaks](https://github.com/jspaaksh) | Convert `CITATION.cff` files to codemeta
-[codemeta2zenodo](https://github.com/marketplace/actions/codemeta-to-zenodo-converter) | GitHub Action | 2.0.0, 3.0.0 | [escape2020](https://github.com/escape2020) | GitHub Action that automatically converts a repository's codemeta.json into a .zenodo.json file, using the eossr library, for archival on Zenodo
-[codefair-app](https://github.com/fairdataihub/codefair-app) | Vue | 3.0.0 | [FAIR Data Innovations Hub](https://github.com/fairdataihub) | A coding assistant GitHub app that automatically generates a CodeMeta.json for a GitHub repository
-[CodeMeta file generator](https://gist.github.com/arfon/478b2ed49e11f984d6fb) | Ruby | 0.1.0 | [arfon](http://github.com/arfon) | (no support for current schema)
-[CodeMeta generator](https://codemeta.github.io/codemeta-generator/) | JavaScript | 2.0.0, 3.0.0 | [ProgVal](https://github.com/ProgVal) | Online form to create or complete a CodeMeta file
-[codemeta-harvester](https://github.com/proycon/codemeta-harvester) | POSIX Shell | 2.0.0, 3.0.0 | [proycon](https://github.com/proycon) | Automatic software metadata conversion pipeline that uses codemetapy and other tools
-[codemeta-server](https://github.com/proycon/codemeta-server) | Python | 2.0.0, 3.0.0 | [proycon](https://github.com/proycon) | Webservice offering an API (including SPARQL) and simple human web-interface so search and browse software metadata
-[codemetapy](https://github.com/proycon/codemetapy) | Python | 2.0.0, 3.0.0 | [proycon](https://github.com/proycon) | Generate CodeMeta for Python, NodeJS, Java packages and others; + generic CodeMeta manipulation
-[codemetar](https://ropensci.github.io/codemetar) | R | 2.0.0 | [cboettig](https://github.com/cboettig) | Generate CodeMeta for R packages; + generic CodeMeta manipulation
-[eossr](https://escape-ossr.gitlab.io/eossr/) | Python | 2.0.0, 3.0.0 | [vuillaut](https://github.com/vuillaut) | Python library to manage the ESCAPE Open-Source Software Repository (OSSR); validates codemeta.json files and converts CodeMeta metadata to the Zenodo schema
-[Contributors Metadata Check](https://github.com/marketplace/actions/contributors-metadata-check) | Python | 2.0.0, 3.0.0 | [vuillaut](https://github.com/vuillaut) | GitHub Action that checks git contributors are listed in `codemeta.json`. Can comment on pull requests when some are missing
-[FACILE-RS](https://git.opencarp.org/openCARP/FACILE-RS) | Python | 2.0.0 | [MarieHouillon](https://github.com/MarieHouillon) | Metadata conversion (to Citation File Format (CFF), DataCite, BagIt and BagPack) and software publication pipelines based on CodeMeta. Previously known as openCARP-CI.
-[Somef](https://github.com/KnowledgeCaptureAndDiscovery/somef) | Python | OEG developers | [dgarijo](http://github.com/dgarijo) | Tool that automatically extracts software metadata from repositories and scientific publications
-[tributors](https://con.github.io/tributors/) | Python | 2.0.0 | [vsoch](https://github.com/vsoch) | Generate CodeMeta contributors section from GitHub API and ORCID API
-{.table .table-striped}
+These tools do not need anything except your browser. They provide a helpful form for you to fill out, and allow you to see and refine the output, while ensuring it is valid.
 
-## Integrations
+The [CodeMeta Generator](/create) is the reference generator implementation, and is best used for simple projects.
 
-Integrations indicate existing platforms & services which understand CodeMeta descriptions.
-These do not provide a user-facing software tool for generating codemeta.json, but can ingest
-existing codemeta.json files automatically.
+### Use Existing Data
 
-Name | Language | CodeMeta versions | Maintainers | Description
------|----------|-------------------|-------------|------------
-[Fidgit](https://github.com/arfon/fidgit) | Ruby | 0.1.0 | Arfon Smith, Kaitlin Thaney, Mark Hahnel | An ungodly union of GitHub and Figshare
-[Software Heritage](https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html#adding-support-for-additional-ecosystem-specific-metadata) | Python | 2.0 | SWH team | The metadata indexers
-{.table .table-striped}
+The tools in the table of [Converters](#converters) can migrate data to and from various other formats. If you already have the necessary information in a `citation.cff`, a package manifest, or even your Git repository's API, you can easily adapt it to CodeMeta.
+
+### A Tool for Your Stack
+
+Our [table of libraries](#libraries) table lists tools packaged for specitic languages or environments, while [Generation Utilities](#generation-utilities) can be integrated into many pipelines.
+
+### Keep in Sync
+
+Speaking of pipelines, you can also find [Publishing Pipelines](#publishing-pipelines). if your stack is missing that piece of the puzzle. These can help you keep your metadata in sync across multiple locations.
+
+## Tools for Supported Versions
+
+The tables in this section contain tools for supported versions of CodeMeta.'
+
+Note: Tools marked with a warning symbol ( ⚠️ ) are not known to support the *latest version* of CodeMeta.
+{.tip}
+
+These tools are categorised according to the context they can be used. In many cases a tool belongs to multiple categories and will be listed multiple times on this page.
+
+{{% tools %}}
+
+
+## Tools for Unsupported Versions
+
+These tools have not been verified to work on supported versions of CodeMeta. They may not work as expected, if at all.
+
+While out of date, these tools may provide a good starting point for a new tool, instead of starting from scratch.
+
+
+{{% unsupported-tools %}}
+
 
 Pending:
 
