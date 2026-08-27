@@ -155,5 +155,49 @@
     "description": "The metadata indexers",
     "url": "https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html",
     "categories": ["Service Integrations"]
+  },
+  {
+    "name": "Codefair-app",
+    "language": "Vue",
+    "versions": ["3.0.0"],
+    "maintainers": [
+      {"name": "FAIR Data Innovations Hub", "url": "https://github.com/fairdataihub"}      
+    ],
+    "description": "A coding assistant GitHub app that automatically generates a codemeta.json for a GitHub repository",
+    "url": "https://github.com/fairdataihub/codefair-app",
+    "categories": ["Converters", "Publication Pipelines", "Service Integrations"]
+  },
+  {
+    "name": "Contributors Metadata Check",
+    "language": "Python",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "vuillaut", "url": "https://github.com/vuillaut"}
+    ],
+    "description": "GitHub Action that checks git contributors are listed in codemeta.json. Can comment on pull requests when some are missing",
+    "url": "https://github.com/marketplace/actions/contributors-metadata-check",
+    "categories": ["Service integrations", "Publication Pipeline"]
+  },
+  {
+    "name": "codemeta2zenodo",
+    "language": "GitHub Action",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "escape2020", "url": "https://github.com/escape2020"}
+    ],
+    "description": "GitHub Action that automatically converts a repository's codemeta.json into a .zenodo.json file, using the eossr library, for archival on Zenodo",
+    "url": "https://github.com/marketplace/actions/codemeta-to-zenodo-converter",
+    "categories": ["Converters", "Publication Pipelines", "Service integrations"]
+  },
+  {
+    "name": "eossr",
+    "language": "Python",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "vuillaut", "url": "https://github.com/vuillaut"}
+    ],
+    "description": "Python library to manage the ESCAPE Open-Source Software Repository (OSSR); validates codemeta.json files and converts CodeMeta metadata to the Zenodo schema",
+    "url": "https://escape-ossr.gitlab.io/eossr/",
+    "categories": ["Converters", "Libraries", "Publication Pipelines"]
   }
 ]
