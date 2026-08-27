@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Web-based Generators",
+    "desc": "These are easy-to-use web forms. Once filled out with the required information, they output complete and valid codemeta data which can be reviwed and edited before being downloaded or copied elsewhere. The output can be directly used in a `codemeta.json file`."
+  },
+  {
+    "name": "Converters",
+    "desc": "Tools which pull data from other metadata formats or APIs, and reformats that information into data formatted for codemeta."
+  },
+  {
+    "name": "Generation Utilities",
+    "desc": "These are tools which are usually invoked in a terminal context and interacted with using command-line arguments, to generate partial or complete codemeta output."
+  },
+  {
+    "name": "Libraries",
+    "desc": "Components installed using a language or environment package manager, which facilitates the ingestion or outputting of codemeta data."
+  },
+  {
+    "name": "Publication Pipelines",
+    "desc": "Tools which help automate publishing processes based on codemeta data, via pipelines such as uploads, CI/CD, etc,."
+  },
+  {
+    "name": "Service Integrations",
+    "desc": "Services which make use of other codemeta-related tools to provide a product or service."
+  }
+]
