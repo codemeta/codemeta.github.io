@@ -23,7 +23,7 @@ Our [table of libraries](#libraries) table lists tools packaged for specitic lan
 
 ### Keep in Sync
 
-Speaking of pipelines, you can also find [Publishing Pipelines](#publishing-pipelines). if your stack is missing that piece of the puzzle. These can help you keep your metadata in sync across multiple locations.
+If you need to automate your metadata publishing, you can also find [Publishing Pipelines](#publishing-pipelines). These can work with your existing deployment or CI/CD workflows, and can help you keep your metadata in sync across multiple locations.
 
 ## Tools for Supported Versions
 
