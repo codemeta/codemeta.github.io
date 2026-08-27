@@ -5,7 +5,7 @@ layout: sidenav
 
 This page lists some existing tools to help with CodeMeta files. They range from scripts to services, and can help you create, convert, validate, and visualize CodeMeta data.
 
-The list is not exhaustive. You are invited to submit new tools, or update the listings for existing tools! This can be done in [this website's repository](https://github.com/codemeta/codemeta.github.io).
+The list is not exhaustive. You are invited to submit new tools, or update the listings for existing tools! This can be done in [this website's repository](https://github.com/codemeta/codemeta.github.io?tab=contributing-ov-file#updating-the-tools-page)
 
 ## Choosing Tools
 
