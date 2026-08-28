@@ -13,7 +13,7 @@
     <th>Versions</th>
     <th>Description</th>
   </tr>
-  {{ range $tools }}
+  {{ range sort $tools "name" "asc" }}
   {{ $latest := .versions | collections.Reverse }}
   {{ if in $supported (index $latest 0 ) | not }}
   <tr>
