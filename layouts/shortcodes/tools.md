@@ -19,7 +19,7 @@
     <th>Versions</th>
     <th>Description</th>
   </tr>
-  {{ range $tools }}
+  {{ range sort $tools "name" "asc" }}
     {{ if in $supported (index .versions 0 ) }}
       {{- if in .categories $cat.name }}
       
