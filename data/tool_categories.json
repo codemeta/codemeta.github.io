@@ -1,7 +1,7 @@
 [
   {
     "name": "Web-based Generators",
-    "desc": "These are easy-to-use web forms. Once filled out with the required information, they output complete and valid codemeta data which can be reviwed and edited before being downloaded or copied elsewhere. The output can be directly used in a `codemeta.json file`."
+    "desc": "These are easy-to-use web forms. Once filled out with the required information, they output complete and valid codemeta data which can be reviewed and edited before being downloaded or copied elsewhere. The output can be used directly in a `codemeta.json` file."
   },
   {
     "name": "Converters",
