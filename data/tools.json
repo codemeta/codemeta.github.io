@@ -1,0 +1,203 @@
+[
+  {
+    "name": "AutoCodemeta Generator",
+    "language": "JavaScript",
+    "versions": ["3.0.0"],
+    "maintainers": [
+      {"name": "dgarijo", "url": "https://github.com/dgarijo"}
+    ],
+    "description": "Optimized version of CodeMeta Generator that automatically creates a CodeMeta file from a given repository",
+    "url": "https://w3id.org/autocodemeta",
+    "categories": ["Web-based Generators"]
+  },
+  {
+    "name": "Bolognese",
+    "language": "Ruby",
+    "versions": ["1.0.0"],
+    "maintainers": [
+      {"name": "mfenner", "url": "https://github.com/mfenner"}
+    ],
+    "description": "Primarily a tool for conversion between formats provided by DataCite, including CodeMeta and schema.org",
+    "url": "https://github.com/datacite/bolognese",
+    "categories": ["Converters", "Libraries", "Generation Utilities", "Publication Pipelines"]
+  },
+  {
+    "name": "cff-converter",
+    "language": "Python",
+    "versions": ["2.0.0"],
+    "maintainers": [
+      {"name": "jspaaks", "url": "https://github.com/jspaaks"}
+    ],
+    "description": "Convert CITATION.cff files to codemeta",
+    "url": "https://github.com/citation-file-format/cff-converter-python",
+    "categories": ["Converters"]
+  },
+  {
+    "name": "CodeMeta file generator",
+    "language": "Ruby",
+    "versions": ["0.1.0"],
+    "maintainers": [
+      {"name": "arfon", "url": "https://github.com/arfon"}
+    ],
+    "description": "(no support for current schema)",
+    "url": "https://gist.github.com/arfon/478b2ed49e11f984d6fb",
+    "categories": ["Generation Utilities"]
+  },
+  {
+    "name": "CodeMeta generator",
+    "language": "JavaScript",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "ProgVal", "url": "https://github.com/ProgVal"}
+    ],
+    "description": "Online form to create or complete a CodeMeta file",
+    "url": "https://codemeta.github.io/codemeta-generator/",
+    "categories": ["Web-based Generators"]
+  },
+  {
+    "name": "codemeta-harvester",
+    "language": "POSIX Shell",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "proycon", "url": "https://github.com/proycon"}
+    ],
+    "description": "Automatic software metadata conversion pipeline that uses codemetapy and other tools",
+    "url": "https://github.com/proycon/codemeta-harvester",
+    "categories": ["Converters", "Generation Utilities"]
+  },
+  {
+    "name": "codemeta-server",
+    "language": "Python",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "proycon", "url": "https://github.com/proycon"}
+    ],
+    "description": "Webservice offering an API (including SPARQL) and simple human web-interface to search and browse software metadata",
+    "url": "https://github.com/proycon/codemeta-server",
+    "categories": ["Service Integrations"]
+  },
+  {
+    "name": "codemetapy",
+    "language": "Python",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "proycon", "url": "https://github.com/proycon"}
+    ],
+    "description": "Generate CodeMeta for Python, NodeJS, Java packages and others; + generic CodeMeta manipulation",
+    "url": "https://github.com/proycon/codemetapy",
+    "categories": ["Converters", "Libraries", "Generation Utilities"]
+  },
+  {
+    "name": "codemetar",
+    "language": "R",
+    "versions": ["2.0.0"],
+    "maintainers": [
+      {"name": "cboettig", "url": "https://github.com/cboettig"}
+    ],
+    "description": "Generate CodeMeta for R packages; + generic CodeMeta manipulation",
+    "url": "https://ropensci.github.io/codemetar",
+    "categories": ["Converters", "Libraries"]
+  },
+  {
+    "name": "FACILE-RS",
+    "language": "Python",
+    "versions": ["2.0.0"],
+    "maintainers": [
+      {"name": "MarieHouillon", "url": "https://github.com/MarieHouillon"}
+    ],
+    "description": "Metadata conversion (to Citation File Format (CFF), DataCite, BagIt and BagPack) and software publication pipelines based on CodeMeta. Previously known as openCARP-CI.",
+    "url": "https://git.opencarp.org/openCARP/FACILE-RS",
+    "categories": ["Converters", "Publication Pipelines"]
+  },
+  {
+    "name": "Somef",
+    "language": "Python",
+    "versions": ["3.0.0"],
+    "maintainers": [
+      {"name": "OEG developers"},
+      {"name": "dgarijo", "url": "https://github.com/dgarijo"}
+    ],
+    "description": "Tool that automatically extracts software metadata from repositories and scientific publications",
+    "url": "https://github.com/KnowledgeCaptureAndDiscovery/somef",
+    "categories": ["Converters"]
+  },
+  {
+    "name": "tributors",
+    "language": "Python",
+    "versions": ["2.0.0"],
+    "maintainers": [
+      {"name": "vsoch", "url": "https://github.com/vsoch"}
+    ],
+    "description": "Generate CodeMeta contributors section from GitHub API and ORCID API",
+    "url": "https://con.github.io/tributors/",
+    "categories": ["Converters", "Generation Utilities"]
+  },
+  {
+    "name": "Fidgit",
+    "language": "Ruby",
+    "versions": ["0.1.0"],
+    "maintainers": [
+      {"name": "Arfon Smith"},
+      {"name": "Kaitlin Thaney"},
+      {"name": "Mark Hahnel"}
+    ],
+    "description": "An ungodly union of GitHub and Figshare",
+    "url": "https://github.com/arfon/fidgit",
+    "categories": ["Service Integrations"]
+  },
+  {
+    "name": "Software Heritage",
+    "language": "Python",
+    "versions": ["2.0.0"],
+    "maintainers": [
+      {"name": "SWH team"}
+    ],
+    "description": "The metadata indexers",
+    "url": "https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html",
+    "categories": ["Service Integrations"]
+  },
+  {
+    "name": "Codefair-app",
+    "language": "Vue",
+    "versions": ["3.0.0"],
+    "maintainers": [
+      {"name": "FAIR Data Innovations Hub", "url": "https://github.com/fairdataihub"}      
+    ],
+    "description": "A coding assistant GitHub app that automatically generates a codemeta.json for a GitHub repository",
+    "url": "https://github.com/fairdataihub/codefair-app",
+    "categories": ["Converters", "Publication Pipelines", "Service Integrations"]
+  },
+  {
+    "name": "Contributors Metadata Check",
+    "language": "Python",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "vuillaut", "url": "https://github.com/vuillaut"}
+    ],
+    "description": "GitHub Action that checks git contributors are listed in codemeta.json. Can comment on pull requests when some are missing",
+    "url": "https://github.com/marketplace/actions/contributors-metadata-check",
+    "categories": ["Service integrations", "Publication Pipeline"]
+  },
+  {
+    "name": "codemeta2zenodo",
+    "language": "GitHub Action",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "escape2020", "url": "https://github.com/escape2020"}
+    ],
+    "description": "GitHub Action that automatically converts a repository's codemeta.json into a .zenodo.json file, using the eossr library, for archival on Zenodo",
+    "url": "https://github.com/marketplace/actions/codemeta-to-zenodo-converter",
+    "categories": ["Converters", "Publication Pipelines", "Service integrations"]
+  },
+  {
+    "name": "eossr",
+    "language": "Python",
+    "versions": ["2.0.0", "3.0.0"],
+    "maintainers": [
+      {"name": "vuillaut", "url": "https://github.com/vuillaut"}
+    ],
+    "description": "Python library to manage the ESCAPE Open-Source Software Repository (OSSR); validates codemeta.json files and converts CodeMeta metadata to the Zenodo schema",
+    "url": "https://escape-ossr.gitlab.io/eossr/",
+    "categories": ["Converters", "Libraries", "Publication Pipelines"]
+  }
+]

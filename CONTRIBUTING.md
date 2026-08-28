@@ -194,3 +194,45 @@ pairs `aspect`, `description`, `class`, and `link`.
 
 Keeping the JSON file ordered by the `aspect` number will make it easier to
 identify which Aspects are represented already.
+
+### Updating the Tools page
+
+The [Tools page](https://codemeta.github.io/tools/) structure is defined in
+two shortcodes: `/layouts/shortcodes/tools.md` and 
+`/layouts/shortcodes/unsupported-tools`.
+
+Those shortcodes pull data from the JSON in the `/data/tool_categories.json`
+and `data/tools.json` files, and from `.Site.Params.supported` which tracks
+the current versions the website considers to be "Supported".
+
+To add a new supported version, add a new item to the array in the `supported`
+array. It is in the `Params` section of `/config.toml`.
+
+To add a new tool:
+
+- Add a new object to the array in `data/tools.json`, with the following
+key-value pairs:
+  - `name` is the name of the tool or project,
+  - `language` is the tool's primary language, schema, etc. Useful for choosing
+  a tool within limitations of an existing tech stack.
+  - `versions` is an array of the versions that the tool has been tested with
+  and found to be functional.
+  - `maintainers` is an array of the maintainers. It consists of:
+    - `name` is the name of the maintainer. Both individuals and groups are
+    acceptable.
+    - `url` *(optional)* can be any appropriate contact page for reaching out
+    to the maintainer about the tool, if needed. This is typically a code forge
+    account page, which that party has committed to the project with.
+  - `description` is a sentance or two that explains what the tool does.
+  - `url` is a link to a website where people may acquire the tool.
+  - `categories` is a list of the categories the tool falls into. If the
+  category has not beeb added to `/data/tool_categories.json`, there will be no
+  section or table created for it on the page.
+  
+  To add a new tool category:
+  
+  - Add a new object to the array in `/data/tool_categories.json` with the following
+  key-value pairs:
+    `name` is a descriptive name for the category,
+    `description` is a few sentences of text that introduces the category to
+    potential users.

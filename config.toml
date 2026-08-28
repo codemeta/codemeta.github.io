@@ -60,6 +60,10 @@ publishDir = "../website"
     github =  "codemeta"
     repo = "codemeta.github.io"
     background = "img/pyramids.jpg"
+    supported = [
+        '3.0.0',
+        '2.0.0'
+    ]
     
     newslimit = 5
     feeds = [
