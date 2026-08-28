@@ -46,10 +46,3 @@ While out of date, these tools may provide a good starting point for a new tool,
 
 {{% unsupported-tools %}}
 
-
-Pending:
-
-- DataCite
-- Figshare
-- JOSS
-- Zenodo
