@@ -400,46 +400,29 @@ refer to a consistent identity of an individual.
 
 ### Roles
 
-The `Role` type property is used within the `author` or `contributor`
-properties to further define the participation of a `Person`. The property is
-intended to clarify the functional area the individual with the free-form
-value of the `roleName` property.
+The `Role` type property is used to define the contribution of a `Person`. It 
+describes their contribution independently of the person, and allows a person,
+through their `id` to be linked to all of their various roles.
 
-An example author role:
+One `Person` can be credited for multiple types of `Role`. This means, for
+example, that one person can be credited as "Developer" and for "Documentation".
+Multiple people can be attributed to the same `roleName`. A `Role` can also be
+defined for a specific period of time by using the `startDate` and `endDate`
+properties.
 
-```json
-"author": [
-...
-    {
-      "roleName": "User Experience Design",
-      "schema:author": "https://github.com/octocat",
-      "type": "Role"
-    },
-...
-]
-```
+`Role` is distinct from other `Person` type properties that such as the 
+`maintainer` property. Those properties should be defined separately as
+top-level properties of the document, containing at least one `Person`.
+{.tip}
 
-Or a contributor:
+The `roleName` property can have any descriptive role name desired, or a URL.
+It defines the type of contribution. The use of `id` avoids duplicating the
+details for a person, which keeps them consistent and easy to update.
 
-```json
-"contributor": [
-...
-    {
-      "roleName": "Documentation",
-      "schema:author": "https://github.com/octocat",
-      "type": "Role"
-    },
-...
-]
-```
+The `Role` must link to a `Person` also defined in the document, typically
+under `author` or `contributor`. The example below demonstrates the `id` and
+`schema:author` values providing this link.
 
-This is distinct from the `maintainer` property, which should be defined
-independently as a top-level property of the document, containing at least
-one `Person`.
-
-The `Role` must link to a `Person` previously defined in the top-level
-property. The example below demonstrates the `id` and `schema:author` values
-providing this link.
 
 ```json
 "author": [
