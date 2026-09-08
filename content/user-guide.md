@@ -400,22 +400,23 @@ refer to a consistent identity of an individual.
 
 ### Roles
 
-The `Role` type property is used to define the contribution of a `Person`. It 
-describes their contribution independently of the person, and allows a person,
-through their `id` to be linked to all of their various roles.
+The `Role` type is used to define the contribution of a `Person`, describing
+their contribution independently. It allows a `Person`, through their `id`,
+to be linked to all of their various roles.
 
-One `Person` can be credited for multiple types of `Role`. This means, for
-example, that one person can be credited as "Developer" and for "Documentation".
+One `Person` can be credited for multiple kinds of `Role`. This means, for
+example, that someone can be credited as "Developer" and for "Documentation".
 Multiple people can be attributed to the same `roleName`. A `Role` can also be
 defined for a specific period of time by using the `startDate` and `endDate`
 properties.
 
-`Role` is distinct from other `Person` type properties that such as the 
-`maintainer` property. Those properties should be defined separately as
-top-level properties of the document, containing at least one `Person`.
+Defining a `Role` is not a substitute for defining properties that are named
+like roles. For example, the maintainer(s) may change over time and may retain
+attribution after their `endDate`. For clarity `maintainer` should only contain
+the current holder(s) of that position.
 {.tip}
 
-The `roleName` property can have any descriptive role name desired, or a URL.
+The `roleName` property can have any descriptive role name desired, or a URL
 It defines the type of contribution. The use of `id` avoids duplicating the
 details for a person, which keeps them consistent and easy to update.
 
