@@ -26,3 +26,8 @@ Property
 {{ end }}
 </tbody>
 </table>
+
+New to CodeMeta? The [User Guide](/user-guide) describes how these terms are used in a
+`codemeta.json` file. There are also [various tools](/tools) such as
+[the generator](/create) that can help!
+{.tip}

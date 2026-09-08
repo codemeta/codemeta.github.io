@@ -4,30 +4,53 @@
 
 Crosswalks are developed in
 [the main CodeMeta repository](https://github.com/codemeta/codemeta) and are
-periodically synchronised into the website.
+periodically synchronised into the website. A markdown file is
+automatically generated on the website for each Crosswalk when the `Makefile`
+is run during deployment.
 
-A markdown file must be created on this website before that synchronised
-Crosswalk data is displayed. Refer to existing files for examples of the
-format. The file must contain the following frontmatter fields:
+[!WARNING] Do *not* manually create these markdown files. They will be 
+overwritten or duplicated.
 
-- `title` in the format `Crosswalk for <target>` where `<target>` is the name
-of the system the Crosswalk maps to. It can include spaces and symbols.
-- `image` in the format `/img/<filename>` where `<filename>` is the name of
-the logo filename, including extension. This file must be added to the
-`/static/img/` directory. Do *not* use the source path.
+By default, the generated markdown files are very basic and variations may
+be desired. To allow for custom information, overrides can be defined in
+`/data/crosswalk_pages.json`. Many Crosswalks have already been enhanced.
 
-The content after the frontmatter should include a short description of the
-target system. A link to the system or its metadata documentation should be
-included in this description.
-
-The following code required on the last line of the file, where
-`<source filename>` is the filename of
-[the Crosswalk source file in the main repository](https://github.com/codemeta/codemeta.github.io/tree/master/content/crosswalk),
-including spaces and symbols, but _without_ the extension:
+A complete set of the override fields would look like this:
 
 ```
-{{% crosswalk name="<source filename>" %}}
+    {
+        "stem":"My Crosswalk",
+        "name":"My Crosswalk metadata",
+        "short":"mycrosswalk",
+        "desc":"My Crosswalk metadata is very cool. [This field can have markdown](https://codemeta.github.io).",
+        "foot":"See crosswalk for [My Other Crosswalk](https://codemeta.github.io).",
+        "img":"codemeta.png",
+        "date":"2026-07-04"
+    },
 ```
+
+[!NOTE] Remember to escape `"` if used.
+
+  - `stem` _(required)_ must be *exactly* what the vocabulary's header is
+[in its crosswalk .csv](https://github.com/codemeta/codemeta/blob/master/crosswalks).
+It is the only individually required field, but there is no point to adding it if
+no other fields are populated.
+  - `name` is the full name of the crosswalk, if it is longer than in the header,
+  - `short` is a short name for the crosswalk for a cleaner or shorter url,
+  - `desc` is a more verbose description than the default provided by the script,
+  - `foot` is an extension of the description that appears after the crosswalk table,
+  - `img` is the filename and extension of the image. If it is not already in *this*
+repository, you will need to include it in your Pull Request that adds it to this JSON.
+Image files go in `static/img`,
+  - `date` is the date that the vocabulary's crosswalk was added to CodeMeta.
+
+Page generation can be triggered by running `python3 scripts/crosswalk_to_pages`.
+
+If you add or change a `short` override, your local copy may retain the previously named
+file in the directory. Rebuilding with `--cleanDestinationDir` may fix this.
+
+Any issues with the automatic generation of the markdown files should be raised against this
+repository.
 
 Any other issues, requests, or contributions for the content of Crosswalks
 should go to the main repository.

@@ -11,14 +11,13 @@
    <!-- List pages can get Content and yaml metadata from an _index.md -->
   {{ with .Content }}<div class="article-style" itemprop="articleBody">{{ . }}</div>{{ end }}
 
-
   <div class="row">
     <table class="col-11">
     {{ range .Paginator.Pages }}
     <tr class="article">
       <td class="col-2 p-2 text-center">
       {{if .Params.image }}
-          <img style="height:auto;max-width:75px;" alt="{{ substr .Params.image 5 -4 }} logo" src="{{ .Params.image }}" height="50px"/>
+          <img style="height:auto;max-width:75px;" alt="{{ .Params.slug | replaceRE "-" "" | humanize }} logo" src="{{ .Params.image }}" height="50px"/>
       {{ end }}
       </td>
       <td>
@@ -31,21 +30,27 @@
 	{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
 	<nav class="mt-5">
 	  <table class="col-12">
-	  <tr class="pager">
-	    <td class="col-4 text-end">
-	    {{ if .Paginator.HasPrev }}
-                <a href="{{ .Paginator.Prev.URL | relURL }}">&laquo; Previous</a>
+        <tr class="pager fs-4">
+          <td class="col-4 text-start">
+          {{ if .Paginator.HasPrev }}
+                  <a href="{{ .Paginator.Prev.URL | relURL }}#crosswalk-directory">&laquo; Previous</a>
+              {{ end }}
+          </td>
+          <td class="col-4 text-center">{{ $paginator := .Paginator.PageNumber }}
+            {{ range .Paginator.Pagers }}
+            {{ if eq .PageNumber $paginator }}
+            {{ .PageNumber }}
+            {{ else }}
+            <a class="p-1" href="{{ .URL | relURL }}#crosswalk-directory">{{ .PageNumber }}</a>
             {{ end }}
-            </td>
-            <td class="col-4 text-center">
-                {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</td>
-	    <td class="col-4 text-start">
-	    {{ if .Paginator.HasNext }}
-		<a href="{{ .Paginator.Next.URL | relURL }}">Next &raquo;</a>
-	    {{ end }}
-            </td>
-	  </tr>
-          </table>
+            {{ end }}</td>
+          <td class="col-4 text-end">
+          {{ if .Paginator.HasNext }}
+          <a href="{{ .Paginator.Next.URL | relURL }}#crosswalk-directory">Next &raquo;</a>
+          {{ end }}
+          </td>
+        </tr>
+      </table>
 	</nav>
 	{{ end }}
 
