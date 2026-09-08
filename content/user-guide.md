@@ -290,17 +290,23 @@ Every CodeMeta document must refer to the context file `codemeta.jsonld`, for
 example via a URL. This indicates that all terms in the document should be
 interpreted in the "context" of CodeMeta.
 
-Most terms are chosen to match the equivalent terms in <http://schema.org>,
-but CodeMeta provides a few additional terms not found in <http://schema.org>
+Most terms are chosen to match the equivalent terms in <https://schema.org>,
+but CodeMeta provides a few additional terms not found in <https://schema.org>
 which may be helpful for software projects.
 
-CodeMeta also restricts the context to use only those <http://schema.org>
+CodeMeta also restricts the context to use only those <https://schema.org>
 terms that are explicitly listed on the [terms](/terms) page. Users wanting
 to include additional terms may:
 
-* Use the `schema:` prefix to define them as <http://schema.org> terms, (such
+* Use the `schema:` prefix to define them as <https://schema.org> terms, (such
 as `"schema:releaseNotes"` [in this example](https://github.com/SciCodes/somef-core/blob/f0481b6f28166e1c5a95919d2767f1aaa5b3fa87/codemeta.json#L85)), or
 * Extend the context (see [the developer guide](/developer-guide)).
+
+If you are migrating to CodeMeta from another metadata standard, refer to the
+[Crosswalks page](/crosswalks) to see if a desired term has an equivalent
+mapped. There are maps for many existing vocabularies in the directory,
+including various package manifests.
+{.tip}
 
 The context file may be modified and updated in the future, if new JSON
 properties are added or existing ones modified.
