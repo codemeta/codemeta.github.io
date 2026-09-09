@@ -134,13 +134,16 @@ Would be represented in BibLaTeX as:
 
 ### Citations for Active Development
 
-Citations may also be generated from CodeMeta documents and combined with an
-identifier such as a commit hash or a long-term stable identifier like a
-[Software Hash Identifier (SWHID)](https://swhid.org) for better accuracy.
+Hashes should not be stored in CodeMeta, as this creates a race condition.
+{.warning}
+
+BibTeX citations may also be generated from CodeMeta documents and enhanced
+with an identifier such as a commit hash or a long-term stable identifier for
+better accuracy.
 
 These citations also use extended entry types. Along with `@softwareversion`
 the `@codefragment` entry type can be used. SWHIDs can also reference a file,
-or code selection,
+or code selection.
 
 The following BibTeX citation:
 
@@ -160,12 +163,36 @@ The following BibTeX citation:
 }
 ```
 
-References an exact version of CodeMeta stored in the
-[Software Heritage Archive](https://archive.softwareheritage.org), along with
-its origin and a snapshot reference. The use of a SWHID allows for a precise
-point in CodeMeta's history to be referenced. Future researchers will be able
-to obtain the code at that precise point by looking up the SWHID in the Archive
-or a mirror.
+References an exact copy of CodeMeta that aligns with a specific commit hash.
+
+In that example, the hash or long-term stable identifier used is a
+[Software Hash Identifier (SWHID)](https://swhid.org) which points to
+[an archived copy](https://archive.softwareheritage.org/browse/directory/833177a48dc997f12b1786080dc32f67b3d3e4e0/?origin_url=https://github.com/codemeta/codemeta.git&revision=bae605fef4331833d608780051503108f0bbd59b&snapshot=c3c7f3ac853a2c6f07e73803f81df359a4851dc8)
+of the repository. The use of a SWHID allows for a precise point in CodeMeta's
+history to be referenced even if the origin repository is lost. Future
+researchers will be able to obtain the code at that precise point by looking up
+the SWHID in that archive, or a mirrored copy of it.
+
+### Why not Citation File Format (CFF)?
+
+[CFF](https://citation-file-format.gihub.io) is also a good way to record
+metadata for citations, in particular if human-readability is a priority.
+CodeMeta is more intended for being indexed by machines. It may be worth using
+both, based on your circumstances. but some people prefer to maintain one
+document instead of multiple documents. Each schema has its own approach for
+which data is recorded and how. Use the one that best fits your requirements
+and preferences.
+
+Because CodeMeta aims to be a translation layer between different formats, it
+also supports certain other technical and administrative metadata that CFF does
+not; such as `funding`. Refer to the [terms](/terms/) page to see what CodeMeta
+supports. Some pipelines that process `codemeta.json` documents will defer to a
+`CITATION.cff` where one is available, and use `codemeta.json` for metadata
+that CFF does not support.
+
+Neither format is a committment. A `CITATION.cff` can be derived from a
+`codemeta.json`, and a `codemeta.json` can be populated from a `CITATION.cff`.
+There are various [tools](/tools/) available to help with this.
 
 ## Extending the CodeMeta Context
 
