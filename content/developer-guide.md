@@ -178,7 +178,7 @@ the SWHID in that archive, or a mirrored copy of it.
 [CFF](https://citation-file-format.gihub.io) is also a good way to record
 metadata for citations, in particular if human-readability is a priority.
 CodeMeta is more intended for being indexed by machines. It may be worth using
-both, based on your circumstances. but some people prefer to maintain one
+both, based on your circumstances. Some people prefer to maintain one
 document instead of multiple documents. Each schema has its own approach for
 which data is recorded and how. Use the one that best fits your requirements
 and preferences.
