@@ -164,9 +164,119 @@ for a purpose, such as to support a research project. They were shared with the
 community so that they may assist others. This allows CodeMeta to be adopted
 with greater ease, and assists with better pipelines for publishing software.
 
-## Generating Citations from a CodeMeta documents
+## Generating Citations from a CodeMeta Document
 
-[ TBD ]
+Enabling useful citations for reproducibility is one of the core purposes of
+CodeMeta.
+
+Citations for software packages are generated from CodeMeta documents by
+converting the metadata into a modern [BibTeX format](https://www.bibtex.org/)
+using [BibLaTeX format](https://www.biblatex.org/) and the
+[BibLaTeX-software](https://www.ctan.org/pkg/biblatex-software) module that
+enriches and expands the `@software` entry type.
+
+If your citation data is not currently in a codemeta document, it can be
+converted by using [a Crosswalk](/crosswalk#crosswalk-directory) for reference
+or with the help of various [tools](/tools#converters).
+
+### Citations for Stable Versions
+
+These citations use the BibLaTeX-software `@softwareversion` entry type. They
+are useful for citing a software version by a stable published release number.
+
+Citations generated against stable published releases may be of limited use if
+the software used in research is following an actively changing branch. See
+the next section if this description resembles your situation.
+
+Conversion from CodeMeta into a BibLaTeX-flavored BibTeX citation follows the
+[BibTeX (@softwareversion) Crosswalk](/crosswalk/bibtex-softwareversion). This
+mapping is only for the `@softwareversion` entry type.
+
+The BibTeX generation can be done manually, or with a [tool](/tools/) such as
+[Bolognese](https://github.com/datacite/bolognese).
+
+The following in CodeMeta:
+
+```json
+{
+    ...
+    "name": "example-app",
+    "softwareVersion": "1.2.3",
+    ...
+}
+```
+
+Would be represented in BibLaTeX as:
+
+```bib
+@softwareversion{example-app,
+    ...
+    version = "1.2.3"
+    ...
+}
+```
+
+### Citations for Active Development
+
+Hashes should not be stored in CodeMeta, as this creates a race condition.
+{.warning}
+
+BibTeX citations may also be generated from CodeMeta documents and enhanced
+with an identifier such as a commit hash or a long-term stable identifier for
+better accuracy.
+
+These citations also use extended entry types. Along with `@softwareversion`
+the `@codefragment` entry type can be used. SWHIDs can also reference a file,
+or code selection.
+
+The following BibTeX citation:
+
+```bib
+@softwareversion{swh-dir-833177a,
+    author = "Boettiger, Carl and Jones, Matthew B.",
+    license = "Apache-2.0",
+    abstract = "CodeMeta is a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations.",
+    date = "2017-06-05",
+    year = "2017",
+    month = jun,
+    file = "https://github.com/codemeta/codemeta/archive/2.0.zip",
+    repository = "https://github.com/codemeta/codemeta",
+    title = "CodeMeta: Minimal metadata schemas for science software and code, in JSON-LD",
+    version = "2.0",
+    swhid = "swh:1:dir:833177a48dc997f12b1786080dc32f67b3d3e4e0;origin=https://github.com/codemeta/codemeta.git;visit=swh:1:snp:c3c7f3ac853a2c6f07e73803f81df359a4851dc8;anchor=swh:1:rev:bae605fef4331833d608780051503108f0bbd59b"
+}
+```
+
+References an exact copy of CodeMeta that aligns with a specific commit hash.
+
+In that example, the hash or long-term stable identifier used is a
+[Software Hash Identifier (SWHID)](https://swhid.org) which points to
+[an archived copy](https://archive.softwareheritage.org/browse/directory/833177a48dc997f12b1786080dc32f67b3d3e4e0/?origin_url=https://github.com/codemeta/codemeta.git&revision=bae605fef4331833d608780051503108f0bbd59b&snapshot=c3c7f3ac853a2c6f07e73803f81df359a4851dc8)
+of the repository. The use of a SWHID allows for a precise point in CodeMeta's
+history to be referenced even if the origin repository is lost. Future
+researchers will be able to obtain the code at that precise point by looking up
+the SWHID in that archive, or a mirrored copy of it.
+
+### Why not Citation File Format (CFF)?
+
+[CFF](https://citation-file-format.gihub.io) is also a good way to record
+metadata for citations, in particular if human-readability is a priority.
+CodeMeta is more intended for being indexed by machines. It may be worth using
+both, based on your circumstances. Some people prefer to maintain one
+document instead of multiple documents. Each schema has its own approach for
+which data is recorded and how. Use the one that best fits your requirements
+and preferences.
+
+Because CodeMeta aims to be a translation layer between different formats, it
+also supports certain other technical and administrative metadata that CFF does
+not; such as `funding`. Refer to the [terms](/terms/) page to see what CodeMeta
+supports. Some pipelines that process `codemeta.json` documents will defer to a
+`CITATION.cff` where one is available, and use `codemeta.json` for metadata
+that CFF does not support.
+
+Neither format is a committment. A `CITATION.cff` can be derived from a
+`codemeta.json`, and a `codemeta.json` can be populated from a `CITATION.cff`.
+There are various [tools](/tools/) available to help with this.
 
 ## Extending the CodeMeta Context
 
