@@ -95,15 +95,25 @@ for csv_path in paths:
                     version not in existing_item["versions"]
                 ), f"CodeMeta {version} has duplicated property {item}"
                 existing_item["versions"].append(version)
-            # check for existing properties that have differing types or descriptions
-            # values from newer versions of properties_description.json take precedence
-            # over new ones.
+            # check for existing properties that have slightly differing types or
+            # descriptions values from newer versions of properties_description.json
+            # take precedence over new ones.
             # update the versions for these here and break to avoid duplicate rows
+            # Differences that are meaningful are still broken out into their own row
             if item["Property"] == existing_item["Property"] and item["Parent Type"] == existing_item["Parent Type"]:
                 if canonicalize(item["Type"]) != canonicalize(existing_item["Type"]):
-                    # both types meaningfully differ
-                    item["versions"] = [version]
-                    json_items.append(item)
+                    # If we're going to persist with 2+ supported versions then this
+                    # whole thing probably needs a rewrite.
+                    # But, this dirty fix will work for v4.
+                    p_matches = [p for p in json_items if p["Property"] == item["Property"]]
+                    if len(p_matches) > 1:
+                        indices = [i for i, prop in enumerate(json_items) if prop["Property"] == item["Property"] and (canonicalize(prop["Type"]) == canonicalize(item["Type"]))]
+                        if len(indices) == 1 and version not in json_items[indices[0]]["versions"]:
+                            json_items[indices[0]]["versions"].append(version)
+                    else:
+                       # both types meaningfully differ and this is the only property match
+                        item["versions"] = [version]
+                        json_items.append(item)
                 else:
                     item["Type"] = existing_item["Type"]
                     if version not in existing_item["versions"]:
