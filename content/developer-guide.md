@@ -280,15 +280,17 @@ There are various [tools](/tools/) available to help with this.
 
 ## Extending the CodeMeta Context
 
+The most recent version of CodeMeta is {{% badge %}}
+
 CodeMeta explicitly defines the terms it uses from <https://schema.org>, rather
 than merely extending <https://schema.org> with a few additional terms. To use
 additional terms from <https://schema.org> not listed on the [terms page](/terms/)
 (or terms from any other context), you must extend your context appropriately.
-For instance, to combine CodeMeta (v3.1) with all terms available in schema.org,
+For instance, to combine CodeMeta (v4.0) with all terms available in schema.org,
 you would do:
 
 ```json
-"@context": ["https://w3id.org/codemeta/3.1", "http://schema.org/"]
+"@context": ["https://w3id.org/codemeta/4.0", "http://schema.org/"]
 ```
 
 Note that the default context should be listed last.

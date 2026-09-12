@@ -61,6 +61,7 @@ publishDir = "../website"
     repo = "codemeta.github.io"
     background = "img/pyramids.jpg"
     supported = [
+        '4.0.0',
         '3.0.0',
         '2.0.0'
     ]

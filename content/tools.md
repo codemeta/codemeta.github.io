@@ -32,6 +32,8 @@ The tables in this section contain tools for supported versions of CodeMeta.
 Note: Tools marked with a warning symbol ( ⚠️ ) are not known to support the *latest version* of CodeMeta.
 {.tip}
 
+The most recent version of CodeMeta is {{% badge %}}
+
 These tools are categorised according to the context they can be used. In many cases a tool belongs to multiple categories and will be listed multiple times on this page.
 
 {{% tools %}}
