@@ -27,10 +27,7 @@ If you need to automate your metadata publishing, you can also find [Publishing 
 
 ## Tools for Supported Versions
 
-The tables in this section contain tools for supported versions of CodeMeta.
-
-Note: Tools marked with a warning symbol ( ⚠️ ) are not known to support the *latest version* of CodeMeta.
-{.tip}
+The tables in this section contain tools for supported versions of CodeMeta. A star ( ⭐ ) indicates a tool known to support the *latest version* of CodeMeta.
 
 These tools are categorised according to the context they can be used. In many cases a tool belongs to multiple categories and will be listed multiple times on this page.
 
