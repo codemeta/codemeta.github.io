@@ -29,7 +29,7 @@
     <td>{{ .language }}</td>
     <td>{{ $icnt := sub (.maintainers | len) 1 }}{{- range $i, $mtnrs := .maintainers }}{{ $mtnr := index $mtnrs }}{{ if $mtnr.url }}<a href="{{ $mtnr.url }}">{{ $mtnr.name }}</a>{{ else }}{{ $mtnr.name }}{{ end }}{{ if lt $i $icnt }},{{end}}<br>{{ end -}}</td>
     <td>{{ if in .versions $latest | not }} ⚠️ {{ end }}
-    {{ delimit .versions  ", " }}</td>
+    {{ if .versions }}v{{ end }}{{ delimit .versions ", v" }}</td>
     <td>{{ .description }}</td>
   </tr>
     {{ end -}}

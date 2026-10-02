@@ -21,7 +21,7 @@
     <td>{{ .language }}</td>
     <td>{{ $icnt := sub (.categories | len) 1 }} {{ range $i, $cat := .categories }}<a href="#{{ $cat | urlize }}">{{ $cat }}</a>{{ if lt $i $icnt }},{{end}}<br>{{ end -}}</td>
     <td>{{ $icnt := sub (.maintainers | len) 1 }}{{- range $i, $mtnrs := .maintainers }}{{ $mtnr := index $mtnrs }}{{ if $mtnr.url }}<a href="{{ $mtnr.url }}">{{ $mtnr.name }}</a>{{ else }}{{ $mtnr.name }}{{ end }}{{ if lt $i $icnt }},{{end}}<br>{{ end -}}</td>
-    <td>{{ delimit .versions ", " }}</td>
+    <td>{{ if .versions }}v{{ end }}{{ delimit .versions ", v" }}</td>
     <td>{{ .description }}</td>
   </tr>
     {{ end -}}
