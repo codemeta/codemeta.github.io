@@ -12,7 +12,7 @@
 	<atom:link href="https://www.softwareheritage.org/tag/codemeta/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.softwareheritage.org/tag/codemeta/</link>
 	<description></description>
-	<lastBuildDate>Thu, 04 Dec 2025 09:52:59 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 01 Oct 2026 13:11:23 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,25 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Metadata fatigue is not a fatality</title>
+		<link>https://www.softwareheritage.org/2026/10/01/metadata-fatigue-is-not-a-fatality/</link>
+		
+		<dc:creator><![CDATA[sabrina granger]]></dc:creator>
+		<pubDate>Thu, 01 Oct 2026 13:11:23 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Ambassadors]]></category>
+		<category><![CDATA[announcement]]></category>
+		<category><![CDATA[Codemeta]]></category>
+		<guid isPermaLink="false">https://www.softwareheritage.org/?p=49651</guid>
+
+					<description><![CDATA[<p>Meet our new Ambassador, Daniel Garijo. The quest for consistency and uniformity in research software metadata does not have to be a tedious process. </p>
+<p>The post <a href="https://www.softwareheritage.org/2026/10/01/metadata-fatigue-is-not-a-fatality/">Metadata fatigue is not a fatality</a> appeared first on <a href="https://www.softwareheritage.org">Software Heritage</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>CodeMeta Party: Shaping the future of software metadata</title>
 		<link>https://www.softwareheritage.org/2025/12/04/codemeta-future-software-metadata/</link>
 		
