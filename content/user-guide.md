@@ -151,7 +151,7 @@ individual is the `maintainer` of the software being described, like this:
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.1",
+    "@context": "https://w3id.org/codemeta/4.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -174,7 +174,7 @@ This means the previous example is equivalent to:
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.1",
+    "@context": "https://w3id.org/codemeta/4.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -202,7 +202,7 @@ object:
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.1",
+    "@context": "https://w3id.org/codemeta/4.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR"
 }
@@ -213,7 +213,7 @@ SoftwareApplication:
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.1",
+    "@context": "https://w3id.org/codemeta/4.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -229,7 +229,7 @@ application:
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.1",
+    "@context": "https://w3id.org/codemeta/4.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -264,7 +264,7 @@ of the document has changed. It is *_not_* equivalent to the code above.
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.1",
+    "@context": "https://w3id.org/codemeta/4.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -285,6 +285,8 @@ represented as the `"url"` of `rmarkdown`, instead of being the url of
 `Central R Archive Network (CRAN)`.
 
 ## Context
+
+The most recent version of CodeMeta is {{% badge %}}
 
 Every CodeMeta document must refer to the context file `codemeta.jsonld`, for
 example via a URL. This indicates that all terms in the document should be
@@ -321,7 +323,7 @@ of the CodeMeta schema in order to refer to the appropriate context file.
 For example, use the following for the latest release:
 
 ```json
-"@context": "https://w3id.org/codemeta/3.1"
+"@context": "https://w3id.org/codemeta/4.0"
 ```
 
 ## Attributions
@@ -452,6 +454,9 @@ under `author` or `contributor`. The example below demonstrates the `id` and
 
 [Full example](https://github.com/oss-slu/Pi4Micronaut/blob/de4305bec9afe7f7c948e9cc97b9105fd55121f7/codemeta.json).
 
+Note: The above real-world example is using a specific version of CodeMeta. It may not be the correct version for you. Refer to [the tools tables](/tools) to check for compatibility with the tools you use.
+{.tip}
+
 ### Organizations
 
 The properties listed in the [terms](/terms) tables with a type `Organization`
@@ -487,7 +492,7 @@ root of a code repository:
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.1",
+    "@context": "https://w3id.org/codemeta/4.0",
     "type": "SoftwareSourceCode",
     "applicationCategory": "Biology",
     "codeRepository": "https://github.com/gem-pasteur/macsyfinder",
@@ -504,6 +509,9 @@ root of a code repository:
 ```
 
 ([Link to full example](https://github.com/gem-pasteur/macsyfinder/blob/69c22b065065105e6c5ac8dcbff00a804a0a34fc/codemeta.json)).
+
+Note: The above real-world example is using a specific version of CodeMeta. It may not be the correct version for you. Refer to [the tools tables](/tools) to check for compatibility with the tools you use.
+{.tip}
 
 ## Referencing CodeMeta
 
