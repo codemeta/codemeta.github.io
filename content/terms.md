@@ -39,3 +39,6 @@ The CodeMeta project also introduces the following additional properties, which 
 {{% properties-description matchParentType="codemeta:"%}}
 
 Please suggest additional terms or adjustments to this representation in the [CodeMeta issues](https://github.com/codemeta/codemeta/issues).
+
+The `codemeta.jsonld` and `codemeta_all.jsonld` files in the above repository are the **canonical** definitions. The `properties_descriptions.csv` file is built from them and is the source for this table, but is **not** authoritative.
+{.tip}

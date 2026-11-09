@@ -21,9 +21,14 @@ data/properties_description/v2.0.csv:
 data/properties_description/v3.0.csv:
 	wget https://github.com/codemeta/codemeta/raw/3.1/properties_description.csv -O $@
 
+# Temporary reference for building 4.0 prior to a point release. MUST be updated to use a
+# tag reference once one exists, for clarity.
+data/properties_description/v4.0.csv:
+	wget https://raw.githubusercontent.com/codemeta/codemeta/65899d89948e26c6c35a2fc9e47bbb60ee71d53f/properties_description.csv -O $@
+
 # Download properties descriptions for other versions
 data/properties_description/v%.csv:
 	wget https://github.com/codemeta/codemeta/raw/$*/properties_description.csv -O $@
 
-data/properties_description.json: scripts/properties_to_json.py data/properties_description/v2.0.csv data/properties_description/v3.0.csv
+data/properties_description.json: scripts/properties_to_json.py data/properties_description/v2.0.csv data/properties_description/v3.0.csv data/properties_description/v4.0.csv
 	python3 scripts/properties_to_json.py
